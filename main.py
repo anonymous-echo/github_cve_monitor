@@ -352,6 +352,11 @@ def get_info(year):
                                     all_items.extend(items)
                                     print(f"✅ 成功获取第 {page} 页数据，共 {len(items)} 条")
                                     
+                                    # 检查是否达到GitHub API的1000条结果限制
+                                    if len(all_items) >= 1000:
+                                        print(f"✅ 已达到GitHub Search API的1000条结果限制")
+                                        return all_items
+                                        
                                     # 检查是否有下一页
                                     if len(items) < per_page:
                                         print(f"✅ 已获取所有数据，没有更多页面")
