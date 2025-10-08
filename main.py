@@ -295,282 +295,133 @@ def get_github_token():
     return None
 
 def get_info(year):
+    """
+    获取指定年份的CVE相关GitHub仓库信息
+    基于原始代码的简化版本，保留基本功能但减少复杂性
+    """
     try:
         all_items = []
         page = 1
-        per_page = 100 # 默认每页100条，有token时使用
+        per_page = 100  # 默认每页100条，有token时使用
         github_token = get_github_token()
-        headers = {}
+        headers = {'User-Agent': 'CVE-Monitor-App', 'Accept': 'application/json'}
 
         if github_token:
-            print(f"DEBUG: GITHUB_TOKEN is set. Value: {github_token[:5]}...") # Print partial token for security
+            print(f"DEBUG: GITHUB_TOKEN is set. Value: {github_token[:5]}...")
             headers['Authorization'] = f'token {github_token}'
             print(f"Using GitHub Token for authentication (Year: {year})")
         else:
             print("DEBUG: GITHUB_TOKEN is NOT set.")
-            per_page = 30 # 无token时每页30条
+            per_page = 30  # 无token时每页30条
             print(f"No GitHub Token found, using unauthenticated request (Year: {year})")
 
-        # 添加User-Agent头，避免被GitHub阻止
-        headers['User-Agent'] = 'CVE-Monitor-App'
+        max_pages = 10  # 限制最大页数
+        max_retries = 3  # 最大重试次数
         
-        max_retries = 3
-        retry_count = 0
-        max_pages = 10  # 限制最大页数，防止无限循环
-        
-        while retry_count < max_retries and page <= max_pages:
+        while page <= max_pages:
             api = f"https://api.github.com/search/repositories?q=CVE-{year}&sort=updated&page={page}&per_page={per_page}"
-            print(f"DEBUG: 正在获取年份 {year} 的第 {page}/{max_pages} 页数据，重试次数: {retry_count}/{max_retries}")
-            print(f"DEBUG: API请求URL: {api}")
-            print(f"DEBUG: 当前重试计数: {retry_count}，最大重试次数: {max_retries}")
+            print(f"DEBUG: 正在获取年份 {year} 的第 {page}/{max_pages} 页数据")
             
-            # 智能延迟 - 避免连续请求过快
+            # 简单延迟 - 避免连续请求过快
             if page > 1:
-                if not github_token:
-                    # 无token时等待更长时间
-                    wait_time = random.randint(5, 15)
-                    print(f"DEBUG: 无Token，等待 {wait_time} 秒后请求下一页")
-                    time.sleep(wait_time)
-                else:
-                    # 有token时也添加适当延迟
-                    wait_time = random.randint(1, 3)
-                    print(f"DEBUG: 有Token，等待 {wait_time} 秒后请求下一页")
-                    time.sleep(wait_time)
-            
-            try:
-                # 添加超时参数，避免请求无限期挂起
-                response = requests.get(api, headers=headers, timeout=30)
-            except requests.exceptions.Timeout:
-                print(f"❌ 错误: 请求超时，请检查网络连接")
-                retry_count += 1
-                time.sleep(5)
-                continue
-            except requests.exceptions.ConnectionError:
-                print(f"❌ 错误: 连接错误，请检查网络连接")
-                retry_count += 1
-                time.sleep(5)
-                continue
-            except Exception as e:
-                print(f"❌ 错误: 请求发生异常: {e}")
-                retry_count += 1
-                time.sleep(5)
-                continue
-
-            # 打印详细的响应信息用于调试
-            print(f"DEBUG: API请求状态码: {response.status_code}")
-            
-            # 获取并显示速率限制信息
-            remaining = limit = reset_time = None
-            if 'X-RateLimit-Remaining' in response.headers:
-                remaining = response.headers.get('X-RateLimit-Remaining')
-                limit = response.headers.get('X-RateLimit-Limit')
-                reset_time = response.headers.get('X-RateLimit-Reset')
-                print(f"API Rate Limit: {remaining}/{limit}")
-                
-                # 计算重置时间（人性化显示）
-                if reset_time:
-                    reset_seconds = int(reset_time) - int(time.time())
-                    if reset_seconds > 0:
-                        print(f"API限制将在 {reset_seconds} 秒后重置")
-                
-                # 智能速率限制处理
-                if remaining and limit:
-                    remaining_int = int(remaining)
-                    limit_int = int(limit)
-                    
-                    # 如果剩余请求次数很少，等待较长时间
-                    if remaining_int < 5:
-                        print(f"⚠️  警告: 剩余请求次数极少 ({remaining_int}/{limit_int})，等待更长时间...")
-                        wait_time = min(60, max(15, reset_seconds // 2)) if reset_seconds else 60
-                        print(f"DEBUG: 等待 {wait_time} 秒后继续")
-                        time.sleep(wait_time)
-                    # 如果剩余请求次数较少，等待适当时间
-                    elif remaining_int < 10:
-                        print(f"⚠️  警告: 接近速率限制，剩余请求次数: {remaining_int}/{limit_int}")
-                        time.sleep(random.randint(10, 30))
-
-            # 处理403错误
-            if response.status_code == 403:
-                print(f"❌ 错误: GitHub API返回403 Forbidden")
-                try:
-                    # 安全获取响应内容
-                    response_text = response.text
-                    print(f"响应内容: {response_text}")
-                except:
-                    print("无法获取响应内容")
-                    
-                if 'X-GitHub-SSO' in response.headers:
-                    print(f"SSO要求: {response.headers.get('X-GitHub-SSO')}")
-                
-                # 检查是否是速率限制错误或滥用限制
-                if 'rate limit' in response_text.lower() or 'abuse' in response_text.lower():
-                    print("⏱️  检测到速率限制或滥用限制，等待一段时间后重试...")
-                    wait_time = reset_seconds + 10 if reset_seconds else 60  # 等待到限制重置后再重试
-                    print(f"DEBUG: 等待 {wait_time} 秒后重试")
-                    time.sleep(wait_time)
-                    retry_count += 1
-                    continue
-                else:
-                    print("❌ 非速率限制错误，终止请求")
-                    break
-
-            # 处理401错误（认证失败）
-            if response.status_code == 401:
-                print(f"❌ 错误: GitHub API返回401 Unauthorized")
-                print(f"响应内容: {response.text}")
-                break
-                
-            # 处理其他错误状态码
-            if response.status_code != 200:
-                print(f"❌ 错误: GitHub API返回状态码 {response.status_code}")
-                try:
-                    print(f"响应内容: {response.text}")
-                except:
-                    print("无法获取响应内容")
-                    
-                # 对于临时错误，可以重试
-                if response.status_code in [408, 429, 500, 502, 503, 504]:
-                    print("⏱️  检测到临时错误，等待后重试...")
-                    wait_time = min(30, 5 * (retry_count + 1))  # 指数退避策略
-                    print(f"DEBUG: 等待 {wait_time} 秒后重试")
-                    time.sleep(wait_time)
-                else:
-                    time.sleep(5)
-                    
-                retry_count += 1
-                continue
-
-            try:
-                # 先检查响应内容是否为空
-                response_content = response.text
-                if not response_content or response_content.strip() == '':
-                    print(f"❌ 错误: 响应内容为空")
-                    retry_count += 1
-                    time.sleep(5)
-                    continue
-                    
-                req = response.json()
-                
-                # 验证响应是否为有效的JSON对象
-                if not isinstance(req, dict):
-                    print(f"❌ 错误: JSON响应不是有效的对象格式")
-                    print(f"原始响应内容类型: {type(req)}")
-                    retry_count += 1
-                    time.sleep(5)
-                    continue
-                    
-            except json.JSONDecodeError as e:
-                print(f"❌ 错误: JSON解析错误: {e}")
-                print(f"原始响应内容前200字符: {response_content[:200]}...")
-                retry_count += 1
-                
-                # 采用指数退避策略
-                wait_time = min(30, 5 * (retry_count + 1))
-                print(f"DEBUG: 等待 {wait_time} 秒后重试")
+                wait_time = 3 if github_token else 6
+                print(f"DEBUG: 等待 {wait_time} 秒后请求下一页")
                 time.sleep(wait_time)
-                continue
-            except Exception as e:
-                print(f"❌ 错误: 解析响应失败: {e}")
-                import traceback
-                print(f"错误详情: {traceback.format_exc()[:200]}")
-                retry_count += 1
-                print(f"DEBUG: 增加重试计数到 {retry_count}")
-                time.sleep(5)
-                continue
             
-            # 检查是否有错误信息
-            if "message" in req:
-                message = str(req['message'])
-                print(f"⚠️  API响应消息: {message}")
-                # 检查更多可能的限制关键词
-                limit_keywords = ['rate limit', 'limit', 'abuse', 'block', 'throttle', 'exceed', 'error', 'failed', 'unavailable']
-                if any(keyword in message.lower() for keyword in limit_keywords):
-                    print("⏱️  检测到限制或错误，等待一段时间后重试...")
-                    wait_time = reset_seconds + 10 if reset_seconds else 60
-                    print(f"DEBUG: 等待 {wait_time} 秒后重试")
-                    time.sleep(wait_time)
+            # 使用简单的请求方式
+            retry_count = 0
+            while retry_count < max_retries:
+                try:
+                    print(f"DEBUG: 尝试请求第 {page} 页 (尝试 {retry_count+1}/{max_retries})")
+                    response = requests.get(api, headers=headers, timeout=15)
+                    
+                    # 打印响应状态和速率限制信息
+                    print(f"DEBUG: API请求状态码: {response.status_code}")
+                    if 'X-RateLimit-Remaining' in response.headers:
+                        remaining = response.headers.get('X-RateLimit-Remaining')
+                        limit = response.headers.get('X-RateLimit-Limit')
+                        print(f"API Rate Limit: {remaining}/{limit}")
+                    
+                    # 处理响应
+                    if response.status_code == 200:
+                        try:
+                            data = response.json()
+                            if 'items' in data:
+                                items = data['items']
+                                if items:
+                                    all_items.extend(items)
+                                    print(f"✅ 成功获取第 {page} 页数据，共 {len(items)} 条")
+                                    
+                                    # 检查是否有下一页
+                                    if len(items) < per_page:
+                                        print(f"✅ 已获取所有数据，没有更多页面")
+                                        return all_items
+                                    
+                                    # 继续下一页
+                                    page += 1
+                                    break  # 成功获取数据，跳出重试循环
+                                else:
+                                    print(f"⚠️ 第 {page} 页没有数据，结束请求")
+                                    return all_items
+                            else:
+                                print(f"⚠️ 警告: 响应中没有 'items' 字段")
+                                retry_count += 1
+                                time.sleep(3)
+                        except json.JSONDecodeError:
+                            print(f"❌ 错误: 无法解析JSON响应")
+                            retry_count += 1
+                            time.sleep(3)
+                    
+                    # 处理速率限制
+                    elif response.status_code == 403:
+                        print(f"⚠️ 警告: 请求被拒绝 (403)，可能是速率限制")
+                        if 'X-RateLimit-Reset' in response.headers:
+                            reset_time = response.headers.get('X-RateLimit-Reset')
+                            reset_seconds = int(reset_time) - int(time.time())
+                            if reset_seconds > 0 and reset_seconds < 60:
+                                print(f"等待 {reset_seconds} 秒后继续...")
+                                time.sleep(reset_seconds + 2)
+                                retry_count += 1
+                            else:
+                                print(f"❌ 错误: 速率限制重置时间过长，跳过此页")
+                                page += 1  # 跳过当前页
+                                break
+                        else:
+                            time.sleep(10)
+                            retry_count += 1
+                    
+                    # 其他错误
+                    else:
+                        print(f"❌ 错误: 请求失败，状态码: {response.status_code}")
+                        retry_count += 1
+                        time.sleep(3)
+                
+                except requests.exceptions.Timeout:
+                    print(f"❌ 错误: 请求超时，尝试重试")
                     retry_count += 1
-                    continue
-
-            # 增强数据结构验证
-            # 检查响应是否包含预期的数据结构
-            if "items" not in req:
-                print(f"❌ 错误: 响应中缺少items字段")
-                print(f"响应结构: {list(req.keys())}")
-                retry_count += 1
-                wait_time = min(30, 5 * (retry_count + 1))
-                print(f"DEBUG: 等待 {wait_time} 秒后重试")
-                time.sleep(wait_time)
-                continue
-            
-            # 安全获取items并验证格式
-            items = req.get("items", [])
-            
-            # 确保items是列表类型
-            if not isinstance(items, list):
-                print(f"❌ 警告: items不是列表类型，而是 {type(items)}")
-                items = []
-            
-            # 记录原始items数量
-            original_items_count = len(items)
-            
-            # 过滤掉无效的item（非字典类型）
-            valid_items = [item for item in items if isinstance(item, dict)]
-            invalid_count = len(items) - len(valid_items)
-            
-            if invalid_count > 0:
-                print(f"⚠️  过滤掉 {invalid_count} 个无效的item数据")
-            
-            print(f"DEBUG: 当前页获取到 {len(valid_items)} 条有效数据 (原始: {original_items_count})")
-            
-            # 检查是否存在数据异常情况
-            if original_items_count > 0 and len(valid_items) == 0:
-                print(f"⚠️  警告: 当前页所有数据均无效，可能是API异常响应")
-                # 尝试重试一次
-                if retry_count < max_retries - 1:
-                    print("🔄 尝试重新获取当前页数据...")
+                    time.sleep(3)
+                
+                except requests.exceptions.ConnectionError:
+                    print(f"❌ 错误: 连接错误，请检查网络连接")
                     retry_count += 1
-                    wait_time = min(30, 5 * (retry_count + 1))
-                    print(f"DEBUG: 等待 {wait_time} 秒后重试")
-                    time.sleep(wait_time)
-                    continue
-                else:
-                    print("⚠️  已达到最大重试次数，跳过当前页")
-
-            if not valid_items:
-                print(f"DEBUG: 无更多有效数据，停止请求")
-                break
-
-            all_items.extend(valid_items)
-            print(f"DEBUG: 累计获取到 {len(all_items)} 条有效数据")
-
-            # 如果当前页返回的有效item数量小于per_page，说明已经是最后一页或没有更多有效数据
-            if len(valid_items) < per_page:
-                print(f"DEBUG: 已获取最后一页数据（当前有效数据{len(valid_items)}/{per_page}）")
-                break
+                    time.sleep(5)
+                
+                except Exception as e:
+                    print(f"❌ 错误: 请求发生异常: {e}")
+                    retry_count += 1
+                    time.sleep(3)
             
-            page += 1
-            retry_count = 0  # 重置重试计数
-            
-            # 对于大量数据，每获取3页后休息更长时间
-            # if page % 3 == 0:
-            #     rest_time = random.randint(10, 30)
-            #     print(f"📊 已获取 {page} 页数据，休息 {rest_time} 秒以避免触发限制...")
-            #     time.sleep(rest_time)
+            # 如果重试次数达到上限仍未成功，跳过当前页
+            if retry_count >= max_retries:
+                print(f"⚠️ 警告: 第 {page} 页多次尝试失败，跳过此页")
+                page += 1
         
-        # 添加退出循环的调试信息
-        if retry_count >= max_retries:
-            print(f"⚠️  已达到最大重试次数({max_retries})，停止获取年份 {year} 的数据")
-        if page > max_pages:
-            print(f"⚠️  已达到最大页数限制({max_pages})，停止获取年份 {year} 的数据")
-
-        print(f"✅ 完成年份 {year} 的数据获取，共获取 {len(all_items)} 条记录")
+        print(f"总共获取到 {len(all_items)} 条数据")
         return all_items
+    
     except Exception as e:
-        print(f"❌ 网络请求发生错误: {e}")
-        import traceback
-        print(f"错误详情: {traceback.format_exc()}")
-        return None
+        print(f"❌ 错误: get_info 函数发生异常: {e}")
+        return []  # 返回空列表而不是None，避免后续处理出错
 
 
 def db_match(items):
