@@ -322,6 +322,12 @@ def get_info(year):
             api = f"https://api.github.com/search/repositories?q=CVE-{year}&sort=updated&page={page}&per_page={per_page}"
             print(f"DEBUG: 正在获取年份 {year} 的第 {page}/{max_pages} 页数据")
             
+            # 如果已经达到最大页数，直接返回结果
+            if page > max_pages:
+                print(f"⚠️ 已达到最大页数限制 ({max_pages})，结束请求")
+                print(f"总共获取到 {len(all_items)} 条数据")
+                return all_items
+                
             # 简单延迟 - 避免连续请求过快
             if page > 1:
                 wait_time = 3 if github_token else 6
@@ -355,7 +361,8 @@ def get_info(year):
                                     # 检查是否达到GitHub API的1000条结果限制
                                     if len(all_items) >= 1000:
                                         print(f"✅ 已达到GitHub Search API的1000条结果限制")
-                                        return all_items
+                                        print(f"总共获取到 {len(all_items)} 条数据")
+                                        return all_items  # 确保返回并退出函数
                                         
                                     # 检查是否有下一页
                                     if len(items) < per_page:
