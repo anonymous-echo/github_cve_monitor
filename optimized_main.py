@@ -59,7 +59,10 @@ def db_match(items):
         
         # 提取CVE
         cve = "CVE Not Found"
-        cve_match = re.search(regex, item.get('html_url', '') + item.get('description', ''))
+        # 确保所有值都是字符串类型
+        html_url = str(item.get('html_url', ''))
+        description = str(item.get('description', ''))
+        cve_match = re.search(regex, html_url + description)
         if cve_match:
             cve = cve_match.group().replace('_', '-')
         
@@ -195,9 +198,11 @@ def main():
             # 快速筛选当日数据
             for entry in sorted_data:
                 try:
-                    created_date_str = entry["created_at"].split('T')[0] if "T" in entry["created_at"] else entry["created_at"].split()[0]
-                    if created_date_str == today_str:
-                        today_list.append(entry)
+                    created_at = entry.get("created_at", "")
+                    if created_at:
+                        created_date_str = created_at.split('T')[0] if "T" in created_at else created_at.split()[0]
+                        if created_date_str == today_str:
+                            today_list.append(entry)
                 except Exception:
                     pass
     
@@ -209,12 +214,13 @@ def main():
             recent_records = cur.fetchall()
             
             for row in recent_records:
+                # 确保所有字段都是字符串类型
                 today_list.append({
-                    "cve": row[5],
-                    "full_name": row[1],
-                    "description": row[2],
-                    "url": row[3],
-                    "created_at": row[4]
+                    "cve": str(row[5]) if row[5] else "CVE Not Found",
+                    "full_name": str(row[1]) if row[1] else "",
+                    "description": str(row[2]) if row[2] else "",
+                    "url": str(row[3]) if row[3] else "",
+                    "created_at": str(row[4]) if row[4] else ""
                 })
         except Exception:
             pass
@@ -223,16 +229,22 @@ def main():
     if today_list:
         try:
             # 过滤并限制数量
-            valid_entries = [e for e in today_list if e["cve"].upper() != "CVE NOT FOUND"][:5]
+            valid_entries = []
+            for e in today_list:
+                cve = str(e.get("cve", ""))
+                if cve.upper() != "CVE NOT FOUND":
+                    valid_entries.append(e)
+                if len(valid_entries) >= 5:
+                    break
             
             # 批量构建内容
             lines = []
             for entry in valid_entries:
-                cve = entry["cve"]
-                full_name = entry["full_name"]
-                description = entry["description"].replace('|','-')[:80]
-                url = entry["url"]
-                created_at = entry["created_at"]
+                cve = str(entry.get("cve", ""))
+                full_name = str(entry.get("full_name", ""))
+                description = str(entry.get("description", "")).replace('|','-')[:80]
+                url = str(entry.get("url", ""))
+                created_at = str(entry.get("created_at", ""))
                 
                 lines.append(f"| [{cve.upper()}](https://www.cve.org/CVERecord?id={cve.upper()}) | [{full_name}]({url}) | {description} | {created_at}|\n")
             
