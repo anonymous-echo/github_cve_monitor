@@ -44,14 +44,29 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
+          
+          # 确保我们在最新的main分支上
+          git fetch origin main
+          git checkout main
+          git pull origin main
+          
           # 只检查必要的文件是否有更改
           if git status --porcelain docs/ | grep -q .;
           then
-            git pull
+            # 先尝试正常添加和提交
             git add docs/
             git commit -m "Update CVE data and stats [skip ci]"
-            # 使用push --force-with-lease避免冲突
-            git push --force-with-lease origin HEAD:main || echo "Push failed, skipping"
+            
+            # 尝试正常推送，如果失败则拉取并重试
+            if ! git push origin main; then
+              echo "Push failed, trying to pull and resolve conflicts..."
+              git pull --rebase origin main || {
+                echo "Rebase failed, using merge strategy..."
+                git pull origin main || echo "Pull failed, skipping push"
+              }
+              # 再次尝试推送
+              git push origin main || echo "Final push attempt failed"
+            fi
           else
             echo "No changes to commit"
           fi

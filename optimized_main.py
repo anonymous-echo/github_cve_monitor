@@ -8,6 +8,7 @@ import requests
 import subprocess
 import sqlite3
 from datetime import datetime, date
+from pathlib import Path
 
 # 项目根目录
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -135,42 +136,116 @@ def get_info(year):
 
 # 初始化每日文件
 def init_daily_file(date_str):
-    """简化的每日文件初始化"""
-    daily_dir = os.path.join(PROJECT_ROOT, 'docs', 'data', 'daily')
-    os.makedirs(daily_dir, exist_ok=True)
+    """初始化每日报告文件，与main.py保持一致的路径结构"""
+    # 创建日期目录
+    today = datetime.now()
+    year = today.year
+    week_number = today.strftime("%W")
+    month = today.strftime("%m")
+    day = today.strftime("%d")
     
-    file_path = os.path.join(daily_dir, f'{date_str}.md')
+    # 创建目录结构 /reports/weekly/YYYY-W-mm-dd
+    dir_path = os.path.join(PROJECT_ROOT, f"docs/reports/weekly/{year}-W{week_number}-{month}-{day}")
+    Path(dir_path).mkdir(parents=True, exist_ok=True)
     
-    # 快速写入头部
+    # 创建每日报告文件
+    file_path = os.path.join(dir_path, f"daily_{date_str}.md")
+    
+    # 写入头部
+    newline = f"""# 每日 情报速递 报告 ({date_str})
+
+> Automatic monitor Github CVE using Github Actions 
+
+## 报告信息
+- **生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **数据来源**: GitHub CVE 数据库
+
+## 今日 情报速递
+
+| CVE | 相关仓库（poc/exp） | 描述 | 日期 |
+|:---|:---|:---|:---|
+"""
+    
     with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(f"# 每日 CVE 情报速递 - {date_str[:4]}-{date_str[4:6]}-{date_str[6:8]}\n\n")
-        f.write("## 今日新增 CVE 漏洞信息\n\n")
-        f.write("| CVE | 相关仓库（poc/exp） | 描述 | 日期 |\n")
-        f.write("|:---|:---|:---|:---|\n")
+        f.write(newline)
     
     return file_path
 
 # 更新索引
 def update_daily_index():
-    """简化的索引更新"""
-    index_path = os.path.join(PROJECT_ROOT, 'docs', 'index.md')
-    daily_dir = os.path.join(PROJECT_ROOT, 'docs', 'data', 'daily')
+    """更新每日 情报速递 报告索引文件，与main.py保持一致"""
+    data_dir = Path(os.path.join(PROJECT_ROOT, "docs/reports/weekly"))
+    if not data_dir.exists():
+        return
     
-    # 快速列出所有文件
-    try:
-        files = [f for f in os.listdir(daily_dir) if f.endswith('.md')]
-        files.sort(reverse=True)
+    # 创建索引文件
+    index_path = data_dir / "index.md"
+    with open(index_path, 'w', encoding='utf-8') as f:
+        f.write("# 每日 情报速递 报告索引\n\n")
+        f.write("> Automatic monitor Github CVE using Github Actions\n\n")
+        f.write("## 可用报告\n\n")
+    
+    # 遍历所有日期目录
+    date_dirs = sorted([d for d in data_dir.glob("*-W*-*-*")], reverse=True)
+    
+    for date_dir in date_dirs:
+        dir_name = date_dir.name
+        with open(index_path, 'a', encoding='utf-8') as f:
+            f.write(f"### {dir_name}\n\n")
         
-        # 简单重写索引
-        with open(index_path, 'w', encoding='utf-8') as f:
-            f.write("# GitHub CVE 情报速递\n\n")
-            f.write("## 每日报告索引\n\n")
-            for file in files[:30]:  # 限制数量
-                date_str = file.replace('.md', '')
-                display_date = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:8]}"
-                f.write(f"- [{display_date}](data/daily/{file})\n")
-    except Exception:
-        pass
+        # 遍历该目录下的所有daily报告
+        daily_files = sorted([f for f in date_dir.glob("daily_*.md")], reverse=True)
+        
+        for daily_file in daily_files:
+            file_name = daily_file.name
+            relative_path = f"data/{date_dir.name}/{file_name}"
+            date_str = file_name.replace("daily_", "").replace(".md", "")
+            
+            # 格式化日期显示
+            try:
+                formatted_date = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
+            except:
+                formatted_date = date_str
+            
+            with open(index_path, 'a', encoding='utf-8') as f:
+                f.write(f"- [{formatted_date} 每日报告]({relative_path})\n")
+        
+        with open(index_path, 'a', encoding='utf-8') as f:
+            f.write("\n")
+    
+    # 更新侧边栏，添加每日报告链接
+    update_sidebar()
+
+def update_sidebar():
+    """更新侧边栏，添加每日报告链接"""
+    sidebar_path = Path(os.path.join(PROJECT_ROOT, "docs/_sidebar.md"))
+    if not sidebar_path.exists():
+        return
+    
+    # 读取现有侧边栏内容
+    with open(sidebar_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    
+    # 检查是否已有每日报告链接
+    daily_report_exists = False
+    for line in lines:
+        if "每日报告" in line:
+            daily_report_exists = True
+            break
+    
+    # 如果没有每日报告链接，添加到侧边栏
+    if not daily_report_exists:
+        # 找到合适的位置插入链接
+        new_lines = []
+        for line in lines:
+            new_lines.append(line)
+            # 在主页链接后添加每日报告链接
+            if "- [主页](README.md)" in line or "- [Home](README.md)" in line:
+                new_lines.append("- [每日报告](/data/index.md)\n")
+        
+        # 写回文件
+        with open(sidebar_path, 'w', encoding='utf-8') as f:
+            f.writelines(new_lines)
 
 # 主函数
 def main():
@@ -190,6 +265,7 @@ def main():
     # 仅获取当年数据，1页，快速返回
     items = get_info(year)
     today_list = []
+    original_today_list_len = 0  # 初始化原始长度计数器
     
     if items:
         # 批量处理数据库
@@ -203,6 +279,7 @@ def main():
                         created_date_str = created_at.split('T')[0] if "T" in created_at else created_at.split()[0]
                         if created_date_str == today_str:
                             today_list.append(entry)
+                            original_today_list_len += 1  # 增加原始长度计数
                 except Exception:
                     pass
     
@@ -225,34 +302,42 @@ def main():
         except Exception:
             pass
     
-    # 批量写入每日报告
+    # 写入每日报告
     if today_list:
-        try:
-            # 过滤并限制数量
-            valid_entries = []
-            for e in today_list:
-                cve = str(e.get("cve", ""))
-                if cve.upper() != "CVE NOT FOUND":
-                    valid_entries.append(e)
-                if len(valid_entries) >= 5:
-                    break
-            
-            # 批量构建内容
-            lines = []
-            for entry in valid_entries:
-                cve = str(entry.get("cve", ""))
-                full_name = str(entry.get("full_name", ""))
-                description = str(entry.get("description", "")).replace('|','-')[:80]
-                url = str(entry.get("url", ""))
-                created_at = str(entry.get("created_at", ""))
-                
-                lines.append(f"| [{cve.upper()}](https://www.cve.org/CVERecord?id={cve.upper()}) | [{full_name}]({url}) | {description} | {created_at}|\n")
-            
-            # 一次性写入
-            with open(daily_file_path, 'a', encoding='utf-8') as f:
-                f.writelines(lines)
-        except Exception:
-            pass
+        # 记录原始today_list长度
+        original_today_list_len = len(today_list)
+        print(f"生成当日 情报速递 报告，共 {len(today_list)} 条记录")
+        
+        # 写入每日报告（过滤掉CVE NOT FOUND的记录）
+        valid_today_list = []
+        for entry in today_list:
+            cve = str(entry.get('cve', '')).upper()
+            if cve != "CVE NOT FOUND":
+                valid_today_list.append(entry)
+        
+        for entry in valid_today_list:
+            cve = str(entry.get('cve', '')).upper()
+            full_name = str(entry.get('full_name', ''))
+            description = str(entry.get('description', '')).replace('|', '-')
+            url = str(entry.get('url', ''))
+            created_at = str(entry.get('created_at', ''))
+
+            newline = f"| [{cve}](https://www.cve.org/CVERecord?id={cve}) | [{full_name}]({url}) | {description} | {created_at}|\n"
+
+            # 写入每日报告文件
+            try:
+                with open(daily_file_path, 'a', encoding='utf-8') as f:
+                    f.write(newline)
+            except Exception:
+                pass  # 静默失败
+        
+        # 如果是使用最近记录，则在报告中增加说明
+        if original_today_list_len == 0:
+            try:
+                with open(daily_file_path, 'a', encoding='utf-8') as f:
+                    f.write("\n\n> 由于没有获取到当日数据，使用近7天记录\n\n")
+            except Exception:
+                pass  # 静默失败
     
     # 简化的统计生成 - 只运行统计脚本，使用7天参数
     try:
