@@ -12,12 +12,11 @@ GitHub CVE Monitor - 增强版每日数据生成脚本
 """
 
 import os
-import json
 import re
-from datetime import datetime, timedelta, date
-from collections import defaultdict
+import json
 import argparse
-from pathlib import Path
+from datetime import datetime, date, timedelta
+from collections import defaultdict
 
 def parse_readme(readme_path):
     """解析README.md文件，提取CVE数据"""

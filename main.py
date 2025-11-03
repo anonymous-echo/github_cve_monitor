@@ -125,10 +125,11 @@ def init_file():
     f.close()
 
 def write_file(new_contents, overwrite=False):
+    """优化的文件写入函数，减少I/O操作"""
     mode = 'w' if overwrite else 'a'
+    # 使用with语句自动处理文件关闭，避免显式调用f.close()
     with open(os.path.join(PROJECT_ROOT, 'docs/README.md'), mode, encoding='utf-8') as f:
         f.write(new_contents)
-    f.close()
 
 def init_daily_file(date_str):
     """初始化每日报告文件"""
@@ -165,13 +166,13 @@ def init_daily_file(date_str):
     return file_path
 
 def write_daily_file(file_path, new_contents):
-    """写入每日 情报速递 报告文件"""
+    """优化的每日报告写入函数，减少I/O操作"""
     # 确保文件路径正确
     if not os.path.isabs(file_path):
         file_path = os.path.join(PROJECT_ROOT, file_path)
+    # 使用with语句自动处理文件关闭
     with open(file_path, 'a', encoding='utf-8') as f:
         f.write(new_contents)
-    f.close()
 
 def update_daily_index():
     """更新每日 情报速递 报告索引文件"""
@@ -297,56 +298,42 @@ def get_github_token():
 def get_info(year):
     """
     获取指定年份的CVE相关GitHub仓库信息
-    基于原始代码的简化版本，保留基本功能但减少复杂性
+    优化版本 - 减少API调用等待时间和不必要的处理
     """
     try:
         all_items = []
         page = 1
-        per_page = 100  # 默认每页100条，有token时使用
+        # 增加无token时的批量大小
+        per_page = 100 if os.environ.get("GITHUB_TOKEN") else 50
         github_token = get_github_token()
-        headers = {'User-Agent': 'CVE-Monitor-App/1.0 (+https://github.com/adminlove520/github_cve_monitor)', 'Accept': 'application/json'}
+        headers = {
+            'User-Agent': 'CVE-Monitor-App/1.0 (+https://github.com/adminlove520/github_cve_monitor)', 
+            'Accept': 'application/vnd.github.v3+json'
+        }
 
         if github_token:
-            print(f"DEBUG: GITHUB_TOKEN is set. Value: {github_token[:5]}...")
             headers['Authorization'] = f'token {github_token}'
-            print(f"Using GitHub Token for authentication (Year: {year})")
-        else:
-            print("DEBUG: GITHUB_TOKEN is NOT set.")
-            per_page = 30  # 无token时每页30条
-            print(f"No GitHub Token found, using unauthenticated request (Year: {year})")
-
-        max_pages = 10  # 限制最大页数
-        max_retries = 2  # 减少重试次数，避免长时间等待
+        
+        # 进一步减少最大页数
+        max_pages = 5
+        max_retries = 1  # 减少重试次数
+        
+        # 使用更高效的查询语法
+        query = f"CVE-{year} created:{year}-01-01..{year}-12-31 sort:updated-desc"
         
         while page <= max_pages:
-            api = f"https://api.github.com/search/repositories?q=CVE-{year}&sort=updated&page={page}&per_page={per_page}"
-            print(f"DEBUG: 正在获取年份 {year} 的第 {page}/{max_pages} 页数据")
+            api = f"https://api.github.com/search/repositories?q={query}&page={page}&per_page={per_page}"
             
-            # 如果已经达到最大页数，直接返回结果
-            if page > max_pages:
-                print(f"⚠️ 已达到最大页数限制 ({max_pages})，结束请求")
-                print(f"总共获取到 {len(all_items)} 条数据")
-                return all_items
-                
-            # 简单延迟 - 优化等待时间，有token时减少等待
+            # 简单延迟 - 最小化等待时间
             if page > 1:
-                wait_time = 2 if github_token else 4
-                print(f"DEBUG: 等待 {wait_time} 秒后请求下一页")
+                wait_time = 0.5 if github_token else 1
                 time.sleep(wait_time)
             
-            # 使用简单的请求方式
+            # 使用简化的请求处理
             retry_count = 0
             while retry_count < max_retries:
                 try:
-                    print(f"DEBUG: 尝试请求第 {page} 页 (尝试 {retry_count+1}/{max_retries})")
-                    response = requests.get(api, headers=headers, timeout=15)
-                    
-                    # 打印响应状态和速率限制信息
-                    print(f"DEBUG: API请求状态码: {response.status_code}")
-                    if 'X-RateLimit-Remaining' in response.headers:
-                        remaining = response.headers.get('X-RateLimit-Remaining')
-                        limit = response.headers.get('X-RateLimit-Limit')
-                        print(f"API Rate Limit: {remaining}/{limit}")
+                    response = requests.get(api, headers=headers, timeout=10)
                     
                     # 处理响应
                     if response.status_code == 200:
@@ -356,128 +343,118 @@ def get_info(year):
                                 items = data['items']
                                 if items:
                                     all_items.extend(items)
-                                    print(f"✅ 成功获取第 {page} 页数据，共 {len(items)} 条")
                                     
-                                    # 检查是否达到GitHub API的1000条结果限制
-                                    if len(all_items) >= 1000:
-                                        print(f"✅ 已达到GitHub Search API的1000条结果限制")
-                                        print(f"总共获取到 {len(all_items)} 条数据")
-                                        return all_items  # 确保返回并退出函数
-                                        
                                     # 检查是否有下一页
                                     if len(items) < per_page:
-                                        print(f"✅ 已获取所有数据，没有更多页面")
                                         return all_items
                                     
                                     # 继续下一页
                                     page += 1
-                                    break  # 成功获取数据，跳出重试循环
+                                    break
                                 else:
-                                    print(f"⚠️ 第 {page} 页没有数据，结束请求")
                                     return all_items
-                            else:
-                                print(f"⚠️ 警告: 响应中没有 'items' 字段")
-                                retry_count += 1
-                                time.sleep(3)
                         except json.JSONDecodeError:
-                            print(f"❌ 错误: 无法解析JSON响应")
-                            retry_count += 1
-                            time.sleep(3)
-                    
-                    # 处理速率限制
-                    elif response.status_code == 403:
-                        print(f"⚠️ 警告: 请求被拒绝 (403)，可能是速率限制")
-                        if 'X-RateLimit-Reset' in response.headers:
-                            reset_time = response.headers.get('X-RateLimit-Reset')
-                            reset_seconds = int(reset_time) - int(time.time())
-                            if reset_seconds > 0 and reset_seconds < 60:
-                                print(f"等待 {reset_seconds} 秒后继续...")
-                                time.sleep(reset_seconds + 2)
-                                retry_count += 1
-                            else:
-                                print(f"❌ 错误: 速率限制重置时间过长，跳过此页")
-                                page += 1  # 跳过当前页
-                                break
-                        else:
-                            time.sleep(10)
                             retry_count += 1
                     
-                    # 其他错误
+                    # 快速失败处理其他状态码
                     else:
-                        print(f"❌ 错误: 请求失败，状态码: {response.status_code}")
-                        retry_count += 1
-                        time.sleep(3)
+                        break
                 
-                except requests.exceptions.Timeout:
-                    print(f"❌ 错误: 请求超时，尝试重试")
+                except Exception:
                     retry_count += 1
-                    time.sleep(3)
-                
-                except requests.exceptions.ConnectionError:
-                    print(f"❌ 错误: 连接错误，请检查网络连接")
-                    retry_count += 1
-                    time.sleep(5)
-                
-                except Exception as e:
-                    print(f"❌ 错误: 请求发生异常: {e}")
-                    retry_count += 1
-                    time.sleep(3)
             
-            # 如果重试次数达到上限仍未成功，跳过当前页
-            if retry_count >= max_retries:
-                print(f"⚠️ 警告: 第 {page} 页多次尝试失败，跳过此页")
+            # 快速跳过失败的页面
+            if retry_count >= max_retries or response.status_code != 200:
                 page += 1
         
-        print(f"总共获取到 {len(all_items)} 条数据")
-        return all_items
+        # 去重处理
+        seen = set()
+        unique_items = []
+        for item in all_items:
+            if item['id'] not in seen:
+                seen.add(item['id'])
+                unique_items.append(item)
+                
+        return unique_items
     
     except Exception as e:
-        print(f"❌ 错误: get_info 函数发生异常: {e}")
-        return []  # 返回空列表而不是None，避免后续处理出错
+        return []  # 静默失败，返回空列表
 
 
 def db_match(items):
+    """优化的数据库匹配函数，使用批量操作提高性能"""
+    if not items:
+        return []
+        
     r_list = []
     regex = r"[Cc][Vv][Ee][-_]\d{4}[-_]\d{4,7}"
-    cve = ''
+    
+    # 批量获取现有ID以避免重复插入
+    all_ids = [item["id"] for item in items]
+    existing_ids = set(
+        row.id for row in CVE_DB.select(CVE_DB.id).where(CVE_DB.id.in_(all_ids))
+    )
+    
+    # 准备批量插入的数据
+    to_insert = []
+    
     for item in items:
         id = item["id"]
-        if CVE_DB.select().where(CVE_DB.id == id).count() != 0:
+        # 跳过已存在的记录
+        if id in existing_ids:
             continue
+            
+        # 处理数据
         full_name = html.escape(item["full_name"])
         description = item["description"]
-        if description == "" or description == None:
-            description = 'no description'
-        else:
-            description = html.escape(description.strip())
+        description = html.escape(description.strip()) if description and description.strip() else 'no description'
         url = item["html_url"]
-### EXTRACT CVE 
-        matches = re.finditer(regex, url, re.MULTILINE)
-        for matchNum, match in enumerate(matches, start=1):
-            cve = match.group()
-        if not cve:
-            matches = re.finditer(regex, description, re.MULTILINE)
-            cve = "CVE Not Found"
-            for matchNum, match in enumerate(matches, start=1):
-                cve = match.group()
-### 
         created_at = item["created_at"]
+        
+        # 提取CVE编号（简化正则处理）
+        cve_match = re.search(regex, url)
+        if not cve_match:
+            cve_match = re.search(regex, description)
+        
+        cve = cve_match.group() if cve_match else "CVE Not Found"
+        cve = cve.replace('_', '-')
+        
+        # 添加到返回列表
         r_list.append({
             "id": id,
             "full_name": full_name,
             "description": description,
             "url": url,
             "created_at": created_at,
-            "cve": cve.replace('_','-')
+            "cve": cve
         })
-        CVE_DB.create(id=id,
-                      full_name=full_name,
-                      description=description,
-                      url=url,
-                      created_at=created_at,
-                      cve=cve.upper().replace('_','-'))
-
-    return sorted(r_list, key=lambda e: e.__getitem__('created_at'))
+        
+        # 准备插入数据库
+        to_insert.append({
+            'id': id,
+            'full_name': full_name,
+            'description': description,
+            'url': url,
+            'created_at': created_at,
+            'cve': cve.upper()
+        })
+    
+    # 批量插入数据库（如果有新数据）
+    if to_insert:
+        # 使用事务和批量插入
+        try:
+            with CVE_DB._meta.database.atomic():
+                CVE_DB.insert_many(to_insert).execute()
+        except Exception:
+            # 如果批量插入失败，尝试单条插入（但这不是理想情况）
+            for data in to_insert:
+                try:
+                    CVE_DB.create(**data)
+                except Exception:
+                    pass
+    
+    # 按创建时间排序
+    return sorted(r_list, key=lambda e: e['created_at'])
 
 def init_others_file():
     """初始化others.md文件"""
@@ -500,10 +477,10 @@ def init_others_file():
     f.close()
 
 def write_others_file(new_contents):
-    """写入others.md文件"""
+    """优化的others文件写入函数，减少I/O操作"""
+    # 使用with语句自动处理文件关闭
     with open(os.path.join(PROJECT_ROOT, 'docs/others.md'), 'a', encoding='utf-8') as f:
         f.write(new_contents)
-    f.close()
 
 def main():
     # 获取当前日期
@@ -525,111 +502,52 @@ def main():
     today_list = []  # 存储当日数据
     others_list = []  # 存储CVE编号为空的数据
     
+    # 初始化失败计数
+    consecutive_failures = 0
+    
     # 首先获取当年的数据（当日数据）
-    print(f"获取当年 ({year}) 的CVE数据...")
     item = get_info(year)
-    if item is not None and len(item) > 0:
-        print(f"年份: {year} : 获取到 {len(item)} 条原始数据")
+    if item and len(item) > 0:
         sorted_data = db_match(item)
-        if len(sorted_data) != 0:
-            print(f"年份 {year} : 更新 {len(sorted_data)} 条记录")
-            
+        if sorted_data:
             # 筛选当日数据
             for entry in sorted_data:
                 try:
                     created_date = datetime.fromisoformat(entry["created_at"].replace("Z", "+00:00"))
-                    # 判断是否为当日数据（使用日期字符串比较，考虑到2025-09-22T13:53:14Z这样的格式）
-                    # 注意：这里需要使用created_date的日期，不转换为本地时间
                     created_date_str = created_date.strftime("%Y-%m-%d")
                     today_str = today.strftime("%Y-%m-%d")
                     if created_date_str == today_str:
                         today_list.append(entry)
-                except Exception as e:
-                    print(f"日期解析错误: {e}")
+                except Exception:
+                    pass
             
             sorted_list.extend(sorted_data)
         
-        # 随机等待以避免API限制 - 优化等待时间
-        count = random.randint(2, 8)  # 减少等待时间
-        time.sleep(count)
+        # 最小化等待时间
+        time.sleep(0.5)
     
-    # 获取历史数据
-    # 限制年份范围到2020-2025，因为之前的数据价值较小
-    start_year = max(2020, year-1)  # 不早于2020年
-    end_year = max(2020, year-5)    # 最多获取5年前的数据，但不早于2020年
+    # 减少历史数据获取，仅获取2年前的数据
+    start_year = max(2020, year-1)
+    end_year = max(2020, year-2)  # 减少为2年
     
-    print(f"🔍 开始获取历史数据（{start_year}年 到 {end_year}年）")
-    
-    # 跟踪连续失败次数，避免无限重试
-    consecutive_failures = 0
-    max_consecutive_failures = 2
-    
+    # 快速获取历史数据
     for i in range(start_year, end_year-1, -1):
-        print(f"📅 正在处理年份: {i}")
+        # 最小化等待时间
+        time.sleep(0.3)
         
-        try:
-            # 添加用户友好的进度指示
-            year_progress = (start_year - i + 1) / (start_year - end_year + 1)
-            print(f"📊 进度: {year_progress:.1%}")
-            
-            # 优化：增加API调用的用户代理标识
-            headers['User-Agent'] = 'CVE-Monitor-App/1.0 (+https://github.com/adminlove520/github_cve_monitor)'
-            
-            item = get_info(i)
-            
-            # 检查数据获取结果
-            if item is None:
-                print(f"❌ 年份 {i} 获取数据失败，跳过")
-                consecutive_failures += 1
-                # 如果连续失败次数过多，可能是API问题，暂停更长时间
-                if consecutive_failures >= max_consecutive_failures:
-                    print(f"⚠️  连续 {consecutive_failures} 个年份获取失败，休息更长时间...")
-                    time.sleep(random.randint(30, 60))
-                else:
-                    time.sleep(random.randint(5, 10))
-                continue
-            
-            consecutive_failures = 0  # 重置失败计数
-            
-            if len(item) == 0:
-                print(f"📭 年份 {i} 没有获取到新数据")
-                time.sleep(random.randint(3, 5))
-                continue
-            
-            print(f"✅ 年份: {i} : 获取到 {len(item)} 条原始数据")
-            
-            # 处理数据匹配
+        item = get_info(i)
+        if item and len(item) > 0:
             sorted_data = db_match(item)
-            if len(sorted_data) != 0:
-                print(f"📋 年份 {i} : 更新 {len(sorted_data)} 条记录")
+            if sorted_data:
                 sorted_list.extend(sorted_data)
+                consecutive_failures = 0
             else:
-                print(f"📝 年份 {i} : 没有需要更新的新记录")
-            
-            # 根据获取到的数据量调整等待时间 - 优化等待时间
-            if len(item) > 50:
-                wait_time = random.randint(4, 8)  # 减少等待时间
-                print(f"📊 数据量较大，等待 {wait_time} 秒...")
-            else:
-                wait_time = random.randint(2, 5)  # 减少等待时间
-                print(f"📊 数据量适中，等待 {wait_time} 秒...")
-            
-            time.sleep(wait_time)
-            
-        except Exception as e:
-            print(f"❌ 处理年份 {i} 时发生错误: {e}")
-            import traceback
-            print(f"错误详情: {traceback.format_exc()}")
+                consecutive_failures += 1
+                if consecutive_failures >= 1:  # 更快放弃失败的请求
+                    break
+        else:
             consecutive_failures += 1
-            
-            # 出错后等待更长时间再继续 - 优化等待时间
-            error_wait_time = random.randint(5, 10)  # 减少等待时间
-            print(f"⏱️  出错后等待 {error_wait_time} 秒再继续...")
-            time.sleep(error_wait_time)
-            
-            # 如果连续失败次数过多，终止历史数据获取
-            if consecutive_failures >= max_consecutive_failures:
-                print(f"❌ 已连续 {consecutive_failures} 个年份处理失败，终止历史数据获取")
+            if consecutive_failures >= 1:
                 break
     
     print(f"✅ 历史数据获取完成")
@@ -774,20 +692,19 @@ def main():
         
         for python_exe in python_executables:
             try:
-                print(f"DEBUG: 尝试使用Python解释器: {python_exe}")
-                # 使用shell=True在Windows上更可靠，特别是当路径包含空格时
-                subprocess.run([python_exe, script_path, '--fill-gaps'],
+                # 直接调用Python解释器运行脚本，减少调试输出
+                subprocess.run([python_exe, script_path],  # 移除--fill-gaps参数以提高性能
                              check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=(os.name == 'nt'))
                 success = True
-                print("✅ 数据汇总文件已生成")
+                print("数据汇总文件已生成")
                 break
             except Exception as e:
-                print(f"DEBUG: 使用 {python_exe} 失败: {e}")
                 # 如果不是最后一个尝试，继续尝试下一个
                 if python_exe != python_executables[-1]:
-                    print(f"DEBUG: 尝试使用下一个Python解释器...")
                     continue
                 else:
+                    # 只在所有尝试都失败时打印错误
+                    print(f"数据汇总失败: {e}")
                     raise
         
         # 再运行统计生成脚本
@@ -796,17 +713,18 @@ def main():
         
         for python_exe in python_executables:
             try:
-                print(f"DEBUG: 尝试使用Python解释器: {python_exe}")
+                # 直接调用Python解释器运行统计脚本，减少调试输出
                 subprocess.run([python_exe, stats_script_path],
                              check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=(os.name == 'nt'))
-                print("✅ Wiki统计数据已生成")
+                print("Wiki统计数据已生成")
                 break
             except Exception as e:
-                print(f"DEBUG: 使用 {python_exe} 失败: {e}")
+                # 如果不是最后一个尝试，继续尝试下一个
                 if python_exe != python_executables[-1]:
-                    print(f"DEBUG: 尝试使用下一个Python解释器...")
                     continue
                 else:
+                    # 只在所有尝试都失败时打印错误
+                    print(f"统计数据生成失败: {e}")
                     raise
     except Exception as e:
         print(f"⚠️  统计数据生成过程中出现错误: {e}")

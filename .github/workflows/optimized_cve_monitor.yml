@@ -1,0 +1,68 @@
+name: Optimized CVE Monitor Workflow
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天2点运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  cve-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20  # 设置超时限制，避免长时间运行
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1  # 只获取最新提交，减少网络和磁盘使用
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip'  # 启用pip缓存
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir requests
+          # 最小化依赖安装
+      
+      - name: Clean up old data (optional)
+        run: |
+          # 清理超过90天的旧数据文件，减少磁盘占用
+          find docs/data/daily -name "*.md" -type f -mtime +90 -delete || true
+      
+      - name: Run optimized CVE monitor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 使用优化版本的主脚本
+          python optimized_main.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          # 只检查必要的文件是否有更改
+          if git status --porcelain docs/ | grep -q .;
+          then
+            git pull
+            git add docs/
+            git commit -m "Update CVE data and stats [skip ci]"
+            # 使用push --force-with-lease避免冲突
+            git push --force-with-lease origin HEAD:main || echo "Push failed, skipping"
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Clean up old database
+        if: always()
+        run: |
+          # 清理旧数据库，避免重复数据累积
+          if [ -f "cve.db" ]; then
+            # 保留最近一年的数据
+            sqlite3 cve.db "DELETE FROM CVE_DB WHERE created_at < datetime('now', '-1 year');"
+          fi
