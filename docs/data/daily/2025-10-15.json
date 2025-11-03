@@ -1,0 +1,104 @@
+{
+  "date": "2025-10-15",
+  "count": 13,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[RootAid/CVE-2025-61882](https://github.com/RootAid/CVE-2025-61882)",
+      "description": "no description",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T16:03:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[NS-Projects-Unina/CTF_CVE_DSP_1](https://github.com/NS-Projects-Unina/CTF_CVE_DSP_1)",
+      "description": "Una CTF, in formato DSP-compliant, basata sulla CVE-2025-29927 di nextjs.",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T14:10:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-5947",
+      "repo_info": "[NightlyAudit/CVE-2025-5947](https://github.com/NightlyAudit/CVE-2025-5947)",
+      "description": "no description",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T12:34:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-56503",
+      "repo_info": "[secxplorers/CVE-2025-56503](https://github.com/secxplorers/CVE-2025-56503)",
+      "description": "CVE-2025-56503 : Sublime Text 4 4200",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T08:30:14Z"
+    },
+    {
+      "cve_id": "CVE-2025-11371",
+      "repo_info": "[NetVanguard-cmd/CVE-2025-11371](https://github.com/NetVanguard-cmd/CVE-2025-11371)",
+      "description": "no description",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T14:10:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-11001",
+      "repo_info": "[pacbypass/CVE-2025-11001](https://github.com/pacbypass/CVE-2025-11001)",
+      "description": "Exploit for CVE-2025-11001 or CVE-2025-11002",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T12:14:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-10041",
+      "repo_info": "[Nxploited/CVE-2025-10041](https://github.com/Nxploited/CVE-2025-10041)",
+      "description": "Flex QR Code Generator &lt;= 1.2.5 - Unauthenticated Arbitrary File Upload",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T07:51:36Z"
+    },
+    {
+      "cve_id": "CVE-2024-53677",
+      "repo_info": "[seoyoung-kang/CVE-2024-53677](https://github.com/seoyoung-kang/CVE-2024-53677)",
+      "description": "CVE-2024-53677 관련 컨설턴트용 툴 개발",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T16:02:15Z"
+    },
+    {
+      "cve_id": "CVE-2024-28231",
+      "repo_info": "[grimmmbo/ros2_CVE-2024-28231](https://github.com/grimmmbo/ros2_CVE-2024-28231)",
+      "description": "Demonstrating the usage of Fastrtps-DDS vulnerability CVE-2024-28231 within Ros2",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T16:17:27Z"
+    },
+    {
+      "cve_id": "CVE-2023-34804",
+      "repo_info": "[aecelen/ktor-xxe-poc](https://github.com/aecelen/ktor-xxe-poc)",
+      "description": "PoC for CVE-2023-45612",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T20:42:21Z"
+    },
+    {
+      "cve_id": "CVE-2022-32250",
+      "repo_info": "[rem0t3/CVE-2022-32250-Compiled](https://github.com/rem0t3/CVE-2022-32250-Compiled)",
+      "description": "no description",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T11:04:34Z"
+    },
+    {
+      "cve_id": "CVE-2021-24762",
+      "repo_info": "[c4cnm/Exploit_CVE-2021-24762](https://github.com/c4cnm/Exploit_CVE-2021-24762)",
+      "description": "This repo shows an exploit to CVE-2021-24762. This is an Blind SQLi exploit that, on default config, greps the admin password.",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T12:33:44Z"
+    },
+    {
+      "cve_id": "CVE-2020-35667",
+      "repo_info": "[Diekgbbtt/CVE-2020-35667-PoC](https://github.com/Diekgbbtt/CVE-2020-35667-PoC)",
+      "description": "no description",
+      "date": "2025-10-15",
+      "raw_date": "2025-10-15T22:47:26Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.751692",
+  "metadata": {
+    "total_cves": 13,
+    "date_range": "2025-10-15",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

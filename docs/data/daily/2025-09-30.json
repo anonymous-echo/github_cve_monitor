@@ -1,0 +1,69 @@
+{
+  "date": "2025-09-30",
+  "count": 8,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-57389",
+      "repo_info": "[amalcew/CVE-2025-57389](https://github.com/amalcew/CVE-2025-57389)",
+      "description": "A reflected cross-site scripting vulnerability in OpenWRT v18.06.2",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T14:15:33Z"
+    },
+    {
+      "cve_id": "CVE-2025-56515",
+      "repo_info": "[Kov404/CVE-2025-56515](https://github.com/Kov404/CVE-2025-56515)",
+      "description": "Cross-Site Scripting (XSS) Vulnerability in Fiora Chat Application",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T17:54:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-56514",
+      "repo_info": "[Kov404/CVE-2025-56514](https://github.com/Kov404/CVE-2025-56514)",
+      "description": "Cross Site Scripting (XSS) Vulnerability in Fiora Chat Application",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T17:29:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-48799",
+      "repo_info": "[Dark-life944/CVE-2025](https://github.com/Dark-life944/CVE-2025)",
+      "description": "This is POC for IOS 0click CVE-2025-43300",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T14:07:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-43300",
+      "repo_info": "[ticofookfook/CVE-2025-43300](https://github.com/ticofookfook/CVE-2025-43300)",
+      "description": "no description",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T13:26:10Z"
+    },
+    {
+      "cve_id": "CVE-2025-41244",
+      "repo_info": "[rxerium/CVE-2025-41244](https://github.com/rxerium/CVE-2025-41244)",
+      "description": "Detection for CVE-2025-41244",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T11:40:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[AC8999/CVE-2025-32463](https://github.com/AC8999/CVE-2025-32463)",
+      "description": "A Python exploit for CVE-2025-32463, a critical local privilege escalation vulnerability in the Sudo binary on Linux systems. This flaw allows local users to obtain root access by exploiting the --chroot option, which incorrectly uses /etc/nsswitch.conf from a user-controlled directory.",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T00:23:56Z"
+    },
+    {
+      "cve_id": "CVE-2024-32019",
+      "repo_info": "[hexared/CVE-2024-32019_poc](https://github.com/hexared/CVE-2024-32019_poc)",
+      "description": "This is an alternative poc for the CVE-2024-32019 written in python",
+      "date": "2025-09-30",
+      "raw_date": "2025-09-30T11:37:40Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.730312",
+  "metadata": {
+    "total_cves": 8,
+    "date_range": "2025-09-30",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

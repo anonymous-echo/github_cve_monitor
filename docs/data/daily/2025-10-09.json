@@ -1,0 +1,118 @@
+{
+  "date": "2025-10-09",
+  "count": 15,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61319",
+      "repo_info": "[AmalJafarzade/CVE-2025-61319](https://github.com/AmalJafarzade/CVE-2025-61319)",
+      "description": "Stored XSS in ReNgine &lt;= 2.2.0 — public disclosure",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T19:24:51Z"
+    },
+    {
+      "cve_id": "CVE-2025-60378",
+      "repo_info": "[ajansha/CVE-2025-60378](https://github.com/ajansha/CVE-2025-60378)",
+      "description": "CVE-2025-60378 — Stored HTML Injection in RISE — Ultimate Project Manager &amp; CRM &lt; 3.9.4 (Invoices &amp; Messaging)",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T21:42:03Z"
+    },
+    {
+      "cve_id": "CVE-2025-60375",
+      "repo_info": "[AhamedYaseen03/CVE-2025-60375](https://github.com/AhamedYaseen03/CVE-2025-60375)",
+      "description": "CVE-2025-60375 — Authentication bypass / incorrect access control in PerfexCRM &lt; 3.3.1 (admin login)",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T19:24:50Z"
+    },
+    {
+      "cve_id": "CVE-2025-55903",
+      "repo_info": "[ajansha/CVE-2025-55903](https://github.com/ajansha/CVE-2025-55903)",
+      "description": "CVE-2025-55903 — Stored HTML Injection in PerfexCRM &lt; 3.3.1 (Invoice/Client Communication)",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T20:41:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[Yuri08loveElaina/CVE-2025-49844](https://github.com/Yuri08loveElaina/CVE-2025-49844)",
+      "description": "A powerful Redis exploitation tool that leverages CVE-2025-4984",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T06:03:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner](https://github.com/Mufti22/CVE-2025-49844-RediShell-Vulnerability-Scanner)",
+      "description": "CVE-2025-49844 checker",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T18:03:24Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[MiclelsonCN/CVE-2025-49844_POC](https://github.com/MiclelsonCN/CVE-2025-49844_POC)",
+      "description": "CVE-2025-49844 POC",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T13:21:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-4476",
+      "repo_info": "[soltanali0/CVE-2025-4476-Exploit](https://github.com/soltanali0/CVE-2025-4476-Exploit)",
+      "description": "no description",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T19:51:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[ricardomaia/CVE-2025-32463](https://github.com/ricardomaia/CVE-2025-32463)",
+      "description": "Enviroment and Nuclei template to test CVE-2025-32463",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T05:53:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[shazed-x/CVE-2025-32463](https://github.com/shazed-x/CVE-2025-32463)",
+      "description": "- Vulnerable: sudo 1.9.14, 1.9.15, 1.9.16, 1.9.17 - Patched in: sudo 1.9.17p1 and later - Legacy versions older than 1.9.14 are not affected, as they don&#x27;t support the --chroot option.",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T09:58:59Z"
+    },
+    {
+      "cve_id": "CVE-2024-32113",
+      "repo_info": "[luizgaf/CVE-2024-32113-Exploit](https://github.com/luizgaf/CVE-2024-32113-Exploit)",
+      "description": "CVE-2024-32113-Apache-OFBiz&lt;18.12.13-Exploit",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T15:21:20Z"
+    },
+    {
+      "cve_id": "CVE-2023-50164",
+      "repo_info": "[hybinn/CVE-2023-50164](https://github.com/hybinn/CVE-2023-50164)",
+      "description": "no description",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T20:02:15Z"
+    },
+    {
+      "cve_id": "CVE-2023-42793",
+      "repo_info": "[syorik/CVE-2023-42793](https://github.com/syorik/CVE-2023-42793)",
+      "description": "no description",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T10:10:29Z"
+    },
+    {
+      "cve_id": "CVE-2023-39143",
+      "repo_info": "[foregenix/CVE-2023-39143](https://github.com/foregenix/CVE-2023-39143)",
+      "description": "no description",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T10:45:59Z"
+    },
+    {
+      "cve_id": "CVE-2023-21554",
+      "repo_info": "[shootweb/CVE-2023-21554](https://github.com/shootweb/CVE-2023-21554)",
+      "description": "CVE-2023-21554 PoC",
+      "date": "2025-10-09",
+      "raw_date": "2025-10-09T19:02:16Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.745163",
+  "metadata": {
+    "total_cves": 15,
+    "date_range": "2025-10-09",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

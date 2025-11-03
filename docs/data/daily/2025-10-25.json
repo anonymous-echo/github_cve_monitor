@@ -1,0 +1,76 @@
+{
+  "date": "2025-10-25",
+  "count": 9,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9983",
+      "repo_info": "[sohaibeb/CVE-2025-9983](https://github.com/sohaibeb/CVE-2025-9983)",
+      "description": "CVE-2025-9983 POC Exploit",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T22:22:36Z"
+    },
+    {
+      "cve_id": "CVE-2025-61304",
+      "repo_info": "[pentastic-be/CVE-2025-61304](https://github.com/pentastic-be/CVE-2025-61304)",
+      "description": "OS command injection vulnerability in Dynatrace ActiveGate ping extension up to 1.016 via crafted ip address",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T12:42:09Z"
+    },
+    {
+      "cve_id": "CVE-2025-61304",
+      "repo_info": "[Smarttfoxx/CVE-2025--](https://github.com/Smarttfoxx/CVE-2025--)",
+      "description": "no description",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T05:04:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[jiansiting/CVE-2025-59287](https://github.com/jiansiting/CVE-2025-59287)",
+      "description": "WSUS Unauthenticated RCE",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T02:30:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[garvitv14/CVE-2025-59287](https://github.com/garvitv14/CVE-2025-59287)",
+      "description": "It is an Working exploit of new CVE found in WSUS.",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T15:18:21Z"
+    },
+    {
+      "cve_id": "CVE-2025-4796",
+      "repo_info": "[Nxploited/CVE-2025-4796](https://github.com/Nxploited/CVE-2025-4796)",
+      "description": "Eventin &lt;= 4.0.34 - Authenticated (Contributor+) Privilege Escalation via User Email Change/Account Takeover",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T03:35:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-4334",
+      "repo_info": "[vinodwick/CVE-2025-4334](https://github.com/vinodwick/CVE-2025-4334)",
+      "description": "The Simple User Registration plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.3. This is due to insufficient restrictions on user meta values that can be supplied during registration. This makes it possible for unauthenticated attackers to register as an administrator.",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T16:12:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[DensuLabs/CVE-2025-32463](https://github.com/DensuLabs/CVE-2025-32463)",
+      "description": "CVE‑2025‑32463",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T22:18:35Z"
+    },
+    {
+      "cve_id": "CVE-2025-24893",
+      "repo_info": "[rvizx/CVE-2025-24893](https://github.com/rvizx/CVE-2025-24893)",
+      "description": "no description",
+      "date": "2025-10-25",
+      "raw_date": "2025-10-25T22:07:31Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.764995",
+  "metadata": {
+    "total_cves": 9,
+    "date_range": "2025-10-25",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

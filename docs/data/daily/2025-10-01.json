@@ -1,0 +1,111 @@
+{
+  "date": "2025-10-01",
+  "count": 14,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9242",
+      "repo_info": "[watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242](https://github.com/watchtowrlabs/watchTowr-vs-WatchGuard-CVE-2025-9242)",
+      "description": "no description",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T13:01:22Z"
+    },
+    {
+      "cve_id": "CVE-2025-9242",
+      "repo_info": "[Camier/VOIXCODER](https://github.com/Camier/VOIXCODER)",
+      "description": "Modern Real-Time Voice Cloning - Modernized SV2TTS with PyTorch 2.x, enhanced security (CVE-2025-32434 mitigated), comprehensive testing",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T12:15:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-59713",
+      "repo_info": "[Gooseinpants/Dashy-auth-bypass](https://github.com/Gooseinpants/Dashy-auth-bypass)",
+      "description": "CVE-2025-57617 exploitation",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T21:35:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-58789",
+      "repo_info": "[quetuan03/CVE-2025-58789](https://github.com/quetuan03/CVE-2025-58789)",
+      "description": "WordPress WP Full Stripe Free Plugin &lt;= 8.2.5 is vulnerable to SQL Injection",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T09:22:40Z"
+    },
+    {
+      "cve_id": "CVE-2025-58788",
+      "repo_info": "[quetuan03/CVE-2025-58788](https://github.com/quetuan03/CVE-2025-58788)",
+      "description": "WordPress License Manager for WooCommerce Plugin &lt;= 3.0.12 is vulnerable to SQL Injection",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T08:43:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-57926",
+      "repo_info": "[quetuan03/CVE-2025-57926](https://github.com/quetuan03/CVE-2025-57926)",
+      "description": "WordPress Passster Plugin &lt;= 4.2.18 is vulnerable to Cross Site Scripting (XSS)",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T09:53:14Z"
+    },
+    {
+      "cve_id": "CVE-2025-56381",
+      "repo_info": "[MoAlali/CVE-2025-56381](https://github.com/MoAlali/CVE-2025-56381)",
+      "description": "ERPNEXT v15.67.0 was discovered to contain multiple SQL injection  vulnerabilities in the /api/method/frappe.desk.reportview.get endpoint via the order_by and group_by parameters.",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T19:24:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-56380",
+      "repo_info": "[MoAlali/CVE-2025-56380](https://github.com/MoAlali/CVE-2025-56380)",
+      "description": "Frappe Framework v15.72.4 was discovered to contain a SQL injection  vulnerability via the fieldname parameter in the frappe.client.get_value API endpoint.",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T19:14:57Z"
+    },
+    {
+      "cve_id": "CVE-2025-56379",
+      "repo_info": "[MoAlali/CVE-2025-56379](https://github.com/MoAlali/CVE-2025-56379)",
+      "description": "A stored cross-site scripting (XSS) vulnerability in the blog post feature of ERPNEXT v15.67.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the content field.",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T18:48:11Z"
+    },
+    {
+      "cve_id": "CVE-2025-54677",
+      "repo_info": "[quetuan03/CVE-2025-54677](https://github.com/quetuan03/CVE-2025-54677)",
+      "description": "WordPress Online Booking &amp; Scheduling Calendar for WordPress by vcita Plugin &lt;= 4.5.3 is vulnerable to a medium priority Arbitrary File Upload",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T10:08:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-3248",
+      "repo_info": "[Kiraly07/Demo_CVE-2025-3248](https://github.com/Kiraly07/Demo_CVE-2025-3248)",
+      "description": "no description",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T04:53:30Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[onniio/CVE-2025-32463](https://github.com/onniio/CVE-2025-32463)",
+      "description": "no description",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T15:07:07Z"
+    },
+    {
+      "cve_id": "CVE-2024-36401",
+      "repo_info": "[Yafiah-Darwesh/cs50-cyber-paloalto-oauth](https://github.com/Yafiah-Darwesh/cs50-cyber-paloalto-oauth)",
+      "description": "CS50 Cybersecurity final project — Palo Alto OAuth token breach (CVE-2024-3400)",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T10:25:05Z"
+    },
+    {
+      "cve_id": "CVE-2021-4034",
+      "repo_info": "[kaisen-bot/pwnkit-helper](https://github.com/kaisen-bot/pwnkit-helper)",
+      "description": "🚀 Enhance your penetration testing with PwnKit Helper, a simple tool for exploiting the CVE-2021-4034 vulnerability in pkexec for local privilege escalation.",
+      "date": "2025-10-01",
+      "raw_date": "2025-10-01T09:53:03Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.731315",
+  "metadata": {
+    "total_cves": 14,
+    "date_range": "2025-10-01",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2025-10-30",
+  "count": 13,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-6440",
+      "repo_info": "[Pwdnx1337/CVE-2025-6440](https://github.com/Pwdnx1337/CVE-2025-6440)",
+      "description": "WooCommerce Designer Pro - Arbitrary File Upload",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T09:46:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-61481",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-61481](https://github.com/B1ack4sh/Blackash-CVE-2025-61481)",
+      "description": "CVE-2025-61481",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T13:19:18Z"
+    },
+    {
+      "cve_id": "CVE-2025-60503",
+      "repo_info": "[H4zaz/CVE-2025-60503](https://github.com/H4zaz/CVE-2025-60503)",
+      "description": "XSS CVE reported by hazaz",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T16:31:58Z"
+    },
+    {
+      "cve_id": "CVE-2025-59489",
+      "repo_info": "[moTorky/mhl_cve_2025_59489](https://github.com/moTorky/mhl_cve_2025_59489)",
+      "description": "no description",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T16:06:06Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[0x7556/CVE-2025-59287](https://github.com/0x7556/CVE-2025-59287)",
+      "description": "CVE-2025-59287  注入WolfShell内存马",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T13:38:46Z"
+    },
+    {
+      "cve_id": "CVE-2025-55752",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-55752](https://github.com/B1ack4sh/Blackash-CVE-2025-55752)",
+      "description": "CVE-2025-55752",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T13:33:39Z"
+    },
+    {
+      "cve_id": "CVE-2025-54957",
+      "repo_info": "[AlphabugX/CVE-2025-54957](https://github.com/AlphabugX/CVE-2025-54957)",
+      "description": "CVE-2025-54957",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T07:21:54Z"
+    },
+    {
+      "cve_id": "CVE-2025-53766",
+      "repo_info": "[meerkatone/patch_chewsday_cve_2025_53766](https://github.com/meerkatone/patch_chewsday_cve_2025_53766)",
+      "description": "no description",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T08:40:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-49844](https://github.com/B1ack4sh/Blackash-CVE-2025-49844)",
+      "description": "CVE-2025-49844",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T09:01:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[muhammedkayag/CVE-2025-32463](https://github.com/muhammedkayag/CVE-2025-32463)",
+      "description": "Technical examination of CVE-2025-32463 by Muhammed Kaya.",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T08:47:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-24367",
+      "repo_info": "[TheCyberGeek/CVE-2025-24367-Cacti-PoC](https://github.com/TheCyberGeek/CVE-2025-24367-Cacti-PoC)",
+      "description": "Proof of Concept for CVE-2025-24367",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T19:41:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-10035",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-10035](https://github.com/B1ack4sh/Blackash-CVE-2025-10035)",
+      "description": "CVE-2025-10035",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T17:44:25Z"
+    },
+    {
+      "cve_id": "CVE-2024-48990",
+      "repo_info": "[Mr-DJ/CVE-2024-48990](https://github.com/Mr-DJ/CVE-2024-48990)",
+      "description": "PoC for CVE-2024-48990",
+      "date": "2025-10-30",
+      "raw_date": "2025-10-30T05:02:29Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.770020",
+  "metadata": {
+    "total_cves": 13,
+    "date_range": "2025-10-30",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

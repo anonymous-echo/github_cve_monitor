@@ -1,0 +1,62 @@
+{
+  "date": "2025-10-21",
+  "count": 7,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9519",
+      "repo_info": "[Nimisha17/Poc-CVE-2025-9519](https://github.com/Nimisha17/Poc-CVE-2025-9519)",
+      "description": "no description",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T19:52:33Z"
+    },
+    {
+      "cve_id": "CVE-2025-8088",
+      "repo_info": "[papcaii2004/CVE-2025-8088-WinRAR-builder](https://github.com/papcaii2004/CVE-2025-8088-WinRAR-builder)",
+      "description": "A POC exploit for WinRAR vulnerability (CVE-2025-8088) affecting versions 7.12 and lower",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T04:55:23Z"
+    },
+    {
+      "cve_id": "CVE-2025-49002",
+      "repo_info": "[Feng-Huang-0520/DataEase_Postgresql_JDBC_Bypass-CVE-2025-49002](https://github.com/Feng-Huang-0520/DataEase_Postgresql_JDBC_Bypass-CVE-2025-49002)",
+      "description": "飞致云 DataEase Postgresql JDBC Bypass 远程代码执行漏洞 CVE-2025-49002 漏洞类型 RCE",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T10:11:21Z"
+    },
+    {
+      "cve_id": "CVE-2025-31161",
+      "repo_info": "[cesarbtakeda/CVE-2025-31161](https://github.com/cesarbtakeda/CVE-2025-31161)",
+      "description": "no description",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T17:49:57Z"
+    },
+    {
+      "cve_id": "CVE-2024-32002",
+      "repo_info": "[etility/CVE-31317-install-apk](https://github.com/etility/CVE-31317-install-apk)",
+      "description": "利用CVE-31317漏洞给安卓终端安装软件，适用于安卓安全补丁2024年7月前的安卓12设备，其他设备未测试",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T03:58:12Z"
+    },
+    {
+      "cve_id": "CVE-2024-32002",
+      "repo_info": "[min704/CVE-31317-install-apk](https://github.com/min704/CVE-31317-install-apk)",
+      "description": "利用CVE-31317漏洞给安卓终端安装软件，适用于安卓安全补丁2024年7月前的安卓12设备，其他设备未测试",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T05:00:02Z"
+    },
+    {
+      "cve_id": "CVE-2023-32571",
+      "repo_info": "[SecTex/CVE-2023-32571](https://github.com/SecTex/CVE-2023-32571)",
+      "description": "Proof of Concept for CVE-2023-32571",
+      "date": "2025-10-21",
+      "raw_date": "2025-10-21T21:32:57Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.759489",
+  "metadata": {
+    "total_cves": 7,
+    "date_range": "2025-10-21",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

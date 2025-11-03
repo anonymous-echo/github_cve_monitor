@@ -1,0 +1,83 @@
+{
+  "date": "2025-09-29",
+  "count": 10,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9267",
+      "repo_info": "[Tiger3080/CVE-2025-9267](https://github.com/Tiger3080/CVE-2025-9267)",
+      "description": "Seagate Toolkit for Windows (Installer &lt;2.35.0.6) is vulnerable to insecure DLL loading. The installer loads DLLs from the working directory without validation, allowing attackers to place a malicious DLL alongside the installer and execute arbitrary code.",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T03:22:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-8518",
+      "repo_info": "[maestro-ant/Vvveb-CMS-CVE-2025-8518](https://github.com/maestro-ant/Vvveb-CMS-CVE-2025-8518)",
+      "description": "This repository contains a Proof of Concept (PoC) demonstrating a critical vulnerability in givanz Vvveb 1.0.5. The vulnerability allows an authenticated user with template editing privileges to write arbitrary PHP code to server files, leading to Remote Code Execution (RCE).",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T16:51:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-8088",
+      "repo_info": "[Fathi-MO/POC-CVE-2025-8088](https://github.com/Fathi-MO/POC-CVE-2025-8088)",
+      "description": "no description",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T10:18:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-53770",
+      "repo_info": "[victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320](https://github.com/victormbogu1/LetsDefend-SOC342-CVE-2025-53770-SharePoint-ToolShell-Auth-Bypass-andRCE-EventID-320)",
+      "description": "no description",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T14:11:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-36604",
+      "repo_info": "[watchtowrlabs/watchTowr-vs-Dell-UnityVSA-PreAuth-CVE-2025-36604](https://github.com/watchtowrlabs/watchTowr-vs-Dell-UnityVSA-PreAuth-CVE-2025-36604)",
+      "description": "Detection Artefact Generator for Dell UnityVSA CVE-2025-36604",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T20:40:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-11077",
+      "repo_info": "[byteReaper77/CVE-2025-11077](https://github.com/byteReaper77/CVE-2025-11077)",
+      "description": "Exploit blind SQL Injection in (Online Learning Management System)",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T14:32:29Z"
+    },
+    {
+      "cve_id": "CVE-2024-47051",
+      "repo_info": "[hyeonyeonglee/CVE-2024-47051](https://github.com/hyeonyeonglee/CVE-2024-47051)",
+      "description": "CVE-2024-47051",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T10:35:18Z"
+    },
+    {
+      "cve_id": "CVE-2023-40289",
+      "repo_info": "[s-hamann/CVE-2023-40289](https://github.com/s-hamann/CVE-2023-40289)",
+      "description": "Exploit for CVE-2023-40289, a command injection vulnerability in several Baseband Management Controllers (BMC) by with firmware by ATEN",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T19:59:32Z"
+    },
+    {
+      "cve_id": "CVE-2023-40289",
+      "repo_info": "[mrk336/SNMPocalypse-Cisco-Bug-Lets-Hackers-Crash-or-Command-Devices](https://github.com/mrk336/SNMPocalypse-Cisco-Bug-Lets-Hackers-Crash-or-Command-Devices)",
+      "description": "CVE-2023-20352 is a critical stack overflow flaw in Cisco IOS/IOS XE&#x27;s SNMP engine. With just crafted SNMP packets, remote attackers can crash systems or seize root control. All SNMP versions are vulnerable patch now or risk total compromise",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T02:45:45Z"
+    },
+    {
+      "cve_id": "CVE-2021-31630",
+      "repo_info": "[arabindadora/log4shell](https://github.com/arabindadora/log4shell)",
+      "description": "Log4Shell (CVE-2021-44228) PoC",
+      "date": "2025-09-29",
+      "raw_date": "2025-09-29T13:53:19Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.729317",
+  "metadata": {
+    "total_cves": 10,
+    "date_range": "2025-09-29",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

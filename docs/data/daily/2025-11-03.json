@@ -1,0 +1,34 @@
+{
+  "date": "2025-11-03",
+  "count": 3,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61472",
+      "repo_info": "[flywithjoey/CVE-2025-61472](https://github.com/flywithjoey/CVE-2025-61472)",
+      "description": "no description",
+      "date": "2025-11-03",
+      "raw_date": "2025-11-03T02:30:11Z"
+    },
+    {
+      "cve_id": "CVE-2024-45496",
+      "repo_info": "[fatcatresearch/cve-2024-45496](https://github.com/fatcatresearch/cve-2024-45496)",
+      "description": "developer-to-node privilege escalation via privileged git-clone container",
+      "date": "2025-11-03",
+      "raw_date": "2025-11-03T01:01:16Z"
+    },
+    {
+      "cve_id": "CVE-2022-27913",
+      "repo_info": "[CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-](https://github.com/CamTechCoaching/Joomla-CVE-Detector-CVE-2022-27913-)",
+      "description": "Identify instances of Joomla that are affected by CVE-2022-27913.",
+      "date": "2025-11-03",
+      "raw_date": "2025-11-03T01:31:18Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.773471",
+  "metadata": {
+    "total_cves": 3,
+    "date_range": "2025-11-03",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

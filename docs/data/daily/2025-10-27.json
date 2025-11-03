@@ -1,0 +1,181 @@
+{
+  "date": "2025-10-27",
+  "count": 24,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-62481",
+      "repo_info": "[AshrafZaryouh/CVE-2025-53072-CVE-2025-62481](https://github.com/AshrafZaryouh/CVE-2025-53072-CVE-2025-62481)",
+      "description": "Critical Vulnerabilities Report",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T16:13:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-61884",
+      "repo_info": "[AshrafZaryouh/CVE-2025-61884-At-a-Glance](https://github.com/AshrafZaryouh/CVE-2025-61884-At-a-Glance)",
+      "description": "🚨 CVE-2025-61884 — High-Risk Oracle EBS Configurator Info Disclosure",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T15:53:34Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[AshrafZaryouh/CVE-2025-61882-Executive-Summary](https://github.com/AshrafZaryouh/CVE-2025-61882-Executive-Summary)",
+      "description": "CVE-2025-61882 — Critical Oracle EBS RCE: Analysis &amp; Response",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T15:31:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[GhoStZA-debug/CVE-2025-61882](https://github.com/GhoStZA-debug/CVE-2025-61882)",
+      "description": "CVE-2025-61882: Oracle E-Business Suite RCE Scanner and Exploit",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T19:22:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-61156",
+      "repo_info": "[D7EAD/CVE-2025-61156](https://github.com/D7EAD/CVE-2025-61156)",
+      "description": "Disclosure for CVE-2025-61156, an insecure access control, kernel-mode vulnerability found in ThreatFire System Monitor abused in the wild for BYOVD and EDR evasion.",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T14:19:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-60910",
+      "repo_info": "[Mp-97/CVE-2025-60910](https://github.com/Mp-97/CVE-2025-60910)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T15:26:05Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[FurkanKAYAPINAR/CVE-2025-59287](https://github.com/FurkanKAYAPINAR/CVE-2025-59287)",
+      "description": "CVE-2025-59287",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T10:26:58Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[mubix/Find-WSUS](https://github.com/mubix/Find-WSUS)",
+      "description": "Helps defenders find their WSUS configurations in the wake of CVE-2025-59287",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T18:26:35Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[RadzaRr/WSUSResponder](https://github.com/RadzaRr/WSUSResponder)",
+      "description": "Module PowerShell de réponse à l&#x27;incident CVE-2025-59287 — WSUS Remote Code Execution (RCE)",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T15:32:11Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[tecxx/CVE-2025-59287-WSUS](https://github.com/tecxx/CVE-2025-59287-WSUS)",
+      "description": "powershell version of hawktrace POC exploit",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T14:05:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[Lupovis/Honeypot-for-CVE-2025-59287-WSUS](https://github.com/Lupovis/Honeypot-for-CVE-2025-59287-WSUS)",
+      "description": "Defensive PoC decoy for CVE-2025-59287 (WSUS) - emulates WSUS endpoints, captures request bodies and metadata, saves evidence for forensic analysis, and provides validation harness and detection rules.",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T10:08:57Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[demining/Pixnapping-Attack-on-Android](https://github.com/demining/Pixnapping-Attack-on-Android)",
+      "description": "Pixnapping Attack: Compromising private keys and seed phrases through vulnerability CVE-2025-48561 represents a new critical threat to the Bitcoin network and Android infrastructure",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T12:06:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-56522",
+      "repo_info": "[Dong-hui-li/CVE-2025-56521andCVE-2025-56522](https://github.com/Dong-hui-li/CVE-2025-56521andCVE-2025-56522)",
+      "description": "desciption",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T02:57:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-46817",
+      "repo_info": "[slayerkkkk/CVE-2025-46817-PoC](https://github.com/slayerkkkk/CVE-2025-46817-PoC)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T20:15:52Z"
+    },
+    {
+      "cve_id": "CVE-2025-29927",
+      "repo_info": "[lucaschanzx/CVE-2025-29927-PoC](https://github.com/lucaschanzx/CVE-2025-29927-PoC)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T20:58:14Z"
+    },
+    {
+      "cve_id": "CVE-2025-29824",
+      "repo_info": "[zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation](https://github.com/zmkeh/CVE-2025-29824-CLFS-Local-privilege-escalation)",
+      "description": "note",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T09:46:06Z"
+    },
+    {
+      "cve_id": "CVE-2025-22167",
+      "repo_info": "[issamjr/CVE-2025-22167](https://github.com/issamjr/CVE-2025-22167)",
+      "description": "CVE-2025-22167 scanner script",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T02:23:18Z"
+    },
+    {
+      "cve_id": "CVE-2024-37032",
+      "repo_info": "[stuxbench/vllm-cve-2024-37032](https://github.com/stuxbench/vllm-cve-2024-37032)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T21:25:15Z"
+    },
+    {
+      "cve_id": "CVE-2023-49440",
+      "repo_info": "[KernelCipher/CVE-2023-49440-POC](https://github.com/KernelCipher/CVE-2023-49440-POC)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T10:07:29Z"
+    },
+    {
+      "cve_id": "CVE-2021-44142",
+      "repo_info": "[WinDyAlphA/CVE-2021-44142-vulnerable-lab](https://github.com/WinDyAlphA/CVE-2021-44142-vulnerable-lab)",
+      "description": "CVE-2021-44142 vulnerable lab",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T16:14:13Z"
+    },
+    {
+      "cve_id": "CVE-2021-3560",
+      "repo_info": "[qazbnme/CVE-2021](https://github.com/qazbnme/CVE-2021)",
+      "description": "Proof of concept for CVE-2021-31166, a remote HTTP.sys use-after-free triggered remotely.",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T14:37:49Z"
+    },
+    {
+      "cve_id": "CVE-2021-22204",
+      "repo_info": "[Roronoawjd/CVE-2021-22204](https://github.com/Roronoawjd/CVE-2021-22204)",
+      "description": "CVE-2021-22204 exiftool rce",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T15:59:51Z"
+    },
+    {
+      "cve_id": "CVE-2020-29607",
+      "repo_info": "[CaelumIsMe/CVE-2020-29607-POC](https://github.com/CaelumIsMe/CVE-2020-29607-POC)",
+      "description": "no description",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T00:46:09Z"
+    },
+    {
+      "cve_id": "CVE-2020-27955",
+      "repo_info": "[the-chivalrousZ/cve-2020-27955](https://github.com/the-chivalrousZ/cve-2020-27955)",
+      "description": "cve-2020-27955 test",
+      "date": "2025-10-27",
+      "raw_date": "2025-10-27T23:14:28Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.767007",
+  "metadata": {
+    "total_cves": 24,
+    "date_range": "2025-10-27",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

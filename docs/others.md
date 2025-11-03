@@ -3,7 +3,7 @@
 > Automatic monitor Github CVE using Github Actions 
 
 ## 报告信息
-- **生成时间**: 2025-09-27 15:44:58
+- **生成时间**: 2025-11-03 15:30:53
 - **数据来源**: GitHub仓库（未识别CVE编号）
 - **说明**: 本报告包含在GitHub上找到但未能提取有效CVE编号的仓库信息
 
@@ -299,9 +299,11 @@
 | 🚫 未识别 | [Moon1705/easy_security](https://github.com/Moon1705/easy_security) | Project with sublist3r, massan, CVE-2018-15473, ssh bruteforce, ftp bruteforce and nikto. | 2020-05-08T10:29:00Z|
 | 🚫 未识别 | [AliAmouz/CVE2025-24893](https://github.com/AliAmouz/CVE2025-24893) | no description | 2025-09-24T10:03:08Z|
 | 🚫 未识别 | [Andromeda254/cve](https://github.com/Andromeda254/cve) | list of cve from 2001 to 2024 | 2025-09-26T00:13:16Z|
+| 🚫 未识别 | [Katirinata/CMD-Exploit-CVE-2024-RCE-AboRady-FUD-25765-Injection](https://github.com/Katirinata/CMD-Exploit-CVE-2024-RCE-AboRady-FUD-25765-Injection) | Exploit development uses tools like exploitation frameworks and CVE databases. Cmd exploits, such as cmd fud or cmd exploit, enable silent execution while avoiding detection through proper setups. | 2025-10-21T19:42:27Z|
+| 🚫 未识别 | [jiangjialiang1019/cveDataMappingYear_2020](https://github.com/jiangjialiang1019/cveDataMappingYear_2020) | no description | 2025-10-31T07:27:07Z|
 
 
 ---
 
-**报告生成时间**: 2025-09-27 15:59:03  
-**总记录数**: 288
+**报告生成时间**: 2025-11-03 15:42:31  
+**总记录数**: 290

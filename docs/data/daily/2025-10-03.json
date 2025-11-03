@@ -1,0 +1,90 @@
+{
+  "date": "2025-10-03",
+  "count": 11,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9286",
+      "repo_info": "[Nxploited/CVE-2025-9286](https://github.com/Nxploited/CVE-2025-9286)",
+      "description": "Appy Pie Connect for WooCommerce &lt;= 1.1.2 - Missing Authorization to Unauthenticated Privilege Escalation",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T13:17:50Z"
+    },
+    {
+      "cve_id": "CVE-2025-8625",
+      "repo_info": "[Nxploited/CVE-2025-8625](https://github.com/Nxploited/CVE-2025-8625)",
+      "description": "Copypress Rest API 1.1 - 1.2 - Missing Configurable JWT Secret and File-Type Validation to Unauthenticated Remote Code Execution",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T18:07:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-7771",
+      "repo_info": "[Gabriel-Lacorte/CVE-2025-7771](https://github.com/Gabriel-Lacorte/CVE-2025-7771)",
+      "description": "A exploit for the ThrottleStop driver.",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T16:17:11Z"
+    },
+    {
+      "cve_id": "CVE-2025-7558",
+      "repo_info": "[rundas-r00t/CVE-2025-7558-PoC](https://github.com/rundas-r00t/CVE-2025-7558-PoC)",
+      "description": "sql injection PoC for CVE-2025-7558. authored by i-Corner",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T15:16:45Z"
+    },
+    {
+      "cve_id": "CVE-2025-61622",
+      "repo_info": "[fa1consec/cve_2025_61622_poc](https://github.com/fa1consec/cve_2025_61622_poc)",
+      "description": "This PoC demonstrates the Remote Code Execution (RCE) vulnerability in  Apache Pyfory (versions 0.12.0-0.12.2 and legacy PyFury 0.1.0-0.10.3)  due to insecure pickle fallback deserialization (CVE-2025-61622).",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T12:44:16Z"
+    },
+    {
+      "cve_id": "CVE-2025-60787",
+      "repo_info": "[prabhatverma47/CVE-2025-60787](https://github.com/prabhatverma47/CVE-2025-60787)",
+      "description": "CVE-2025-60787 Poc - RCE - MotionEye &lt;= 0.43.1b4",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T15:20:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-60736",
+      "repo_info": "[WinDyAlphA/CVE-2025-60736](https://github.com/WinDyAlphA/CVE-2025-60736)",
+      "description": "code-projects Online Medicine Guide 1.0 is vulnerable to SQL Injection",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T16:33:23Z"
+    },
+    {
+      "cve_id": "CVE-2025-37947",
+      "repo_info": "[doyensec/KSMBD-CVE-2025-37947](https://github.com/doyensec/KSMBD-CVE-2025-37947)",
+      "description": "Blog Post: https://blog.doyensec.com/2025/10/08/ksmbd-3.html",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T14:08:46Z"
+    },
+    {
+      "cve_id": "CVE-2023-45612",
+      "repo_info": "[infernosalex/CVE-2023-45612-PoC](https://github.com/infernosalex/CVE-2023-45612-PoC)",
+      "description": "Proof-of-Concept of CVE-2023-45612",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T14:59:26Z"
+    },
+    {
+      "cve_id": "CVE-2021-31630",
+      "repo_info": "[zaaraZiof0/pkexec-exploit-CVE](https://github.com/zaaraZiof0/pkexec-exploit-CVE)",
+      "description": "This repository contains ZAARA&#x27;s implementation of the exploit for CVE-2021-4034 (PwnKit), a local privilege escalation vulnerability in polkit&#x27;s pkexec. This tool demonstrates advanced exploitation techniques while maintaining operational security.",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T08:07:41Z"
+    },
+    {
+      "cve_id": "CVE-2020-11023",
+      "repo_info": "[paktiko1986/pocpoc_bypass_cve_2020-11023](https://github.com/paktiko1986/pocpoc_bypass_cve_2020-11023)",
+      "description": "no description",
+      "date": "2025-10-03",
+      "raw_date": "2025-10-03T06:08:27Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.737661",
+  "metadata": {
+    "total_cves": 11,
+    "date_range": "2025-10-03",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2025-10-19",
+  "count": 11,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-55315",
+      "repo_info": "[7huukdlnkjkjba/CVE-2025-55315-](https://github.com/7huukdlnkjkjba/CVE-2025-55315-)",
+      "description": "专业级HTTP请求走私漏洞利用与自动化渗透测试工具",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T02:02:46Z"
+    },
+    {
+      "cve_id": "CVE-2025-54874",
+      "repo_info": "[cyhe50/cve-2025-54874-poc](https://github.com/cyhe50/cve-2025-54874-poc)",
+      "description": "no description",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T22:49:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[robbin0919/CVE-2025-32463](https://github.com/robbin0919/CVE-2025-32463)",
+      "description": "no description",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T14:22:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-32433",
+      "repo_info": "[Batman529/PoC-CVE-2025-32433](https://github.com/Batman529/PoC-CVE-2025-32433)",
+      "description": "These is a PoC for the CVE-2025-32433 vulnerability, do NOT test on systems that you dont own!!!",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T11:04:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-32433",
+      "repo_info": "[wubinworks/magento2-session-reaper-patch](https://github.com/wubinworks/magento2-session-reaper-patch)",
+      "description": "Patch for CVE-2025-54236(a.k.a Session Reaper) which allows customer account takeover and RCE under certain conditions. This patch is actually a Magento 2 extension and universal compatible for Magento 2.3 &amp; 2.4. If you cannot upgrade Magento or cannot apply the official hotfix, try this one.",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T01:08:24Z"
+    },
+    {
+      "cve_id": "CVE-2025-11579",
+      "repo_info": "[shinigami-777/PoC_CVE-2025-11579](https://github.com/shinigami-777/PoC_CVE-2025-11579)",
+      "description": "Proof of Concept for CVE-2025-11579",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T16:07:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-1094",
+      "repo_info": "[PinkArmor/CVE-2025-1094-Lab-Setup](https://github.com/PinkArmor/CVE-2025-1094-Lab-Setup)",
+      "description": "no description",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T18:08:06Z"
+    },
+    {
+      "cve_id": "CVE-2025-10230",
+      "repo_info": "[dptsec/CVE-2025-10230](https://github.com/dptsec/CVE-2025-10230)",
+      "description": "PoC for CVE-2025-10230 - Samba WINS hook command injection",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T15:30:34Z"
+    },
+    {
+      "cve_id": "CVE-2023-28121",
+      "repo_info": "[0axz-tools/CVE-2023-28121](https://github.com/0axz-tools/CVE-2023-28121)",
+      "description": "no description",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T19:29:55Z"
+    },
+    {
+      "cve_id": "CVE-2023-28121",
+      "repo_info": "[alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit](https://github.com/alzeer711/MikroTik-RouterOS-6.49.18-Exploit-Kit)",
+      "description": "📋 ملخص مشروع MikroTik RouterOS 6.49.18 Exploit Kit 🎯 نظرة عامة تم إنشاء مشروع احترافي وشامل لاختراق أجهزة MikroTik RouterOS 6.49.18 يتضمن جميع المكونات المطلوبة مع واجهة عربية كاملة وتوثيق مفصل. ✅ المكونات المكتملة 1️⃣ سكربتات الاختراق (7 سكربتات ✅ المميزات الرئيسية  1🎯 دعم CVE-2023-30799  اقراء دليل ملخص شامل للاداة PROJECT_SUMMARY.md",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T05:25:43Z"
+    },
+    {
+      "cve_id": "CVE-2022-0001",
+      "repo_info": "[NickoPS87/Spring4Shell-Python-Firewall-POC](https://github.com/NickoPS87/Spring4Shell-Python-Firewall-POC)",
+      "description": "Proof-of-Concept (POC) of a simple firewall in Python designed to mitigate the Spring4Shell (CVE-2022-22965) RCE attack by inspecting and blocking malicious request bodies.",
+      "date": "2025-10-19",
+      "raw_date": "2025-10-19T10:18:46Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.756251",
+  "metadata": {
+    "total_cves": 11,
+    "date_range": "2025-10-19",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2025-10-02",
+  "count": 8,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-8359",
+      "repo_info": "[Nxploited/CVE-2025-8359](https://github.com/Nxploited/CVE-2025-8359)",
+      "description": "AdForest &lt;= 6.0.9 - Authentication Bypass to Admin",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T16:57:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-63498",
+      "repo_info": "[xryptoh/CVE-2025-63498](https://github.com/xryptoh/CVE-2025-63498)",
+      "description": "no description",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T13:31:50Z"
+    },
+    {
+      "cve_id": "CVE-2025-59713",
+      "repo_info": "[synacktiv/CVE-2025-59712_CVE-2025-59713](https://github.com/synacktiv/CVE-2025-59712_CVE-2025-59713)",
+      "description": "Snipe-IT PoC exploit for CVE-2025-59712 and CVE-2025-59713",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T07:44:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-57457",
+      "repo_info": "[restdone/CVE-2025-57457](https://github.com/restdone/CVE-2025-57457)",
+      "description": "no description",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T16:51:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-55972",
+      "repo_info": "[Szym0n13k/CVE-2025-55972-Remote-Unauthenticated-Denial-of-Service-DoS-in-TCL-Smart-TV-UPnP-DLNA-AVTransport](https://github.com/Szym0n13k/CVE-2025-55972-Remote-Unauthenticated-Denial-of-Service-DoS-in-TCL-Smart-TV-UPnP-DLNA-AVTransport)",
+      "description": "A TCL Smart TV running a vulnerable UPnP/DLNA MediaRenderer implementation is affected by a remote, unauthenticated Denial of Service (DoS).",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T18:58:18Z"
+    },
+    {
+      "cve_id": "CVE-2025-55971",
+      "repo_info": "[Szym0n13k/CVE-2025-55971-Blind-Unauthenticated-SSRF-in-TCL-Smart-TV-UPnP-DLNA-AVTransport](https://github.com/Szym0n13k/CVE-2025-55971-Blind-Unauthenticated-SSRF-in-TCL-Smart-TV-UPnP-DLNA-AVTransport)",
+      "description": "TCL 65C655 Smart TV, running firmware version V8-R75PT01-LF1V269.001116 (Android TV, Kernel 5.4.242+), is vulnerable to a blind, unauthenticated Server-Side Request Forgery (SSRF) via the UPnP MediaRenderer service (AVTransport).",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T18:58:16Z"
+    },
+    {
+      "cve_id": "CVE-2025-24893",
+      "repo_info": "[gotr00t0day/CVE-2025-24893](https://github.com/gotr00t0day/CVE-2025-24893)",
+      "description": "Unauthenticated Remote Code Execution in XWiki via SolrSearch Macro",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T19:45:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-24893",
+      "repo_info": "[ibrahmsql/CVE-2025-24893](https://github.com/ibrahmsql/CVE-2025-24893)",
+      "description": "CVE-2025-24893 exploit",
+      "date": "2025-10-02",
+      "raw_date": "2025-10-02T21:14:49Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.737661",
+  "metadata": {
+    "total_cves": 8,
+    "date_range": "2025-10-02",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

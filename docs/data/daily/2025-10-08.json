@@ -1,0 +1,111 @@
+{
+  "date": "2025-10-08",
+  "count": 14,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61183",
+      "repo_info": "[thawphone/CVE-2025-61183](https://github.com/thawphone/CVE-2025-61183)",
+      "description": "no description",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T08:47:41Z"
+    },
+    {
+      "cve_id": "CVE-2025-61183",
+      "repo_info": "[srozb/reditrap](https://github.com/srozb/reditrap)",
+      "description": "Minimal Redis honeypot detecting RediShell (CVE-2025-49844) exploits.",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T07:16:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-57833",
+      "repo_info": "[ianoboyle/CVE-2025-57833](https://github.com/ianoboyle/CVE-2025-57833)",
+      "description": "Example Vulnerable application for CVE-2025–57833",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T21:18:38Z"
+    },
+    {
+      "cve_id": "CVE-2025-54352",
+      "repo_info": "[limmmw/CVE-2025-54352](https://github.com/limmmw/CVE-2025-54352)",
+      "description": "no description",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T04:00:38Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[pedrorichil/CVE-2025-49844](https://github.com/pedrorichil/CVE-2025-49844)",
+      "description": "no description",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T13:38:51Z"
+    },
+    {
+      "cve_id": "CVE-2025-38561",
+      "repo_info": "[toshithh/CVE-2025-38561](https://github.com/toshithh/CVE-2025-38561)",
+      "description": "ksmbd: Preauh_HashValue race condition If client send multiple session setup requests to ksmbd, Preauh_HashValue race condition could happen.",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T18:20:08Z"
+    },
+    {
+      "cve_id": "CVE-2025-37947",
+      "repo_info": "[michalbednarski/ResourcePoison](https://github.com/michalbednarski/ResourcePoison)",
+      "description": "Writeup and exploit for CVE-2025-22441: Privilege escalation from installed app to SystemUI process on Android due to pass of untrusted ApplicationInfo to LoadedApk",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T13:12:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[0x3c4dfa1/CVE-2025-32463](https://github.com/0x3c4dfa1/CVE-2025-32463)",
+      "description": "sudo --chroot exploit",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T22:30:12Z"
+    },
+    {
+      "cve_id": "CVE-2025-29927",
+      "repo_info": "[Bongni/CVE-2025-29927](https://github.com/Bongni/CVE-2025-29927)",
+      "description": "Reproduction and fix of the CVE-2025-29927 vulnerability.",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T02:04:39Z"
+    },
+    {
+      "cve_id": "CVE-2025-10353",
+      "repo_info": "[ivansmc00/CVE-2025-10353-POC](https://github.com/ivansmc00/CVE-2025-10353-POC)",
+      "description": "Exploit for CVE-2025-10353. Unauthenticated File Upload on Melis Platform Framework that leads to RCE",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T11:52:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-10352",
+      "repo_info": "[ivansmc00/CVE-2025-10352-POC](https://github.com/ivansmc00/CVE-2025-10352-POC)",
+      "description": "Exploit for CVE-2025-10352. Admin account creation on Melis Platform Framework",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T10:48:31Z"
+    },
+    {
+      "cve_id": "CVE-2024-38856",
+      "repo_info": "[michalbednarski/ThisSeemsWrong](https://github.com/michalbednarski/ThisSeemsWrong)",
+      "description": "Writeup and exploit for CVE-2024-49746: Android&#x27;s Parcel::continueWrite closing File Descriptors that are later used",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T13:04:01Z"
+    },
+    {
+      "cve_id": "CVE-2024-38856",
+      "repo_info": "[michalbednarski/AbxOverflow](https://github.com/michalbednarski/AbxOverflow)",
+      "description": "Writeup and exploit for CVE-2024-34740, integer overflow in Android&#x27;s BinaryXmlSerializer to system_server file write and then to system_server code execution from normal installed app",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T12:54:02Z"
+    },
+    {
+      "cve_id": "CVE-2022-0739",
+      "repo_info": "[Manjen1218/CVE-2022-0739-Exploitation](https://github.com/Manjen1218/CVE-2022-0739-Exploitation)",
+      "description": "no description",
+      "date": "2025-10-08",
+      "raw_date": "2025-10-08T03:10:58Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.743654",
+  "metadata": {
+    "total_cves": 14,
+    "date_range": "2025-10-08",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

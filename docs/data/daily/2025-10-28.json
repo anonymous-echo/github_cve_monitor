@@ -1,0 +1,139 @@
+{
+  "date": "2025-10-28",
+  "count": 18,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-62727",
+      "repo_info": "[ch4n3-yoon/CVE-2025-62727-Demo](https://github.com/ch4n3-yoon/CVE-2025-62727-Demo)",
+      "description": "Proof of concept of CVE-2025-62727 that can cause denial-of-service in FastAPI (based Starlette &lt;= 0.48.0)",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T02:57:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-61155",
+      "repo_info": "[coramarcet/WordPressCVEExploitProject](https://github.com/coramarcet/WordPressCVEExploitProject)",
+      "description": "Exploit of WordPress plugins “Likes and Dislikes Plugin” SQL injection vulnerability (CVE 2025-5287) and &quot;EasyTimer&quot; remote code execution vulnerability (CVE 2025-9519)",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T19:50:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-60595",
+      "repo_info": "[Clicksafeae/CVE-2025-60595](https://github.com/Clicksafeae/CVE-2025-60595)",
+      "description": "SPH Engineering UgCS 5.13.0 is vulnerable to Arbitary code execution. This is the public refrence to be used on CVE site",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T09:03:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector](https://github.com/AdityaBhatt3010/CVE-2025-59287-When-your-patch-server-becomes-the-attack-vector)",
+      "description": "CVE-2025-59287 — Critical unauthenticated RCE in Windows Server Update Services (WSUS) via unsafe deserialization of an AuthorizationCookie, enabling SYSTEM-level compromise and active exploitation; patch or isolate WSUS (ports 8530/8531) immediately.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T07:12:23Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat](https://github.com/mrk336/Breaking-the-Update-Chain-Inside-CVE-2025-59287-and-the-WSUS-RCE-Threat)",
+      "description": "CVE-2025-59287 is a critical RCE vulnerability in Windows Server Update Services (WSUS) caused by unsafe deserialization of untrusted data. It allows remote attackers to execute arbitrary code without authentication. Urgent patching is advised due to active exploitation.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T06:22:55Z"
+    },
+    {
+      "cve_id": "CVE-2025-55854",
+      "repo_info": "[PushkarAyengar/CVE-2025-55854-PoC](https://github.com/PushkarAyengar/CVE-2025-55854-PoC)",
+      "description": "PoC for CVE-2025-55854",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T17:07:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-55752",
+      "repo_info": "[TAM-K592/CVE-2025-55752](https://github.com/TAM-K592/CVE-2025-55752)",
+      "description": "CVE-2025-55752, Apache Tomcat that allows directory traversal via URL rewrite, and under certain conditions, leads to remote code execution (RCE) if HTTP PUT is enabled.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T17:49:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[elyasbassir/CVE-2025-49844](https://github.com/elyasbassir/CVE-2025-49844)",
+      "description": "اسکپلویت اسیب پذیری CVE-2025-49844",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T21:20:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-23320",
+      "repo_info": "[esteban11121/WSUS-RCE-Mitigation-59287](https://github.com/esteban11121/WSUS-RCE-Mitigation-59287)",
+      "description": "Guía de respuesta rápida y script de auditoría para CVE-2025-59287 (RCE crítica en WSUS).",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T19:56:15Z"
+    },
+    {
+      "cve_id": "CVE-2024-48990",
+      "repo_info": "[Serner77/CVE-2024-48990-Automatic-Exploit](https://github.com/Serner77/CVE-2024-48990-Automatic-Exploit)",
+      "description": "Automated local privilege escalation exploit for CVE-2024-48990 (needrestart v3.7), leveraging PYTHONPATH hijacking to gain root access.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T19:07:07Z"
+    },
+    {
+      "cve_id": "CVE-2024-48990",
+      "repo_info": "[mladicstefan/CVE-2024-48990](https://github.com/mladicstefan/CVE-2024-48990)",
+      "description": "Full exploit for needsrestart setuid root shell",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T21:51:07Z"
+    },
+    {
+      "cve_id": "CVE-2024-35374",
+      "repo_info": "[Rikoot/CVE-2024-35374](https://github.com/Rikoot/CVE-2024-35374)",
+      "description": "A Metasploit module for CVE-2024-35374",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T18:39:20Z"
+    },
+    {
+      "cve_id": "CVE-2023-6019",
+      "repo_info": "[Zohaibkhan1472/cve-2023-6019](https://github.com/Zohaibkhan1472/cve-2023-6019)",
+      "description": "no description",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T20:04:02Z"
+    },
+    {
+      "cve_id": "CVE-2023-38831",
+      "repo_info": "[yangdayyy/cve-2023-38831](https://github.com/yangdayyy/cve-2023-38831)",
+      "description": "ict519 assignment",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T12:10:47Z"
+    },
+    {
+      "cve_id": "CVE-2023-26360",
+      "repo_info": "[H3rm1tR3b0rn/CVE-2023-26360-RCE](https://github.com/H3rm1tR3b0rn/CVE-2023-26360-RCE)",
+      "description": "Exploit for Remote Code Execution in ColdFusion 2021 (CVE-2023-26360)",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T04:10:08Z"
+    },
+    {
+      "cve_id": "CVE-2021-42013",
+      "repo_info": "[FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit](https://github.com/FakhriCRD/Apache-CVE-2021-42013-RCE-Exploit)",
+      "description": "A powerful and reliable exploit tool for Apache HTTP Server vulnerabilities CVE-2021-41773 and CVE-2021-42013. This tool provides remote code execution capabilities on vulnerable Apache 2.4.49 and 2.4.50 servers.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T11:45:54Z"
+    },
+    {
+      "cve_id": "CVE-2021-42013",
+      "repo_info": "[Mintimate/log4j2-bugmaker](https://github.com/Mintimate/log4j2-bugmaker)",
+      "description": "Demo of CVE-2021-44228 Log4Shell.",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T08:07:49Z"
+    },
+    {
+      "cve_id": "CVE-2021-21300",
+      "repo_info": "[the-chivalrousZ/cve-2021-21300](https://github.com/the-chivalrousZ/cve-2021-21300)",
+      "description": "CVE-2021-21300 test",
+      "date": "2025-10-28",
+      "raw_date": "2025-10-28T19:11:58Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.768016",
+  "metadata": {
+    "total_cves": 18,
+    "date_range": "2025-10-28",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

@@ -304,7 +304,7 @@ def get_info(year):
         page = 1
         per_page = 100  # 默认每页100条，有token时使用
         github_token = get_github_token()
-        headers = {'User-Agent': 'CVE-Monitor-App', 'Accept': 'application/json'}
+        headers = {'User-Agent': 'CVE-Monitor-App/1.0 (+https://github.com/adminlove520/github_cve_monitor)', 'Accept': 'application/json'}
 
         if github_token:
             print(f"DEBUG: GITHUB_TOKEN is set. Value: {github_token[:5]}...")
@@ -316,7 +316,7 @@ def get_info(year):
             print(f"No GitHub Token found, using unauthenticated request (Year: {year})")
 
         max_pages = 10  # 限制最大页数
-        max_retries = 3  # 最大重试次数
+        max_retries = 2  # 减少重试次数，避免长时间等待
         
         while page <= max_pages:
             api = f"https://api.github.com/search/repositories?q=CVE-{year}&sort=updated&page={page}&per_page={per_page}"
@@ -328,9 +328,9 @@ def get_info(year):
                 print(f"总共获取到 {len(all_items)} 条数据")
                 return all_items
                 
-            # 简单延迟 - 避免连续请求过快
+            # 简单延迟 - 优化等待时间，有token时减少等待
             if page > 1:
-                wait_time = 3 if github_token else 6
+                wait_time = 2 if github_token else 4
                 print(f"DEBUG: 等待 {wait_time} 秒后请求下一页")
                 time.sleep(wait_time)
             
@@ -549,8 +549,8 @@ def main():
             
             sorted_list.extend(sorted_data)
         
-        # 随机等待以避免API限制
-        count = random.randint(3, 15)
+        # 随机等待以避免API限制 - 优化等待时间
+        count = random.randint(2, 8)  # 减少等待时间
         time.sleep(count)
     
     # 获取历史数据
@@ -571,6 +571,9 @@ def main():
             # 添加用户友好的进度指示
             year_progress = (start_year - i + 1) / (start_year - end_year + 1)
             print(f"📊 进度: {year_progress:.1%}")
+            
+            # 优化：增加API调用的用户代理标识
+            headers['User-Agent'] = 'CVE-Monitor-App/1.0 (+https://github.com/adminlove520/github_cve_monitor)'
             
             item = get_info(i)
             
@@ -603,12 +606,12 @@ def main():
             else:
                 print(f"📝 年份 {i} : 没有需要更新的新记录")
             
-            # 根据获取到的数据量调整等待时间
+            # 根据获取到的数据量调整等待时间 - 优化等待时间
             if len(item) > 50:
-                wait_time = random.randint(8, 15)
+                wait_time = random.randint(4, 8)  # 减少等待时间
                 print(f"📊 数据量较大，等待 {wait_time} 秒...")
             else:
-                wait_time = random.randint(3, 8)
+                wait_time = random.randint(2, 5)  # 减少等待时间
                 print(f"📊 数据量适中，等待 {wait_time} 秒...")
             
             time.sleep(wait_time)
@@ -619,8 +622,8 @@ def main():
             print(f"错误详情: {traceback.format_exc()}")
             consecutive_failures += 1
             
-            # 出错后等待更长时间再继续
-            error_wait_time = random.randint(10, 20)
+            # 出错后等待更长时间再继续 - 优化等待时间
+            error_wait_time = random.randint(5, 10)  # 减少等待时间
             print(f"⏱️  出错后等待 {error_wait_time} 秒再继续...")
             time.sleep(error_wait_time)
             

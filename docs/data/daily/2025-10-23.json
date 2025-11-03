@@ -1,0 +1,104 @@
+{
+  "date": "2025-10-23",
+  "count": 13,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-8088",
+      "repo_info": "[mocred/cve-2025-8088](https://github.com/mocred/cve-2025-8088)",
+      "description": "path traversal tool based on cve 2025 8088 vurnelability",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T18:03:11Z"
+    },
+    {
+      "cve_id": "CVE-2025-62506",
+      "repo_info": "[yoshino-s/CVE-2025-62506](https://github.com/yoshino-s/CVE-2025-62506)",
+      "description": "Exploit for CVE-2025-62506",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T12:18:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-61932",
+      "repo_info": "[allinsthon/CVE-2025-61932](https://github.com/allinsthon/CVE-2025-61932)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T17:31:50Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[BattalionX/http-oracle-ebs-cve-2025-61882.nse](https://github.com/BattalionX/http-oracle-ebs-cve-2025-61882.nse)",
+      "description": "Detects Oracle E-Business Suite (CVE-2025-61882). Detection: multi-tier checks — fingerprinting, version checks, endpoint &amp; SSRF tests, timing analysis &amp; controlled exploitation 4 high-confidence results. Default = safe fingerprinting only. Set aggressive=true 2 enable active/probing checks use w/caution. Provided By BattalionX BattalionX@proton.me",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T07:33:21Z"
+    },
+    {
+      "cve_id": "CVE-2025-48148",
+      "repo_info": "[Nxploited/CVE-2025-48148](https://github.com/Nxploited/CVE-2025-48148)",
+      "description": "StoreKeeper for WooCommerce &lt;= 14.4.4 - Unauthenticated Arbitrary File Upload",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T13:07:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-27636",
+      "repo_info": "[Crystallen1/CVE-2025-27636-demo](https://github.com/Crystallen1/CVE-2025-27636-demo)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T09:54:50Z"
+    },
+    {
+      "cve_id": "CVE-2024-56800",
+      "repo_info": "[cyhe50/cve-2024-56800-poc](https://github.com/cyhe50/cve-2024-56800-poc)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T23:36:16Z"
+    },
+    {
+      "cve_id": "CVE-2024-38063",
+      "repo_info": "[akozsentre/CVE-2024-38063](https://github.com/akozsentre/CVE-2024-38063)",
+      "description": "Monthly Land Temperature Surface Base Nano-Castle help learn the basics of Java",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T12:08:44Z"
+    },
+    {
+      "cve_id": "CVE-2024-32002",
+      "repo_info": "[srakkk/cve-2024-32002-demo](https://github.com/srakkk/cve-2024-32002-demo)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T07:08:18Z"
+    },
+    {
+      "cve_id": "CVE-2024-32002",
+      "repo_info": "[srakkk/cve-2024-32002-hook](https://github.com/srakkk/cve-2024-32002-hook)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T07:10:13Z"
+    },
+    {
+      "cve_id": "CVE-2024-32002",
+      "repo_info": "[mystxcal/cve-2024-32002-demo](https://github.com/mystxcal/cve-2024-32002-demo)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T07:42:41Z"
+    },
+    {
+      "cve_id": "CVE-2020-35489",
+      "repo_info": "[kiyamehram/CVE_2020_35489_EnhancedExploit.php](https://github.com/kiyamehram/CVE_2020_35489_EnhancedExploit.php)",
+      "description": "no description",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T10:48:24Z"
+    },
+    {
+      "cve_id": "CVE-2020-14882",
+      "repo_info": "[Jaden-Bowers/Tenda-Router-VR-and-Exploit](https://github.com/Jaden-Bowers/Tenda-Router-VR-and-Exploit)",
+      "description": "Writeup for Tenda AC15 router firmware rehosting and remote command execution (CVE-2020-10987) exploit replication.",
+      "date": "2025-10-23",
+      "raw_date": "2025-10-23T15:30:18Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.762473",
+  "metadata": {
+    "total_cves": 13,
+    "date_range": "2025-10-23",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

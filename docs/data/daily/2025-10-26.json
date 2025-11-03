@@ -1,0 +1,83 @@
+{
+  "date": "2025-10-26",
+  "count": 10,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9967",
+      "repo_info": "[glitchhawks/CVE-2025-9967](https://github.com/glitchhawks/CVE-2025-9967)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T12:21:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-6514",
+      "repo_info": "[Cyberency/CVE-2025-6514](https://github.com/Cyberency/CVE-2025-6514)",
+      "description": "mcp-remote exposed to OS command injection",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T08:57:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-62527",
+      "repo_info": "[0xBruno/WSUSploit.NET](https://github.com/0xBruno/WSUSploit.NET)",
+      "description": "PoC for CVE-2025-59287",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T01:39:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-62376",
+      "repo_info": "[ghostroots/CVE-2025-62376](https://github.com/ghostroots/CVE-2025-62376)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T12:25:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-60749",
+      "repo_info": "[yonatanasd232132/talkingBen](https://github.com/yonatanasd232132/talkingBen)",
+      "description": "planned to be a root kit that is ingrained inside of the UEFI bootloader, but first does priviliage escalation and will be constantly update with probably a c2 server and anti EDR and AV&#x27;s prevention measures for it to be real world applicable malware (looking for CVE-2025-3052)",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T13:43:16Z"
+    },
+    {
+      "cve_id": "CVE-2025-53533",
+      "repo_info": "[moezbouzayani9/Pi-hole-XSS-CVE-2025-53533](https://github.com/moezbouzayani9/Pi-hole-XSS-CVE-2025-53533)",
+      "description": "Cross-Site-Scripting XSS in Pi-hole-CVE-2025-53533 exploit (PoC)",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T12:05:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-49553",
+      "repo_info": "[glitchhawks/CVE-2025-49553](https://github.com/glitchhawks/CVE-2025-49553)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T12:23:30Z"
+    },
+    {
+      "cve_id": "CVE-2025-23320",
+      "repo_info": "[There-was-a-bird/triton-cve-2025-23320](https://github.com/There-was-a-bird/triton-cve-2025-23320)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T19:08:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-11832",
+      "repo_info": "[blackhatlegend/CVE-2025-11832](https://github.com/blackhatlegend/CVE-2025-11832)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T12:18:53Z"
+    },
+    {
+      "cve_id": "CVE-2024-23897",
+      "repo_info": "[aadi0258/Exploit-CVE-2024-23897](https://github.com/aadi0258/Exploit-CVE-2024-23897)",
+      "description": "no description",
+      "date": "2025-10-26",
+      "raw_date": "2025-10-26T13:24:53Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.766009",
+  "metadata": {
+    "total_cves": 10,
+    "date_range": "2025-10-26",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

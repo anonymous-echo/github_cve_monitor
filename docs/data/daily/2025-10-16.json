@@ -1,0 +1,111 @@
+{
+  "date": "2025-10-16",
+  "count": 14,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-62410",
+      "repo_info": "[SubZeroHackerz/CVE-2025-62410](https://github.com/SubZeroHackerz/CVE-2025-62410)",
+      "description": "no description",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T10:38:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit](https://github.com/AdityaBhatt3010/CVE-2025-61882-Oracle-E-Business-Suite-Pre-Auth-RCE-Exploit)",
+      "description": "A critical pre-authentication Remote Code Execution (RCE) flaw in Oracle E-Business Suite (versions 12.2.3 - 12.2.14) allows attackers to gain full control over vulnerable servers via malicious HTTP requests - now actively exploited in the wild.",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T15:33:40Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[MindflareX/CVE-2025-61882-POC](https://github.com/MindflareX/CVE-2025-61882-POC)",
+      "description": "POC of CVE-2025-61882",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T05:15:18Z"
+    },
+    {
+      "cve_id": "CVE-2025-60752",
+      "repo_info": "[zer0matt/CVE-2025-60752](https://github.com/zer0matt/CVE-2025-60752)",
+      "description": "PoC of CVE-2025-60752",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T23:53:55Z"
+    },
+    {
+      "cve_id": "CVE-2025-60751",
+      "repo_info": "[zer0matt/CVE-2025-60751](https://github.com/zer0matt/CVE-2025-60751)",
+      "description": "PoC of CVE-2025-60751",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T23:39:06Z"
+    },
+    {
+      "cve_id": "CVE-2025-60503",
+      "repo_info": "[rifting/UnrestrictedUserCreator](https://github.com/rifting/UnrestrictedUserCreator)",
+      "description": "Simple script to add a new, unrestricted user on devices with Family Link by abusing CVE-2025-32324 (pre September patch)",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T01:05:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-56450",
+      "repo_info": "[apboss123/CVE-2025-56450](https://github.com/apboss123/CVE-2025-56450)",
+      "description": "Unauthenticated SQL Injection in Log2Space Subscriber Management Software",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T15:20:08Z"
+    },
+    {
+      "cve_id": "CVE-2025-55315",
+      "repo_info": "[sirredbeard/CVE-2025-55315-repro](https://github.com/sirredbeard/CVE-2025-55315-repro)",
+      "description": "Tool that reproduces CVE-2025-55315 in ASP.NET Core.",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T17:14:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-55315",
+      "repo_info": "[nickcopi/CVE-2025-55315-detection-playground](https://github.com/nickcopi/CVE-2025-55315-detection-playground)",
+      "description": "Playground to experiment with different behavior on patched/unpatched Kestrel for the CVE-2025-55315 HTTP smuggling vulnerability",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T15:31:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-49553",
+      "repo_info": "[silentexploitexe/CVE-2025-49553](https://github.com/silentexploitexe/CVE-2025-49553)",
+      "description": "no description",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T18:19:52Z"
+    },
+    {
+      "cve_id": "CVE-2025-24990",
+      "repo_info": "[moiz-2x/CVE-2025-24990_POC](https://github.com/moiz-2x/CVE-2025-24990_POC)",
+      "description": "Proof of Concept CVE-2025-24990 (Agere Systems&#x27;s driver)",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T04:44:08Z"
+    },
+    {
+      "cve_id": "CVE-2024-31497",
+      "repo_info": "[LukaWynants/Onderzoek_CVE-2024-31497-POC](https://github.com/LukaWynants/Onderzoek_CVE-2024-31497-POC)",
+      "description": "no description",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T11:33:10Z"
+    },
+    {
+      "cve_id": "CVE-2024-27956",
+      "repo_info": "[M1lo25/CS50FinalProject](https://github.com/M1lo25/CS50FinalProject)",
+      "description": "Investigation into the XZ Utils backdoor (CVE-2024-3094): chronology, attack chain, risk to SSH, and supply-chain insights. Includes slides, sources, and mitigations (parity checks, attestations, or SBOMs, as well as SLSA)",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T14:38:49Z"
+    },
+    {
+      "cve_id": "CVE-2022-1364",
+      "repo_info": "[interruptlabs/uc_browser_poc_CVE-2022-1364](https://github.com/interruptlabs/uc_browser_poc_CVE-2022-1364)",
+      "description": "Proof of concept for CVE-2022-1364 against Alibaba&#x27;s UC Browser",
+      "date": "2025-10-16",
+      "raw_date": "2025-10-16T10:33:26Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.752692",
+  "metadata": {
+    "total_cves": 14,
+    "date_range": "2025-10-16",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

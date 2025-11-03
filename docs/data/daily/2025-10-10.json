@@ -1,0 +1,139 @@
+{
+  "date": "2025-10-10",
+  "count": 18,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[zerozenxlabs/CVE-2025-61882-Oracle-EBS](https://github.com/zerozenxlabs/CVE-2025-61882-Oracle-EBS)",
+      "description": "no description",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T18:28:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-61303",
+      "repo_info": "[eGkritsis/CVE-2025-61303](https://github.com/eGkritsis/CVE-2025-61303)",
+      "description": "RecordedFuture Triage dynamic analysis engine can fail to record malicious behavior when samples produce very high-volume recursive process forking, causing inconsistent or missing behavioral reports.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T14:54:26Z"
+    },
+    {
+      "cve_id": "CVE-2025-61301",
+      "repo_info": "[eGkritsis/CVE-2025-61301](https://github.com/eGkritsis/CVE-2025-61301)",
+      "description": "CAPEv2 reporting/mongodb.py and reporting/jsondump.py allow denial-of-analysis when deeply nested or oversized behavior documents trigger orjson serialization errors or MongoDB BSON size/nesting limits, causing truncated or missing analysis reports.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T12:52:18Z"
+    },
+    {
+      "cve_id": "CVE-2025-60880",
+      "repo_info": "[Shenal01/CVE-2025-60880](https://github.com/Shenal01/CVE-2025-60880)",
+      "description": "CVE-2025-60880 - Stored Cross-Site Scripting (XSS) in Bagisto Admin Panel",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T05:03:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-60375",
+      "repo_info": "[ajansha/CVE-2025-60375](https://github.com/ajansha/CVE-2025-60375)",
+      "description": "no description",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T08:17:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-60374",
+      "repo_info": "[ajansha/CVE-2025-60374](https://github.com/ajansha/CVE-2025-60374)",
+      "description": "CVE-2025-60374: Stored Cross-Site Scripting (XSS) in Perfex CRM Chatbot",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T16:45:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-5947",
+      "repo_info": "[M4rgs/CVE-2025-5947_Exploit](https://github.com/M4rgs/CVE-2025-5947_Exploit)",
+      "description": "An mini exploit for the Service Finder -Bookings plugin WP",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T04:59:12Z"
+    },
+    {
+      "cve_id": "CVE-2025-41089",
+      "repo_info": "[Marinafabregat/CVE-2025-41089](https://github.com/Marinafabregat/CVE-2025-41089)",
+      "description": "Reflected Cross-Site Scripting (XSS) in Xibo CMS v4.1.2 from Xibo Signage, due to a lack of proper validation of user input.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T18:05:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-41088",
+      "repo_info": "[Marinafabregat/CVE-2025-41088](https://github.com/Marinafabregat/CVE-2025-41088)",
+      "description": "Stored Cross-Site Scripting (XSS) in Xibo Signage&#x27;s Xibo CMS v4.1.2, due to a lack of proper validation of user input.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T11:03:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-38001",
+      "repo_info": "[ngobao2002/CVE-2025-38001-test](https://github.com/ngobao2002/CVE-2025-38001-test)",
+      "description": "no description",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T07:46:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[m3m0o/portabilis-ieducar-user-type-privilege-escalation](https://github.com/m3m0o/portabilis-ieducar-user-type-privilege-escalation)",
+      "description": "Proof of concept for exploitation of the vulnerability described in CVE-2025-11554, which concerns the possibility of a privilege escalation through arbitrary requests to user types change endpoint in the i-Educar software.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T23:01:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-2539",
+      "repo_info": "[AlvaXPloit/CVE-2025-2539](https://github.com/AlvaXPloit/CVE-2025-2539)",
+      "description": "no description",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T00:28:24Z"
+    },
+    {
+      "cve_id": "CVE-2025-11450",
+      "repo_info": "[DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script](https://github.com/DanielMadsenDK/ServiceNow-CVE-2025-11449-CVE-2025-11450-Mitigation-Script)",
+      "description": "This script automatically detects and remediates **CVE-2025-11449** and **CVE-2025-11450** security vulnerabilities in ServiceNow UI Macros. These critical vulnerabilities could allow arbitrary code execution in users&#x27; browsers through specially crafted links if user-controlled `sysparm_` parameters are not properly sanitized.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T08:58:54Z"
+    },
+    {
+      "cve_id": "CVE-2025-11371",
+      "repo_info": "[rxerium/CVE-2025-11371](https://github.com/rxerium/CVE-2025-11371)",
+      "description": "Detection for CVE-2025-11371",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T10:26:57Z"
+    },
+    {
+      "cve_id": "CVE-2024-38856",
+      "repo_info": "[Hex00-0x4/CVE-2024-38856-Apache-OFBiz](https://github.com/Hex00-0x4/CVE-2024-38856-Apache-OFBiz)",
+      "description": "CVE-2024-38856: Apache OFBiz remote code execution Scanner &amp; Exploit",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T02:20:16Z"
+    },
+    {
+      "cve_id": "CVE-2024-38856",
+      "repo_info": "[Athexhacker/EXPLOITER](https://github.com/Athexhacker/EXPLOITER)",
+      "description": "Automated Exploit for CVE-2024-0044 .",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T06:28:25Z"
+    },
+    {
+      "cve_id": "CVE-2024-21262",
+      "repo_info": "[Noah4Puppy/CVE-2024-21262](https://github.com/Noah4Puppy/CVE-2024-21262)",
+      "description": "THREE different reproduction, WORKDIR, EXEC &amp; RUNC.",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T09:47:48Z"
+    },
+    {
+      "cve_id": "CVE-2023-29386",
+      "repo_info": "[vigilante-1337/CVE-2023-29386](https://github.com/vigilante-1337/CVE-2023-29386)",
+      "description": "PoC CVE-2023-29386 — Manager for Icomoon &lt; 2.1 - Unauthenticated Arbitrary File Upload",
+      "date": "2025-10-10",
+      "raw_date": "2025-10-10T12:33:22Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.747175",
+  "metadata": {
+    "total_cves": 18,
+    "date_range": "2025-10-10",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

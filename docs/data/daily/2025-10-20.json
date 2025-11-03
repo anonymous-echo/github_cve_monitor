@@ -1,0 +1,55 @@
+{
+  "date": "2025-10-20",
+  "count": 6,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9744",
+      "repo_info": "[godfatherofexps/CVE-2025-9744-PoC](https://github.com/godfatherofexps/CVE-2025-9744-PoC)",
+      "description": "CVE-2025-9744 PoC.",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T20:48:01Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[keeganparr1/CVE-2025-59287-hawktrace](https://github.com/keeganparr1/CVE-2025-59287-hawktrace)",
+      "description": "PoC from hawktrace",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T14:01:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-59230",
+      "repo_info": "[stalker110119/CVE-2025-59230](https://github.com/stalker110119/CVE-2025-59230)",
+      "description": "no description",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T15:16:06Z"
+    },
+    {
+      "cve_id": "CVE-2025-32433",
+      "repo_info": "[toshithh/CVE-2025-32433](https://github.com/toshithh/CVE-2025-32433)",
+      "description": "no description",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T06:06:09Z"
+    },
+    {
+      "cve_id": "CVE-2025-11391",
+      "repo_info": "[aritlhq/CVE-2025-11391](https://github.com/aritlhq/CVE-2025-11391)",
+      "description": "WordPress PPOM for WooCommerce Plugin &lt;= 33.0.15 is vulnerable to SQL Injection",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T22:12:54Z"
+    },
+    {
+      "cve_id": "CVE-2024-39840",
+      "repo_info": "[wqry085/PoC-Deployer-System](https://github.com/wqry085/PoC-Deployer-System)",
+      "description": "Quick tool for utilizing CVE-2024-31317 on Android",
+      "date": "2025-10-20",
+      "raw_date": "2025-10-20T13:47:09Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.757475",
+  "metadata": {
+    "total_cves": 6,
+    "date_range": "2025-10-20",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

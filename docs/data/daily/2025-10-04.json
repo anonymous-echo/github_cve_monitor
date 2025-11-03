@@ -1,0 +1,69 @@
+{
+  "date": "2025-10-04",
+  "count": 8,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-39946",
+      "repo_info": "[farazsth98/exploit-CVE-2025-39946](https://github.com/farazsth98/exploit-CVE-2025-39946)",
+      "description": "Exploit for CVE-2025-39946, a bug in the Linux kernel&#x27;s net/tls subsystem.",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T19:39:03Z"
+    },
+    {
+      "cve_id": "CVE-2025-30208",
+      "repo_info": "[qodo-dev/CVE-2025-30208](https://github.com/qodo-dev/CVE-2025-30208)",
+      "description": "CVE-2025-30208",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T05:39:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-30208",
+      "repo_info": "[diogolourencodev/middleforce](https://github.com/diogolourencodev/middleforce)",
+      "description": "Simple script to attempt a Bypass on a server possibly vulnerable to CVE-2025-29927 (Next.js Middleware)",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T03:40:54Z"
+    },
+    {
+      "cve_id": "CVE-2025-1338",
+      "repo_info": "[jxcaxtc/CVE-2025-1338](https://github.com/jxcaxtc/CVE-2025-1338)",
+      "description": "This repository contains a proof-of-concept exploit script for CVE-2025-1338",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T23:51:36Z"
+    },
+    {
+      "cve_id": "CVE-2025-10184",
+      "repo_info": "[Webpage-gh/CVE-2025-10184-PoC](https://github.com/Webpage-gh/CVE-2025-10184-PoC)",
+      "description": "OxygenOS Telephony provider permission bypass",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T10:19:07Z"
+    },
+    {
+      "cve_id": "CVE-2024-7627",
+      "repo_info": "[lkmn1/CVE-2024-7627](https://github.com/lkmn1/CVE-2024-7627)",
+      "description": "POC CVE-2024-7627",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T14:38:12Z"
+    },
+    {
+      "cve_id": "CVE-2024-36401",
+      "repo_info": "[URJACK2025/CVE-2024-36401](https://github.com/URJACK2025/CVE-2024-36401)",
+      "description": "An Python Exp For &quot;GeoServer&quot;",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T09:28:39Z"
+    },
+    {
+      "cve_id": "CVE-2020-1472",
+      "repo_info": "[100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab](https://github.com/100HnoMeuNome/ZeroLogon-CVE-2020-1472-lab)",
+      "description": "Explicação e demonstração da vulnerabilidade ZeroLogon (CVE-2020-1472)",
+      "date": "2025-10-04",
+      "raw_date": "2025-10-04T22:29:19Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.739206",
+  "metadata": {
+    "total_cves": 8,
+    "date_range": "2025-10-04",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

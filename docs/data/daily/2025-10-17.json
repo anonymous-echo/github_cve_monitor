@@ -1,0 +1,118 @@
+{
+  "date": "2025-10-17",
+  "count": 15,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-8081",
+      "repo_info": "[LyesH4ck/CVE-2025-8081-Elementor](https://github.com/LyesH4ck/CVE-2025-8081-Elementor)",
+      "description": "PoC for CVE-2025-8081 - Elementor Arbitrary File Read Vulnerability",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T12:54:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-62527",
+      "repo_info": "[njawalkar/apache-commons-lang2](https://github.com/njawalkar/apache-commons-lang2)",
+      "description": "Apache&#x27;s commons-lang2 v2.6 with a backported fix for CVE-2025-48924",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T08:53:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-60500",
+      "repo_info": "[H4zaz/CVE-2025-60500](https://github.com/H4zaz/CVE-2025-60500)",
+      "description": "Exploit about School Management System 7.1 (Authenticated RCE)",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T18:39:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-60500",
+      "repo_info": "[dr4xp/sudo-chroot](https://github.com/dr4xp/sudo-chroot)",
+      "description": "Sudo Vulnerability Local PrivEsc (CVE-2025-32463) POC with Python",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T17:50:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-60500",
+      "repo_info": "[dr4x-c0d3r/sudo-chroot](https://github.com/dr4x-c0d3r/sudo-chroot)",
+      "description": "Sudo Vulnerability Local PrivEsc (CVE-2025-32463) POC with Python",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T15:42:57Z"
+    },
+    {
+      "cve_id": "CVE-2025-55315",
+      "repo_info": "[RootAid/CVE-2025-55315](https://github.com/RootAid/CVE-2025-55315)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T13:50:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-52136",
+      "repo_info": "[f1r3K0/CVE-2025-52136](https://github.com/f1r3K0/CVE-2025-52136)",
+      "description": "EMQX控制台不出网利用",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T06:08:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-39965",
+      "repo_info": "[Shreyas-Penkar/CVE-2025-39965](https://github.com/Shreyas-Penkar/CVE-2025-39965)",
+      "description": "PoC for CVE-2025-39965",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T17:49:10Z"
+    },
+    {
+      "cve_id": "CVE-2025-24893",
+      "repo_info": "[Yukik4z3/CVE-2025-24893](https://github.com/Yukik4z3/CVE-2025-24893)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T05:12:42Z"
+    },
+    {
+      "cve_id": "CVE-2025-10742",
+      "repo_info": "[netspecters/CVE-2025-10742](https://github.com/netspecters/CVE-2025-10742)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T22:08:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-10041",
+      "repo_info": "[Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041](https://github.com/Kai-One001/WordPress-Flex-QR-Code-Generator---CVE-2025-10041)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T07:59:09Z"
+    },
+    {
+      "cve_id": "CVE-2024-51793",
+      "repo_info": "[0axz-tools/CVE-2024-51793](https://github.com/0axz-tools/CVE-2024-51793)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T17:14:37Z"
+    },
+    {
+      "cve_id": "CVE-2024-27956",
+      "repo_info": "[0axz-tools/CVE-2024-27956](https://github.com/0axz-tools/CVE-2024-27956)",
+      "description": "CVE-2024-27956",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T16:09:17Z"
+    },
+    {
+      "cve_id": "CVE-2024-13513",
+      "repo_info": "[0axz-tools/CVE-2024-13513.py](https://github.com/0axz-tools/CVE-2024-13513.py)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T18:58:40Z"
+    },
+    {
+      "cve_id": "CVE-2023-34804",
+      "repo_info": "[Shahibakes/Cve-2023-34804](https://github.com/Shahibakes/Cve-2023-34804)",
+      "description": "no description",
+      "date": "2025-10-17",
+      "raw_date": "2025-10-17T17:05:34Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.753697",
+  "metadata": {
+    "total_cves": 15,
+    "date_range": "2025-10-17",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

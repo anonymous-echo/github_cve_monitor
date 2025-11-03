@@ -1,0 +1,69 @@
+{
+  "date": "2025-10-29",
+  "count": 8,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-63298",
+      "repo_info": "[z3rObyte/CVE-2025-63298](https://github.com/z3rObyte/CVE-2025-63298)",
+      "description": "A path traversal vulnerability was identified in SourceCodester Pet Grooming Management System 1.0, affecting the admin/manage_website.php component. An authenticated user with administrative privileges can leverage this flaw by submitting a specially crafted POST request, enabling the deletion of arbitrary files on the web server.",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T16:10:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[fsanzmoya/wsus_CVE-2025-59287](https://github.com/fsanzmoya/wsus_CVE-2025-59287)",
+      "description": "Verificacion de vulnerabilidad en WSUS",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T07:08:37Z"
+    },
+    {
+      "cve_id": "CVE-2025-55752",
+      "repo_info": "[masahiro331/CVE-2025-55752](https://github.com/masahiro331/CVE-2025-55752)",
+      "description": "no description",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T08:27:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-40778",
+      "repo_info": "[nehkark/CVE-2025-40778](https://github.com/nehkark/CVE-2025-40778)",
+      "description": "POC CVE-2025-40778: Cache Poisoning BIND 9 👾",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T16:05:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-31702",
+      "repo_info": "[purpleghosts/CVE-2025-31702](https://github.com/purpleghosts/CVE-2025-31702)",
+      "description": "Repository with tools, exploits, and material associated with the analysis and discovery process of CVE-2025-31702 and other related security issues.",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T15:04:42Z"
+    },
+    {
+      "cve_id": "CVE-2024-46256",
+      "repo_info": "[TranDongA3/Simulation_CVE-2024-46256](https://github.com/TranDongA3/Simulation_CVE-2024-46256)",
+      "description": "no description",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T18:18:59Z"
+    },
+    {
+      "cve_id": "CVE-2021-41773",
+      "repo_info": "[ApexPredator-InfoSec/forti_shield](https://github.com/ApexPredator-InfoSec/forti_shield)",
+      "description": "A combined POC for CVE-2021-31955,  CVE-2015-4077, and CVE-2015-5736",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T18:16:29Z"
+    },
+    {
+      "cve_id": "CVE-2020-14882",
+      "repo_info": "[AshrafZaryouh/CVE-2020-14882](https://github.com/AshrafZaryouh/CVE-2020-14882)",
+      "description": "CVE-2020-14882",
+      "date": "2025-10-29",
+      "raw_date": "2025-10-29T09:56:59Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.769016",
+  "metadata": {
+    "total_cves": 8,
+    "date_range": "2025-10-29",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

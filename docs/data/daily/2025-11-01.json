@@ -1,0 +1,125 @@
+{
+  "date": "2025-11-01",
+  "count": 16,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-62527",
+      "repo_info": "[Mitchellzhou1/CVE_2025_62527_PoC](https://github.com/Mitchellzhou1/CVE_2025_62527_PoC)",
+      "description": "CVE_2025_62527_PoC",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T03:22:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-61481",
+      "repo_info": "[codetombs/CVE-2025-61481](https://github.com/codetombs/CVE-2025-61481)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T15:05:57Z"
+    },
+    {
+      "cve_id": "CVE-2025-60423",
+      "repo_info": "[Zephyr1ng/CVE-2025-60423](https://github.com/Zephyr1ng/CVE-2025-60423)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T12:13:12Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[QurtiDev/WSUS-CVE-2025-59287-RCE](https://github.com/QurtiDev/WSUS-CVE-2025-59287-RCE)",
+      "description": "This is an exploit script written in C# to aid gaining a reverse shell on targets with Windows Server Update Service(WSUS) CVE-2025-59287. We will deliver a reverse shell payload through encrypted SOAP req.",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T20:05:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[Adar5h16/My-CVE](https://github.com/Adar5h16/My-CVE)",
+      "description": "CVE-2025-50363",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T19:27:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-55234",
+      "repo_info": "[h4xnz/CVE-2025-55234-POC](https://github.com/h4xnz/CVE-2025-55234-POC)",
+      "description": "Windows SMB Server Elevation of Privilege Vulnerability",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T10:43:12Z"
+    },
+    {
+      "cve_id": "CVE-2025-54897",
+      "repo_info": "[themaxlpalfaboy/CVE-2025-54897-LAB](https://github.com/themaxlpalfaboy/CVE-2025-54897-LAB)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T21:21:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-54110",
+      "repo_info": "[ByteHawkSec/CVE-2025-54110-POC](https://github.com/ByteHawkSec/CVE-2025-54110-POC)",
+      "description": "Windows Kernel Integer Overflow Privilege Escalation",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T10:06:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-54106",
+      "repo_info": "[DExplo1ted/CVE-2025-54106-POC](https://github.com/DExplo1ted/CVE-2025-54106-POC)",
+      "description": "Integer Overflow in Windows Routing and Remote Access Service (RRAS)",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T10:28:50Z"
+    },
+    {
+      "cve_id": "CVE-2025-50168",
+      "repo_info": "[D4m0n/CVE-2025-50168-pwn2own-berlin-2025](https://github.com/D4m0n/CVE-2025-50168-pwn2own-berlin-2025)",
+      "description": "CVE-2025-50168 Exploit PoC — Pwn2Own Berlin 2025 - LPE(Windows 11) winning bug.",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T13:02:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-11833",
+      "repo_info": "[modhopmarrow1973/CVE-2025-11833-LAB](https://github.com/modhopmarrow1973/CVE-2025-11833-LAB)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T21:11:08Z"
+    },
+    {
+      "cve_id": "CVE-2025-11499",
+      "repo_info": "[Hazelooks/CVE-2025-11499-Exploit](https://github.com/Hazelooks/CVE-2025-11499-Exploit)",
+      "description": "Unrestricted Upload of File with Dangerous Type",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T11:45:44Z"
+    },
+    {
+      "cve_id": "CVE-2025-11499",
+      "repo_info": "[usjnx72726w/CVE-2025-11499-LAB](https://github.com/usjnx72726w/CVE-2025-11499-LAB)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T20:45:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-11499",
+      "repo_info": "[rootreapers/CVE-2025-11499](https://github.com/rootreapers/CVE-2025-11499)",
+      "description": "no description",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T14:15:34Z"
+    },
+    {
+      "cve_id": "CVE-2024-56800",
+      "repo_info": "[amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal](https://github.com/amirqusairy99/WordPress-File-Upload-4.24.11---Unauthenticated-Path-Traversal)",
+      "description": "CVE-2024-9047",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T03:30:39Z"
+    },
+    {
+      "cve_id": "CVE-2021-3560",
+      "repo_info": "[SeimuPVE/CVE-2021-3560_Polkit](https://github.com/SeimuPVE/CVE-2021-3560_Polkit)",
+      "description": "Exploit for CVE-2021-3560 Polkit Local Privilege Escalation Vulnerability",
+      "date": "2025-11-01",
+      "raw_date": "2025-11-01T20:48:35Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.772452",
+  "metadata": {
+    "total_cves": 16,
+    "date_range": "2025-11-01",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

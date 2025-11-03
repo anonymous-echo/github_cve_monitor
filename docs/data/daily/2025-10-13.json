@@ -1,0 +1,90 @@
+{
+  "date": "2025-10-13",
+  "count": 11,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61984",
+      "repo_info": "[ThanhCT-CyX/Test-CVE-2025-61984](https://github.com/ThanhCT-CyX/Test-CVE-2025-61984)",
+      "description": "no description",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T01:42:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-61884",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-61884](https://github.com/B1ack4sh/Blackash-CVE-2025-61884)",
+      "description": "CVE-2025-61884",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T10:04:08Z"
+    },
+    {
+      "cve_id": "CVE-2025-61884",
+      "repo_info": "[oriolrius/kafka-keycloak-oauth](https://github.com/oriolrius/kafka-keycloak-oauth)",
+      "description": "Apache Kafka 4.1.0 (KRaft) with Keycloak OAuth2 authentication using Strimzi - bypasses CVE-2025-27817 URL allowlist restriction",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T04:39:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-59489",
+      "repo_info": "[AdriianFdz/Exploit-CVE-2025-59489](https://github.com/AdriianFdz/Exploit-CVE-2025-59489)",
+      "description": "A simple script pack to exploit Unity&#x27;s CVE-2025-59489",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T17:32:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-59489",
+      "repo_info": "[xchg-rax-rax/AvTech-PoCs](https://github.com/xchg-rax-rax/AvTech-PoCs)",
+      "description": "PoCs for CVE-2025-57199, CVE-2025-57200, CVE-2025-57201, CVE-2025-57202, and CVE-2025-57203",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T13:09:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-39913",
+      "repo_info": "[byteReaper77/CVE-2025-39913](https://github.com/byteReaper77/CVE-2025-39913)",
+      "description": "UAF in linux kernel ≤ 6.12.38 (psock-&gt;cork)",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T15:02:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-11171",
+      "repo_info": "[SnailSploit/CVE-2025-11171](https://github.com/SnailSploit/CVE-2025-11171)",
+      "description": "CVE-2025-11171",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T07:41:35Z"
+    },
+    {
+      "cve_id": "CVE-2024-43425",
+      "repo_info": "[Tnot123/cve-2024-43425](https://github.com/Tnot123/cve-2024-43425)",
+      "description": "no description",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T02:32:48Z"
+    },
+    {
+      "cve_id": "CVE-2024-39930",
+      "repo_info": "[laachy/CVE-2024-39930-ptrace-detection-mitigation](https://github.com/laachy/CVE-2024-39930-ptrace-detection-mitigation)",
+      "description": "no description",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T07:59:23Z"
+    },
+    {
+      "cve_id": "CVE-2024-39930",
+      "repo_info": "[mrizkimaulidan/CVE-2024-Exploration](https://github.com/mrizkimaulidan/CVE-2024-Exploration)",
+      "description": "no description",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T06:45:10Z"
+    },
+    {
+      "cve_id": "CVE-2023-50164",
+      "repo_info": "[cesarbtakeda/CVE-exploit-2023-42793](https://github.com/cesarbtakeda/CVE-exploit-2023-42793)",
+      "description": "no description",
+      "date": "2025-10-13",
+      "raw_date": "2025-10-13T07:29:18Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.749698",
+  "metadata": {
+    "total_cves": 11,
+    "date_range": "2025-10-13",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

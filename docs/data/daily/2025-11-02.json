@@ -1,0 +1,90 @@
+{
+  "date": "2025-11-02",
+  "count": 11,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-8088",
+      "repo_info": "[B1ack4sh/Blackash-CVE-2025-8088](https://github.com/B1ack4sh/Blackash-CVE-2025-8088)",
+      "description": "CVE-2025-8088",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T19:23:45Z"
+    },
+    {
+      "cve_id": "CVE-2025-62168",
+      "repo_info": "[shahroodcert/CVE-2025-62168](https://github.com/shahroodcert/CVE-2025-62168)",
+      "description": "PoC of CVE-2025-62168",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T09:42:01Z"
+    },
+    {
+      "cve_id": "CVE-2025-59528",
+      "repo_info": "[zimshk/CVE-2025-59528.yaml](https://github.com/zimshk/CVE-2025-59528.yaml)",
+      "description": "no description",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T07:39:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-59287",
+      "repo_info": "[Sid6Effect/CVE-2025-59287](https://github.com/Sid6Effect/CVE-2025-59287)",
+      "description": "WSUS vulnerability PoC",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T13:56:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-57833",
+      "repo_info": "[sw0rd1ight/CVE-2025-57833](https://github.com/sw0rd1ight/CVE-2025-57833)",
+      "description": "Analysis and reproduction of CVE-2025-57833",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T09:08:46Z"
+    },
+    {
+      "cve_id": "CVE-2025-2011",
+      "repo_info": "[X3RX3SSec/CVE-2025-2011](https://github.com/X3RX3SSec/CVE-2025-2011)",
+      "description": "Exploit for CVE-2025-2011",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T18:09:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-12596",
+      "repo_info": "[DebugFrag/CVE-2025-12596-Exploit](https://github.com/DebugFrag/CVE-2025-12596-Exploit)",
+      "description": "Improper Restriction of Operations within the Bounds of a Memory Buffer (CWE-119)",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T20:22:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-12595",
+      "repo_info": "[lagerhaker539/CVE-2025-12595-POC](https://github.com/lagerhaker539/CVE-2025-12595-POC)",
+      "description": "no description",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T19:21:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-12437",
+      "repo_info": "[callinston/CVE-2025-12437](https://github.com/callinston/CVE-2025-12437)",
+      "description": "no description",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T19:50:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-11174",
+      "repo_info": "[SnailSploit/CVE-2025-11174](https://github.com/SnailSploit/CVE-2025-11174)",
+      "description": "Document Library Lite &lt;= 1.1.6 - Missing Authorization to Sensitive Information Exposure - CVE-2025-11174",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T06:57:29Z"
+    },
+    {
+      "cve_id": "CVE-2024-7387",
+      "repo_info": "[fatcatresearch/cve-2024-7387](https://github.com/fatcatresearch/cve-2024-7387)",
+      "description": "developer-to-node privilege escalation via path traversal",
+      "date": "2025-11-02",
+      "raw_date": "2025-11-02T05:46:46Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.773471",
+  "metadata": {
+    "total_cves": 11,
+    "date_range": "2025-11-02",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

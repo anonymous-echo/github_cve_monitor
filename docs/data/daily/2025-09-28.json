@@ -1,0 +1,55 @@
+{
+  "date": "2025-09-28",
+  "count": 6,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-6934",
+      "repo_info": "[Tamilselvan-S-Cyber-Security/CVE-2025-Xss](https://github.com/Tamilselvan-S-Cyber-Security/CVE-2025-Xss)",
+      "description": "no description",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T01:08:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-56807",
+      "repo_info": "[aqwainfosec/CVE-2025-56807](https://github.com/aqwainfosec/CVE-2025-56807)",
+      "description": "CVE-2025-56807: A Stored Cross Site Scripting (XSS) vulnerability was discovered in FairSketch RISE Ultimate Project Manager &amp; CRM (v3.9.4) in the File Manager functionality.",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T03:07:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-56709",
+      "repo_info": "[xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709](https://github.com/xkaneiki/rtty_CVE-2025-56708-CVE-2025-56709)",
+      "description": "CVE-2025-56708&amp;CVE-2025-56709漏洞详解",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T12:02:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-29927",
+      "repo_info": "[kuyrathdaro/cve-2025-29927](https://github.com/kuyrathdaro/cve-2025-29927)",
+      "description": "no description",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T09:11:45Z"
+    },
+    {
+      "cve_id": "CVE-2022-36537",
+      "repo_info": "[ethan-repo-lab4b6/CVE-2022-36537](https://github.com/ethan-repo-lab4b6/CVE-2022-36537)",
+      "description": "no description",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T01:11:02Z"
+    },
+    {
+      "cve_id": "CVE-2022-33679",
+      "repo_info": "[soy-oreocato/CVE-2022-33679_Checker](https://github.com/soy-oreocato/CVE-2022-33679_Checker)",
+      "description": "no description",
+      "date": "2025-09-28",
+      "raw_date": "2025-09-28T18:32:14Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.728313",
+  "metadata": {
+    "total_cves": 6,
+    "date_range": "2025-09-28",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

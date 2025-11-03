@@ -1,0 +1,83 @@
+{
+  "date": "2025-10-24",
+  "count": 10,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61984",
+      "repo_info": "[flyskyfire/cve-2025-61984-poc](https://github.com/flyskyfire/cve-2025-61984-poc)",
+      "description": "PoC for CVE-2025-61984",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T01:31:48Z"
+    },
+    {
+      "cve_id": "CVE-2025-61155",
+      "repo_info": "[pollotherunner/CVE-2025-61155](https://github.com/pollotherunner/CVE-2025-61155)",
+      "description": "Official public advisory for CVE-2025-61155",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T18:35:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-60749",
+      "repo_info": "[yawataa/CVE-2025-60749](https://github.com/yawataa/CVE-2025-60749)",
+      "description": "SketchUp Desktop 2025 DLL Hijacking Vulnerability",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T02:17:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-60349",
+      "repo_info": "[djackreuter/CVE-2025-60349](https://github.com/djackreuter/CVE-2025-60349)",
+      "description": "CVE-2025-60349: Pxscan Arbitrary Process Termination",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T19:43:31Z"
+    },
+    {
+      "cve_id": "CVE-2025-55315",
+      "repo_info": "[jlinebau/CVE-2025-55315-Scanner-Monitor](https://github.com/jlinebau/CVE-2025-55315-Scanner-Monitor)",
+      "description": "Quick and Simple Scripts to Scan for Vulnerable Servers and Packet Level Monitors",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T14:19:43Z"
+    },
+    {
+      "cve_id": "CVE-2025-52099",
+      "repo_info": "[SCREAMBBY/CVE-2025-52099](https://github.com/SCREAMBBY/CVE-2025-52099)",
+      "description": "an integer overflow in SQLite 3.50.0",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T09:55:36Z"
+    },
+    {
+      "cve_id": "CVE-2025-3248",
+      "repo_info": "[bambooqj/cve-2025-3248](https://github.com/bambooqj/cve-2025-3248)",
+      "description": "Langflow 在对用户提交的“验证代码”做 AST 解析和编译时，在未做鉴权与沙箱限制的情况下调用了 Python 的 compile()/exec()（以及在编译阶段会评估函数默认参数与装饰器），攻击者可把恶意载荷放在参数默认值或装饰器里，借此在服务器上下文中执行任意语句（反弹 shell、下载器、横向移动等）",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T13:08:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-1550",
+      "repo_info": "[ChCh0i/cve-2025-1550](https://github.com/ChCh0i/cve-2025-1550)",
+      "description": "no description",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T19:02:33Z"
+    },
+    {
+      "cve_id": "CVE-2023-22515",
+      "repo_info": "[Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197](https://github.com/Arkha-Corvus/LetsDefend-SOC235-Atlassian-Confluence-Broken-Access-Control-0-Day-CVE-2023-22515-EventID-197)",
+      "description": "I was presented with a high-severity alert indicating a potential exploit attempt of CVE-2023-22515, a zero-day vulnerability in Atlassian Confluence. The alert showed a suspicious GET request from an external IP targeting the Confluence server, suggesting an attempt to gain unauthorised admin access.",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T06:38:17Z"
+    },
+    {
+      "cve_id": "CVE-2020-11978",
+      "repo_info": "[stuxbench/mlflow-cve-2020-11978](https://github.com/stuxbench/mlflow-cve-2020-11978)",
+      "description": "no description",
+      "date": "2025-10-24",
+      "raw_date": "2025-10-24T10:58:16Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.763480",
+  "metadata": {
+    "total_cves": 10,
+    "date_range": "2025-10-24",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

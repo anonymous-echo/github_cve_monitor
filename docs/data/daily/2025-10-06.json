@@ -1,0 +1,104 @@
+{
+  "date": "2025-10-06",
+  "count": 13,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9074",
+      "repo_info": "[OilSeller2001/PoC-for-CVE-2025-9074](https://github.com/OilSeller2001/PoC-for-CVE-2025-9074)",
+      "description": "Proof-of-Concept exploit for CVE-2025-9074 - Unauthenticated Docker API exposure allowing arbitrary container creation and host filesystem access.",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T11:42:12Z"
+    },
+    {
+      "cve_id": "CVE-2025-8625",
+      "repo_info": "[ret0x2A/CVE-2025-8625](https://github.com/ret0x2A/CVE-2025-8625)",
+      "description": "no description",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T15:47:33Z"
+    },
+    {
+      "cve_id": "CVE-2025-8061",
+      "repo_info": "[symeonp/Lenovo-CVE-2025-8061](https://github.com/symeonp/Lenovo-CVE-2025-8061)",
+      "description": "PoC for popping a system shell against the LnvMSRIO.sys driver",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T09:33:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[Sachinart/CVE-2025-61882](https://github.com/Sachinart/CVE-2025-61882)",
+      "description": "Exploit for CVE-2025-61882 (do not use without any written permission).",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T22:02:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-61882",
+      "repo_info": "[watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882](https://github.com/watchtowrlabs/watchTowr-vs-Oracle-E-Business-Suite-CVE-2025-61882)",
+      "description": "no description",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T20:56:24Z"
+    },
+    {
+      "cve_id": "CVE-2025-59489",
+      "repo_info": "[GithubKillsMyOpsec/CVE-2025-59489-POC](https://github.com/GithubKillsMyOpsec/CVE-2025-59489-POC)",
+      "description": "Proof Of Concept For CVE-2025-59489. Affects unity games running on Android.",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T02:20:10Z"
+    },
+    {
+      "cve_id": "CVE-2025-51586",
+      "repo_info": "[7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC](https://github.com/7h30th3r0n3/CVE-2025-51586-PrestaShop-PoC)",
+      "description": "PrestaShop AdminLogin Email Enumeration PoC - CVE-2025-51586. This repository provides an ethical Proof-of-Concept (PoC) for the PrestaShop vulnerability allowing user enumeration through the AdminLogin password reset mechanism. It explains the impact, setup, and usage of the PoC script.",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T09:01:52Z"
+    },
+    {
+      "cve_id": "CVE-2025-41244",
+      "repo_info": "[haspiranti/CVE-2025-41244-PoC](https://github.com/haspiranti/CVE-2025-41244-PoC)",
+      "description": "VMware Aria Operations &lt; 4.18.5 &amp; VMware Tools - Local Privilege Escalation",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T01:35:21Z"
+    },
+    {
+      "cve_id": "CVE-2025-10874",
+      "repo_info": "[ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874](https://github.com/ryanmroth/Orbit-Fox_SSRF_CVE-2025-10874)",
+      "description": "Demonstrates SSRF with null byte injection bypass for CVE-2025-10874",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T16:05:27Z"
+    },
+    {
+      "cve_id": "CVE-2024-38820",
+      "repo_info": "[kadamnayan/POC-CVE-2024-38820](https://github.com/kadamnayan/POC-CVE-2024-38820)",
+      "description": "no description",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T11:15:26Z"
+    },
+    {
+      "cve_id": "CVE-2024-30088",
+      "repo_info": "[ramzihafiz/cve-2024-30088-binary](https://github.com/ramzihafiz/cve-2024-30088-binary)",
+      "description": "compiled poc binary",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T06:35:19Z"
+    },
+    {
+      "cve_id": "CVE-2024-23897",
+      "repo_info": "[hybinn/CVE-2024-23897](https://github.com/hybinn/CVE-2024-23897)",
+      "description": "no description",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T13:46:49Z"
+    },
+    {
+      "cve_id": "CVE-2021-31630",
+      "repo_info": "[UserB1ank/CVE-2021-31630](https://github.com/UserB1ank/CVE-2021-31630)",
+      "description": "no description",
+      "date": "2025-10-06",
+      "raw_date": "2025-10-06T10:29:30Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.741652",
+  "metadata": {
+    "total_cves": 13,
+    "date_range": "2025-10-06",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

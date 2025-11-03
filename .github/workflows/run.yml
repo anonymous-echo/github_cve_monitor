@@ -7,7 +7,7 @@ on:
 jobs:
   cve-monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     environment: CI
     # 明确设置GitHub Actions内置token的权限
     permissions:

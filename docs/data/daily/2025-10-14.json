@@ -1,0 +1,167 @@
+{
+  "date": "2025-10-14",
+  "count": 22,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-9196",
+      "repo_info": "[godfatherofexps/CVE-2025-9196-PoC](https://github.com/godfatherofexps/CVE-2025-9196-PoC)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T20:15:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-7441",
+      "repo_info": "[Pwdnx1337/CVE-2025-7441](https://github.com/Pwdnx1337/CVE-2025-7441)",
+      "description": "StoryChief &lt;= 1.0.42 - Unauthenticated Arbitrary File Upload",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T17:40:14Z"
+    },
+    {
+      "cve_id": "CVE-2025-6554",
+      "repo_info": "[jopraveen/CVE-2025-6554](https://github.com/jopraveen/CVE-2025-6554)",
+      "description": "poc for CVE-2025-6554",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T07:29:51Z"
+    },
+    {
+      "cve_id": "CVE-2025-61456",
+      "repo_info": "[tansique-17/CVE-2025-61456](https://github.com/tansique-17/CVE-2025-61456)",
+      "description": "Public Disclosure",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T17:13:51Z"
+    },
+    {
+      "cve_id": "CVE-2025-61455",
+      "repo_info": "[tansique-17/CVE-2025-61455](https://github.com/tansique-17/CVE-2025-61455)",
+      "description": "Public Disclosure",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T17:02:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-61454",
+      "repo_info": "[tansique-17/CVE-2025-61454](https://github.com/tansique-17/CVE-2025-61454)",
+      "description": "Public Disclosure",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T17:15:39Z"
+    },
+    {
+      "cve_id": "CVE-2025-56224",
+      "repo_info": "[saykino/CVE-2025-56224](https://github.com/saykino/CVE-2025-56224)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T11:06:55Z"
+    },
+    {
+      "cve_id": "CVE-2025-56223",
+      "repo_info": "[saykino/CVE-2025-56223](https://github.com/saykino/CVE-2025-56223)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T11:00:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-56221",
+      "repo_info": "[saykino/CVE-2025-56221](https://github.com/saykino/CVE-2025-56221)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T10:42:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-56219",
+      "repo_info": "[saykino/CVE-2025-56219](https://github.com/saykino/CVE-2025-56219)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T10:20:36Z"
+    },
+    {
+      "cve_id": "CVE-2025-56218",
+      "repo_info": "[saykino/CVE-2025-56218](https://github.com/saykino/CVE-2025-56218)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T09:53:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-56218",
+      "repo_info": "[JNDataRT/VirtualLockSensorLPE](https://github.com/JNDataRT/VirtualLockSensorLPE)",
+      "description": "Local privilege escalation exploit for CVE-2025-0886.",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T10:23:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[angelusrivera/CVE-2025-49844](https://github.com/angelusrivera/CVE-2025-49844)",
+      "description": "PoC of RediShell",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T04:20:45Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[shalevo13/Se7enSlip](https://github.com/shalevo13/Se7enSlip)",
+      "description": "A scanner and testter of the CVE-2025-11001 of 7-zip",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T09:25:13Z"
+    },
+    {
+      "cve_id": "CVE-2025-48384",
+      "repo_info": "[mukesh-610/cve-2025-48384](https://github.com/mukesh-610/cve-2025-48384)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T11:47:08Z"
+    },
+    {
+      "cve_id": "CVE-2025-48384",
+      "repo_info": "[mukesh-610/cve-2025-48384-exploit](https://github.com/mukesh-610/cve-2025-48384-exploit)",
+      "description": "no description",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T11:40:41Z"
+    },
+    {
+      "cve_id": "CVE-2025-4123",
+      "repo_info": "[MorphyKutay/CVE-2025-4123-Exploit](https://github.com/MorphyKutay/CVE-2025-4123-Exploit)",
+      "description": "CVE-2025-4123 Grafana Open Redirect Exploit",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T22:06:26Z"
+    },
+    {
+      "cve_id": "CVE-2025-39682",
+      "repo_info": "[khoatran107/cve-2025-39682](https://github.com/khoatran107/cve-2025-39682)",
+      "description": "A variant of CVE-2024-58239",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T07:59:03Z"
+    },
+    {
+      "cve_id": "CVE-2025-25198",
+      "repo_info": "[Groppoxx/CVE-2025-25198-PoC](https://github.com/Groppoxx/CVE-2025-25198-PoC)",
+      "description": "PoC for CVE-2025-25198: automated Host header poisoning test for Mailcow - HTTPS listener, automatic cookie/CSRF handling, captures first reset link.",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T03:14:09Z"
+    },
+    {
+      "cve_id": "CVE-2025-25198",
+      "repo_info": "[enzocipher/CVE-2025-25198](https://github.com/enzocipher/CVE-2025-25198)",
+      "description": "Captures password reset tokens from Mailcow Host header injection attacks.",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T05:07:26Z"
+    },
+    {
+      "cve_id": "CVE-2024-36971",
+      "repo_info": "[Kronk-imp/CVE-2024-36971](https://github.com/Kronk-imp/CVE-2024-36971)",
+      "description": "Poc for CVE-2024-36971",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T12:19:13Z"
+    },
+    {
+      "cve_id": "CVE-2022-41678",
+      "repo_info": "[URJACK2025/CVE-2022-41678](https://github.com/URJACK2025/CVE-2022-41678)",
+      "description": "CVE-2022-41678 是 Apache ActiveMQ 中的一个远程代码执行漏洞。该漏洞允许攻击者通过 JMX (Java Management Extensions) 接口修改 Log4j 配置或 JFR (Java Flight Recorder) 配置，从而写入恶意的 JSP webshell 到服务器的 web 目录中，最终实现远程代码执行。",
+      "date": "2025-10-14",
+      "raw_date": "2025-10-14T14:18:48Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.750693",
+  "metadata": {
+    "total_cves": 22,
+    "date_range": "2025-10-14",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

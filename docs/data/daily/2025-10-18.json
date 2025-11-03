@@ -1,0 +1,104 @@
+{
+  "date": "2025-10-18",
+  "count": 13,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-56802",
+      "repo_info": "[shinyColumn/CVE-2025-56802](https://github.com/shinyColumn/CVE-2025-56802)",
+      "description": "AES-CFB Key Generation and Management Vulnerability in Reolink Desktop Application",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T20:23:57Z"
+    },
+    {
+      "cve_id": "CVE-2025-56801",
+      "repo_info": "[shinyColumn/CVE-2025-56801](https://github.com/shinyColumn/CVE-2025-56801)",
+      "description": "AES-CFB IV Generation Vulnerability in Reolink Desktop Application",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T20:08:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-56800",
+      "repo_info": "[shinyColumn/CVE-2025-56800](https://github.com/shinyColumn/CVE-2025-56800)",
+      "description": "Local Authentication Bypass Vulnerability in Reolink Desktop Application",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T15:18:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-56799",
+      "repo_info": "[shinyColumn/CVE-2025-56799](https://github.com/shinyColumn/CVE-2025-56799)",
+      "description": "OS Command Injection Vulnerability via Cache Clearing Scheduler in Reolink Desktop Application",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T12:51:33Z"
+    },
+    {
+      "cve_id": "CVE-2025-33073",
+      "repo_info": "[SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073](https://github.com/SellMeFish/windows-smb-vulnerability-framework-cve-2025-33073)",
+      "description": "Proof-of-Concept",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T13:05:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-33073",
+      "repo_info": "[25145hg654511135gfhfkr8488r8r8r8r8r/test2](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test2)",
+      "description": "cve-2025-54253",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T11:53:10Z"
+    },
+    {
+      "cve_id": "CVE-2025-33073",
+      "repo_info": "[25145hg654511135gfhfkr8488r8r8r8r8r/test](https://github.com/25145hg654511135gfhfkr8488r8r8r8r8r/test)",
+      "description": "آسیب‌پذیری بحرانی با شناسه CVE-2025-54253 در محصول Adobe Experience Manager Forms (JEE) شناسایی شده است",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T11:52:26Z"
+    },
+    {
+      "cve_id": "CVE-2025-27591",
+      "repo_info": "[krn966/CVE-2025-27591](https://github.com/krn966/CVE-2025-27591)",
+      "description": "CVE-2025-27591",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T21:22:16Z"
+    },
+    {
+      "cve_id": "CVE-2025-25257",
+      "repo_info": "[silentexploitexe/CVE-2025-25257](https://github.com/silentexploitexe/CVE-2025-25257)",
+      "description": "no description",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T23:30:37Z"
+    },
+    {
+      "cve_id": "CVE-2024-11392",
+      "repo_info": "[stuxbench/vllm-cve-2024-11392](https://github.com/stuxbench/vllm-cve-2024-11392)",
+      "description": "no description",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T16:34:43Z"
+    },
+    {
+      "cve_id": "CVE-2022-0001",
+      "repo_info": "[Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected](https://github.com/Arkha-Corvus/LetsDefend-SOC173-Follina-0-Day-Detected)",
+      "description": "We are presented with a security alert indicating the detection of the Follina (CVE-2022-30190) vulnerability. A malicious Word document triggered msdt.exe execution, suggesting possible remote code execution on the host JonasPRD. Our task is to investigate the alert, confirm exploitation, assess impact, and recommend remediation.",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T11:43:12Z"
+    },
+    {
+      "cve_id": "CVE-2021-27905",
+      "repo_info": "[RIZZZIOM/CVE-2021-27905](https://github.com/RIZZZIOM/CVE-2021-27905)",
+      "description": "Apache Solr &lt; 8.8.2 Server Side Request Forgery",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T14:19:58Z"
+    },
+    {
+      "cve_id": "CVE-2020-35489",
+      "repo_info": "[nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket](https://github.com/nyambiblaise/Domain-Controller-DC-Exploitation-with-Metasploit-Impacket)",
+      "description": "End-to-end Domain Controller exploitation using Metasploit and Impacket: discovered DC10, exploited Zerologon (CVE-2020-1472), extracted NTLM hashes, gained SYSTEM shell, and established a Meterpreter session.",
+      "date": "2025-10-18",
+      "raw_date": "2025-10-18T15:33:56Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.755205",
+  "metadata": {
+    "total_cves": 13,
+    "date_range": "2025-10-18",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

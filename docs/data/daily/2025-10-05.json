@@ -1,0 +1,83 @@
+{
+  "date": "2025-10-05",
+  "count": 10,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-6934",
+      "repo_info": "[Jenderal92/WP-CVE-2025-6934](https://github.com/Jenderal92/WP-CVE-2025-6934)",
+      "description": "WP-CVE-2025-6934 - Opal Estate Pro &lt;= 1.7.5 - Unauthenticated Privilege Escalation",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T02:41:35Z"
+    },
+    {
+      "cve_id": "CVE-2025-6554",
+      "repo_info": "[mistymntncop/CVE-2025-6554](https://github.com/mistymntncop/CVE-2025-6554)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T02:01:19Z"
+    },
+    {
+      "cve_id": "CVE-2025-61884",
+      "repo_info": "[rxerium/CVE-2025-61882-CVE-2025-61884](https://github.com/rxerium/CVE-2025-61882-CVE-2025-61884)",
+      "description": "Detection for CVE-2025-61882 &amp; CVE-2025-61884",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T18:35:23Z"
+    },
+    {
+      "cve_id": "CVE-2025-56132",
+      "repo_info": "[fredericgoossens/CVE-2025-56132-Liquidfiles](https://github.com/fredericgoossens/CVE-2025-56132-Liquidfiles)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T13:15:29Z"
+    },
+    {
+      "cve_id": "CVE-2025-55616",
+      "repo_info": "[livepwn/CVE-2025-55616](https://github.com/livepwn/CVE-2025-55616)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T16:37:04Z"
+    },
+    {
+      "cve_id": "CVE-2025-52970",
+      "repo_info": "[imbas007/POC-CVE-2025-52970](https://github.com/imbas007/POC-CVE-2025-52970)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T14:11:03Z"
+    },
+    {
+      "cve_id": "CVE-2025-2568",
+      "repo_info": "[shinigami-777/PoC_CVE-2025-2568](https://github.com/shinigami-777/PoC_CVE-2025-2568)",
+      "description": "Proof of Concept for CVE-2025-2568",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T14:22:29Z"
+    },
+    {
+      "cve_id": "CVE-2024-28157",
+      "repo_info": "[shinigami-777/PoC_CVE-2024-28157](https://github.com/shinigami-777/PoC_CVE-2024-28157)",
+      "description": "Proof of Concept for CVE-2024-28157",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T11:34:36Z"
+    },
+    {
+      "cve_id": "CVE-2021-44228",
+      "repo_info": "[d4ngkh04w/CVE-2021-44228-Apache-Log4j2](https://github.com/d4ngkh04w/CVE-2021-44228-Apache-Log4j2)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T16:27:02Z"
+    },
+    {
+      "cve_id": "CVE-2020-17530",
+      "repo_info": "[shoucheng3/apache__struts_CVE-2020-17530_2-5-25](https://github.com/shoucheng3/apache__struts_CVE-2020-17530_2-5-25)",
+      "description": "no description",
+      "date": "2025-10-05",
+      "raw_date": "2025-10-05T10:37:37Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.740654",
+  "metadata": {
+    "total_cves": 10,
+    "date_range": "2025-10-05",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

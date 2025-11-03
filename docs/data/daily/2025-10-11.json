@@ -1,0 +1,69 @@
+{
+  "date": "2025-10-11",
+  "count": 8,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-61777",
+      "repo_info": "[0x0w1z/CVE-2025-61777](https://github.com/0x0w1z/CVE-2025-61777)",
+      "description": "CVE on FlagForgeCTF  on versions v2.0.0 to v2.3.1. Upgraded to version 2.3.2 to fix the issue.",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T09:18:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-59489",
+      "repo_info": "[taptap/cve-2025-59489](https://github.com/taptap/cve-2025-59489)",
+      "description": "CVE-2025-59489 Unity Vulnerability Checker",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T11:50:17Z"
+    },
+    {
+      "cve_id": "CVE-2025-54793",
+      "repo_info": "[Bhuvanesh-Murdoch2005/ict279-cve-2025-54793](https://github.com/Bhuvanesh-Murdoch2005/ict279-cve-2025-54793)",
+      "description": "Group project — CVE-2025-54793 detection &amp; mitigation (Bhuvanesh, Shiva, Emma)",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T04:23:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[imbas007/CVE-2025-49844-Vulnerability-Scanner](https://github.com/imbas007/CVE-2025-49844-Vulnerability-Scanner)",
+      "description": "no description",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T11:42:27Z"
+    },
+    {
+      "cve_id": "CVE-2025-32463",
+      "repo_info": "[cybershaolin47/CVE-2025-32463_POC](https://github.com/cybershaolin47/CVE-2025-32463_POC)",
+      "description": "no description",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T15:50:56Z"
+    },
+    {
+      "cve_id": "CVE-2025-32421",
+      "repo_info": "[hidesec/CVE-2025-32421](https://github.com/hidesec/CVE-2025-32421)",
+      "description": "Comprehensive demonstration of CVE-2025-32421 Eclipse technique - a sophisticated race condition attack against Next.js 15.0.4 that bypasses the original CVE-2024-46982 patch.",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T07:24:02Z"
+    },
+    {
+      "cve_id": "CVE-2025-21298",
+      "repo_info": "[Arkha-Corvus/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298-](https://github.com/Arkha-Corvus/LetsDefend-SOC336-Windows-OLE-Zero-Click-RCE-Exploitation-Detected-CVE-2025-21298-)",
+      "description": "We are expected to investigate a critical alert reporting a Windows OLE zero-click RCE exploitation (CVE-2025-21298) delivered via a malicious RTF attachment.",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T19:40:18Z"
+    },
+    {
+      "cve_id": "CVE-2025-11371",
+      "repo_info": "[lap1nou/CVE-2025-11371](https://github.com/lap1nou/CVE-2025-11371)",
+      "description": "CVE-2025-11371 PoC, credit goes to Huntress, https://www.huntress.com/blog/gladinet-centrestack-triofox-local-file-inclusion-flaw",
+      "date": "2025-10-11",
+      "raw_date": "2025-10-11T18:00:56Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.747683",
+  "metadata": {
+    "total_cves": 8,
+    "date_range": "2025-10-11",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2025-10-31",
+  "count": 17,
+  "cves": [
+    {
+      "cve_id": "CVE-2025-64095",
+      "repo_info": "[h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload](https://github.com/h4x0r-dz/CVE-2025-64095---DNN-Unauthenticated-arbitrary-file-upload)",
+      "description": "POC of DNN Insufficient Access Control - Image Upload allows for Site Content Overwrite",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T14:06:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-62527",
+      "repo_info": "[jiangjialiang1019/cveDataMappingYear_2025](https://github.com/jiangjialiang1019/cveDataMappingYear_2025)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:57:00Z"
+    },
+    {
+      "cve_id": "CVE-2025-49844",
+      "repo_info": "[saneki/cve-2025-49844](https://github.com/saneki/cve-2025-49844)",
+      "description": "Proof-of-concept for CVE-2025-49844",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T05:59:25Z"
+    },
+    {
+      "cve_id": "CVE-2025-48384",
+      "repo_info": "[MarcoTondolo/cve-2025-48384-poc](https://github.com/MarcoTondolo/cve-2025-48384-poc)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T11:48:10Z"
+    },
+    {
+      "cve_id": "CVE-2025-26794",
+      "repo_info": "[XploitGh0st/CVE-2025-26794-exploit](https://github.com/XploitGh0st/CVE-2025-26794-exploit)",
+      "description": "SQL injection exploit for CVE-2025-26794 in Exim 4.98. Automated data extraction via time-based blind SQLi. For authorized penetration testing only.",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T04:06:47Z"
+    },
+    {
+      "cve_id": "CVE-2025-26625",
+      "repo_info": "[Mitchellzhou1/CVE_2025_26625_PoC](https://github.com/Mitchellzhou1/CVE_2025_26625_PoC)",
+      "description": "testing",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T03:12:53Z"
+    },
+    {
+      "cve_id": "CVE-2025-24893",
+      "repo_info": "[Y2F05p2w/CVE-2025-24893](https://github.com/Y2F05p2w/CVE-2025-24893)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:36:31Z"
+    },
+    {
+      "cve_id": "CVE-2024-56800",
+      "repo_info": "[jiangjialiang1019/cveDataMappingYear_2024](https://github.com/jiangjialiang1019/cveDataMappingYear_2024)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:51:48Z"
+    },
+    {
+      "cve_id": "CVE-2024-56800",
+      "repo_info": "[blackcodersec/exploit-cve](https://github.com/blackcodersec/exploit-cve)",
+      "description": "CVE-2024-39713 (Rocket.Chat Blind SSRF vulnerability)",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T06:30:06Z"
+    },
+    {
+      "cve_id": "CVE-2024-48990",
+      "repo_info": "[Loaxert/CVE-2024-48990-PoC](https://github.com/Loaxert/CVE-2024-48990-PoC)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T03:22:42Z"
+    },
+    {
+      "cve_id": "CVE-2023-49440",
+      "repo_info": "[jiangjialiang1019/cveDataMappingYear_2023](https://github.com/jiangjialiang1019/cveDataMappingYear_2023)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:44:35Z"
+    },
+    {
+      "cve_id": "CVE-2022-22536",
+      "repo_info": "[abrewer251/CVE-2022-22536_SAP_Request_Smuggling_Scanner](https://github.com/abrewer251/CVE-2022-22536_SAP_Request_Smuggling_Scanner)",
+      "description": "Fast, socket-level scanner for detecting CVE-2022-22536 in SAP ICM or Web Dispatcher instances. Performs request smuggling tests with a crafted MPI-desync payload. Supports batch scanning IP:PORT targets via plain text files.",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T19:02:02Z"
+    },
+    {
+      "cve_id": "CVE-2022-22536",
+      "repo_info": "[jiangjialiang1019/cveDataMappingYear_2022](https://github.com/jiangjialiang1019/cveDataMappingYear_2022)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:37:54Z"
+    },
+    {
+      "cve_id": "CVE-2021-41773",
+      "repo_info": "[adrianmafandy/CVE-2021-41773](https://github.com/adrianmafandy/CVE-2021-41773)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T10:34:12Z"
+    },
+    {
+      "cve_id": "CVE-2021-41773",
+      "repo_info": "[Mahfujurjust/CVE-2021-41773](https://github.com/Mahfujurjust/CVE-2021-41773)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T00:46:31Z"
+    },
+    {
+      "cve_id": "CVE-2021-3560",
+      "repo_info": "[jiangjialiang1019/cveDataMappingYear_2021](https://github.com/jiangjialiang1019/cveDataMappingYear_2021)",
+      "description": "no description",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T07:30:41Z"
+    },
+    {
+      "cve_id": "CVE-2021-29447",
+      "repo_info": "[0xricksanchez/CVE-2021-29447](https://github.com/0xricksanchez/CVE-2021-29447)",
+      "description": "A XXE payload generator",
+      "date": "2025-10-31",
+      "raw_date": "2025-10-31T16:35:44Z"
+    }
+  ],
+  "generated_at": "2025-11-03T15:42:41.771054",
+  "metadata": {
+    "total_cves": 17,
+    "date_range": "2025-10-31",
+    "source": "README.md",
+    "script_version": "2.0"
+  }
+}
