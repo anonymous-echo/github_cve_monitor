@@ -1,6 +1,6 @@
 {
   "date": "2025-09-02",
-  "count": 18,
+  "count": 19,
   "cves": [
     {
       "cve_id": "CVE-2025-9784",
@@ -50,6 +50,13 @@
       "description": "Command Injection Vulnerability via Plugin Execution in Figma Desktop Application",
       "date": "2025-09-02",
       "raw_date": "2025-09-02T17:44:23Z"
+    },
+    {
+      "cve_id": "CVE-2025-48799",
+      "repo_info": "[gmh5225/CVE-2025-48799-](https://github.com/gmh5225/CVE-2025-48799-)",
+      "description": "Sample exploit of patched vulnerability",
+      "date": "2025-09-02",
+      "raw_date": "2025-09-02T08:29:35Z"
     },
     {
       "cve_id": "CVE-2025-45805",
@@ -129,9 +136,9 @@
       "raw_date": "2025-09-02T00:13:39Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.942505",
+  "generated_at": "2025-11-04T00:59:13.170503",
   "metadata": {
-    "total_cves": 18,
+    "total_cves": 19,
     "date_range": "2025-09-02",
     "source": "README.md",
     "script_version": "2.0"

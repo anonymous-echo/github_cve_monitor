@@ -1,6 +1,6 @@
 {
   "date": "2025-03-27",
-  "count": 26,
+  "count": 27,
   "cves": [
     {
       "cve_id": "CVE-2025-50000",
@@ -171,6 +171,13 @@
       "raw_date": "2025-03-27T07:34:51Z"
     },
     {
+      "cve_id": "CVE-2021-31630",
+      "repo_info": "[timothyjxhn/DeliberatelyVulnerableWebApp](https://github.com/timothyjxhn/DeliberatelyVulnerableWebApp)",
+      "description": "A Deliberately Vulnerable Web Application built on Struts 2 (CVE-2017-5638) and Log4J (CVE-2021-44228) for testing and demonstration of OWASP Top 10 Web Application Security Risks: A06:2021-Vulnerable and Outdated Components.",
+      "date": "2025-03-27",
+      "raw_date": "2025-03-27T00:10:24Z"
+    },
+    {
       "cve_id": "CVE-2019-9978",
       "repo_info": "[echoosso/CVE-2019-9978](https://github.com/echoosso/CVE-2019-9978)",
       "description": "A Remote Code Execution (RCE) vulnerability in the Social Warfare plugin for WordPress, affecting versions below 3.5.3.",
@@ -185,9 +192,9 @@
       "raw_date": "2025-03-27T14:39:59Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.905705",
+  "generated_at": "2025-11-04T00:59:13.134557",
   "metadata": {
-    "total_cves": 26,
+    "total_cves": 27,
     "date_range": "2025-03-27",
     "source": "README.md",
     "script_version": "2.0"

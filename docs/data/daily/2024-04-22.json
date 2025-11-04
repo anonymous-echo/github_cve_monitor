@@ -1,6 +1,6 @@
 {
   "date": "2024-04-22",
-  "count": 11,
+  "count": 12,
   "cves": [
     {
       "cve_id": "CVE-2024-4040",
@@ -66,6 +66,13 @@
       "raw_date": "2024-04-22T23:33:35Z"
     },
     {
+      "cve_id": "CVE-2022-24716",
+      "repo_info": "[gmh5225/CVE-2022-24716-2](https://github.com/gmh5225/CVE-2022-24716-2)",
+      "description": "CVE-2022-24716 (Arbitrary File Disclosure Icingaweb2)",
+      "date": "2024-04-22",
+      "raw_date": "2024-04-22T01:17:01Z"
+    },
+    {
       "cve_id": "CVE-2022-0482",
       "repo_info": "[mija-pilkaite/CVE-2022-0482_exploit](https://github.com/mija-pilkaite/CVE-2022-0482_exploit)",
       "description": "A final project for &quot;Network Security&quot; class at NYCU (National Yang Ming Chiao Tung University, Taiwan). Exploiting a CVE in &quot;EasyAppointments&quot; software.",
@@ -80,9 +87,9 @@
       "raw_date": "2024-04-22T22:33:25Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.840699",
+  "generated_at": "2025-11-04T00:59:13.071085",
   "metadata": {
-    "total_cves": 11,
+    "total_cves": 12,
     "date_range": "2024-04-22",
     "source": "README.md",
     "script_version": "2.0"

@@ -1,6 +1,6 @@
 {
   "date": "2025-08-21",
-  "count": 15,
+  "count": 17,
   "cves": [
     {
       "cve_id": "CVE-2025-9132",
@@ -38,6 +38,13 @@
       "raw_date": "2025-08-21T18:06:09Z"
     },
     {
+      "cve_id": "CVE-2025-53786",
+      "repo_info": "[vincentdthe/CVE-2025-53786](https://github.com/vincentdthe/CVE-2025-53786)",
+      "description": "no description",
+      "date": "2025-08-21",
+      "raw_date": "2025-08-21T10:16:47Z"
+    },
+    {
       "cve_id": "CVE-2025-43300",
       "repo_info": "[h4xnz/CVE-2025-43300](https://github.com/h4xnz/CVE-2025-43300)",
       "description": "no description",
@@ -50,6 +57,13 @@
       "description": "CVE-2025-25256: Fortinet FortiSIEM OS Command Injection CVE PoC (Proof of Concept)",
       "date": "2025-08-21",
       "raw_date": "2025-08-21T09:09:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-25198",
+      "repo_info": "[edera-dev/cve-tarmageddon](https://github.com/edera-dev/cve-tarmageddon)",
+      "description": "CVE-2025-62518: TARmageddon",
+      "date": "2025-08-21",
+      "raw_date": "2025-08-21T16:03:36Z"
     },
     {
       "cve_id": "CVE-2025-22235",
@@ -108,9 +122,9 @@
       "raw_date": "2025-08-21T21:10:45Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.939983",
+  "generated_at": "2025-11-04T00:59:13.168032",
   "metadata": {
-    "total_cves": 15,
+    "total_cves": 17,
     "date_range": "2025-08-21",
     "source": "README.md",
     "script_version": "2.0"

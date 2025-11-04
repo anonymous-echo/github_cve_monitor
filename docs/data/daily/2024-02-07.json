@@ -1,6 +1,6 @@
 {
   "date": "2024-02-07",
-  "count": 7,
+  "count": 8,
   "cves": [
     {
       "cve_id": "CVE-2024-23897",
@@ -50,11 +50,18 @@
       "description": "C implementation of Outlook 0-click vulnerability",
       "date": "2024-02-07",
       "raw_date": "2024-02-07T07:08:55Z"
+    },
+    {
+      "cve_id": "CVE-2022-36537",
+      "repo_info": "[superneilcn/SpringExploitGUI](https://github.com/superneilcn/SpringExploitGUI)",
+      "description": "一款Spring综合漏洞的利用工具，工具目前支持Spring Cloud Gateway RCE(CVE-2022-22947)、Spring Framework RCE (CVE-2022-22965) 的检测以及利用",
+      "date": "2024-02-07",
+      "raw_date": "2024-02-07T07:51:30Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.825974",
+  "generated_at": "2025-11-04T00:59:13.056732",
   "metadata": {
-    "total_cves": 7,
+    "total_cves": 8,
     "date_range": "2024-02-07",
     "source": "README.md",
     "script_version": "2.0"

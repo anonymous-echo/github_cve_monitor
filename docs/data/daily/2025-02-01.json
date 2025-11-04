@@ -1,6 +1,6 @@
 {
   "date": "2025-02-01",
-  "count": 7,
+  "count": 8,
   "cves": [
     {
       "cve_id": "CVE-2025-24118",
@@ -31,6 +31,13 @@
       "raw_date": "2025-02-01T08:52:04Z"
     },
     {
+      "cve_id": "CVE-2024-47051",
+      "repo_info": "[actuator/com.enflick.android.TextNow](https://github.com/actuator/com.enflick.android.TextNow)",
+      "description": "CVE-2024-36437",
+      "date": "2025-02-01",
+      "raw_date": "2025-02-01T17:08:36Z"
+    },
+    {
       "cve_id": "CVE-2024-39123",
       "repo_info": "[FelinaeBlanc/CVE_2024_39123](https://github.com/FelinaeBlanc/CVE_2024_39123)",
       "description": "Démonstration de l&#x27;explotation de la CVE CVE_2024_39123",
@@ -52,9 +59,9 @@
       "raw_date": "2025-02-01T08:24:19Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.895234",
+  "generated_at": "2025-11-04T00:59:13.124322",
   "metadata": {
-    "total_cves": 7,
+    "total_cves": 8,
     "date_range": "2025-02-01",
     "source": "README.md",
     "script_version": "2.0"

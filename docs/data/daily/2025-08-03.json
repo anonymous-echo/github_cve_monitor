@@ -1,6 +1,6 @@
 {
   "date": "2025-08-03",
-  "count": 20,
+  "count": 21,
   "cves": [
     {
       "cve_id": "CVE-2025-8471",
@@ -64,6 +64,13 @@
       "description": "Reverse Shell Payload for CVE-2025-24893",
       "date": "2025-08-03",
       "raw_date": "2025-08-03T14:54:49Z"
+    },
+    {
+      "cve_id": "CVE-2025-10351",
+      "repo_info": "[ivansmc00/CVE-2025-10351-POC](https://github.com/ivansmc00/CVE-2025-10351-POC)",
+      "description": "Exploit for CVE-2025-10351. SQL Injection on Melis Platform Framework",
+      "date": "2025-08-03",
+      "raw_date": "2025-08-03T11:04:53Z"
     },
     {
       "cve_id": "CVE-2024-4367",
@@ -143,9 +150,9 @@
       "raw_date": "2025-08-03T18:58:19Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.935078",
+  "generated_at": "2025-11-04T00:59:13.163172",
   "metadata": {
-    "total_cves": 20,
+    "total_cves": 21,
     "date_range": "2025-08-03",
     "source": "README.md",
     "script_version": "2.0"

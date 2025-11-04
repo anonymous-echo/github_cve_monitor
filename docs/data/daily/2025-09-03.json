@@ -1,6 +1,6 @@
 {
   "date": "2025-09-03",
-  "count": 24,
+  "count": 25,
   "cves": [
     {
       "cve_id": "CVE-2025-9074",
@@ -136,6 +136,13 @@
       "raw_date": "2025-09-03T15:27:49Z"
     },
     {
+      "cve_id": "CVE-2025-10377",
+      "repo_info": "[MooseLoveti/Trinity-Audio-CVE-Report2](https://github.com/MooseLoveti/Trinity-Audio-CVE-Report2)",
+      "description": "Disclosure for CVE-2025-9886 and CVE-2025-9952",
+      "date": "2025-09-03",
+      "raw_date": "2025-09-03T01:02:13Z"
+    },
+    {
       "cve_id": "CVE-2024-3094",
       "repo_info": "[ykhurshudyan-blip/CVE-2024-3094](https://github.com/ykhurshudyan-blip/CVE-2024-3094)",
       "description": "no description",
@@ -171,9 +178,9 @@
       "raw_date": "2025-09-03T08:57:25Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.942741",
+  "generated_at": "2025-11-04T00:59:13.170761",
   "metadata": {
-    "total_cves": 24,
+    "total_cves": 25,
     "date_range": "2025-09-03",
     "source": "README.md",
     "script_version": "2.0"

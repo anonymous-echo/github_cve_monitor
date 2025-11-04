@@ -1,6 +1,6 @@
 {
   "date": "2025-08-27",
-  "count": 16,
+  "count": 17,
   "cves": [
     {
       "cve_id": "CVE-2025-8088",
@@ -29,6 +29,13 @@
       "description": "no description",
       "date": "2025-08-27",
       "raw_date": "2025-08-27T12:24:15Z"
+    },
+    {
+      "cve_id": "CVE-2025-62506",
+      "repo_info": "[valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC](https://github.com/valeriocassoni/CSV-Injection-in-Instant-Developer-Foundation-25.0-PoC)",
+      "description": "This repository contains a Proof of Concept (PoC) for a CSV Injection (Formula Injection) vulnerability (CVE-2025-60852) affecting applications built with the Instant Developer Foundation framework (versions prior to 25.0).",
+      "date": "2025-08-27",
+      "raw_date": "2025-08-27T09:30:50Z"
     },
     {
       "cve_id": "CVE-2025-48384",
@@ -115,9 +122,9 @@
       "raw_date": "2025-08-27T11:51:55Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.941249",
+  "generated_at": "2025-11-04T00:59:13.169262",
   "metadata": {
-    "total_cves": 16,
+    "total_cves": 17,
     "date_range": "2025-08-27",
     "source": "README.md",
     "script_version": "2.0"

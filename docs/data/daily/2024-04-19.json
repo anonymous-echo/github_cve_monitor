@@ -1,6 +1,6 @@
 {
   "date": "2024-04-19",
-  "count": 6,
+  "count": 7,
   "cves": [
     {
       "cve_id": "CVE-2024-3400",
@@ -24,6 +24,13 @@
       "raw_date": "2024-04-19T16:18:59Z"
     },
     {
+      "cve_id": "CVE-2023-5965",
+      "repo_info": "[josemlwdf/CVE-2023-5965](https://github.com/josemlwdf/CVE-2023-5965)",
+      "description": "PoC for Espo CRM 7.2.4 CVE-2023-5965 &amp; CVE-2023-5966",
+      "date": "2024-04-19",
+      "raw_date": "2024-04-19T04:48:43Z"
+    },
+    {
       "cve_id": "CVE-2023-27350",
       "repo_info": "[ASG-CASTLE/CVE-2023-27350](https://github.com/ASG-CASTLE/CVE-2023-27350)",
       "description": "no description",
@@ -45,9 +52,9 @@
       "raw_date": "2024-04-19T04:33:14Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.840127",
+  "generated_at": "2025-11-04T00:59:13.070548",
   "metadata": {
-    "total_cves": 6,
+    "total_cves": 7,
     "date_range": "2024-04-19",
     "source": "README.md",
     "script_version": "2.0"

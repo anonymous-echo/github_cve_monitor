@@ -1,6 +1,6 @@
 {
   "date": "2025-06-01",
-  "count": 2,
+  "count": 3,
   "cves": [
     {
       "cve_id": "CVE-2025-32432",
@@ -10,6 +10,13 @@
       "raw_date": "2025-06-01T15:19:08Z"
     },
     {
+      "cve_id": "CVE-2025-11001",
+      "repo_info": "[litolito54/CVE-2025-11001](https://github.com/litolito54/CVE-2025-11001)",
+      "description": "🔍 Exploit CVE-2025-11001 in 7-Zip on Windows with admin privileges through a symlink attack; targeted for specific vulnerable versions, 21.02 - 25.00.",
+      "date": "2025-06-01",
+      "raw_date": "2025-06-01T22:27:24Z"
+    },
+    {
       "cve_id": "CVE-2023-25690",
       "repo_info": "[oOCyginXOo/CVE-2023-25690-POC](https://github.com/oOCyginXOo/CVE-2023-25690-POC)",
       "description": "CVE 2023 25690 Proof of concept - mod_proxy vulnerable configuration on Apache HTTP Server versions 2.4.0 - 2.4.55 leads to HTTP Request Smuggling vulnerability.",
@@ -17,9 +24,9 @@
       "raw_date": "2025-06-01T14:09:58Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.920297",
+  "generated_at": "2025-11-04T00:59:13.148793",
   "metadata": {
-    "total_cves": 2,
+    "total_cves": 3,
     "date_range": "2025-06-01",
     "source": "README.md",
     "script_version": "2.0"

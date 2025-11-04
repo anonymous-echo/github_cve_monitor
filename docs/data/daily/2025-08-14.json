@@ -1,6 +1,6 @@
 {
   "date": "2025-08-14",
-  "count": 13,
+  "count": 14,
   "cves": [
     {
       "cve_id": "CVE-2025-8088",
@@ -8,6 +8,13 @@
       "description": "Advanced WinRAR Path Traversal Exploit Tool for CVE-2025-8088",
       "date": "2025-08-14",
       "raw_date": "2025-08-14T00:36:24Z"
+    },
+    {
+      "cve_id": "CVE-2025-60425",
+      "repo_info": "[aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425](https://github.com/aakashtyal/Session-Persistence-After-Enabling-2FA-CVE-2025-60425)",
+      "description": "no description",
+      "date": "2025-08-14",
+      "raw_date": "2025-08-14T18:12:59Z"
     },
     {
       "cve_id": "CVE-2025-54424",
@@ -94,9 +101,9 @@
       "raw_date": "2025-08-14T02:45:01Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.937433",
+  "generated_at": "2025-11-04T00:59:13.165482",
   "metadata": {
-    "total_cves": 13,
+    "total_cves": 14,
     "date_range": "2025-08-14",
     "source": "README.md",
     "script_version": "2.0"

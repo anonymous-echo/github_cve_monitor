@@ -1,6 +1,6 @@
 {
   "date": "2025-07-25",
-  "count": 15,
+  "count": 16,
   "cves": [
     {
       "cve_id": "CVE-2025-54554",
@@ -8,6 +8,13 @@
       "description": "CVE-2025-54554 – Unauthenticated Access in tiaudit REST API leading to Sensitive Information Disclosure",
       "date": "2025-07-25",
       "raw_date": "2025-07-25T15:36:07Z"
+    },
+    {
+      "cve_id": "CVE-2025-53786",
+      "repo_info": "[bitsalv/ToolShell-Honeypot](https://github.com/bitsalv/ToolShell-Honeypot)",
+      "description": "Honeypot for CVE-2025-53770 aka ToolShell",
+      "date": "2025-07-25",
+      "raw_date": "2025-07-25T13:54:05Z"
     },
     {
       "cve_id": "CVE-2025-53770",
@@ -108,9 +115,9 @@
       "raw_date": "2025-07-25T13:31:06Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.932929",
+  "generated_at": "2025-11-04T00:59:13.161119",
   "metadata": {
-    "total_cves": 15,
+    "total_cves": 16,
     "date_range": "2025-07-25",
     "source": "README.md",
     "script_version": "2.0"

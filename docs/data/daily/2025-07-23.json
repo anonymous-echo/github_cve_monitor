@@ -1,6 +1,6 @@
 {
   "date": "2025-07-23",
-  "count": 30,
+  "count": 31,
   "cves": [
     {
       "cve_id": "CVE-2025-8018",
@@ -157,6 +157,13 @@
       "raw_date": "2025-07-23T03:20:09Z"
     },
     {
+      "cve_id": "CVE-2024-39840",
+      "repo_info": "[writegsqword/CVE-2024-39840-POC](https://github.com/writegsqword/CVE-2024-39840-POC)",
+      "description": "no description",
+      "date": "2025-07-23",
+      "raw_date": "2025-07-23T07:16:44Z"
+    },
+    {
       "cve_id": "CVE-2024-38063",
       "repo_info": "[Skac44/CVE-2024-38063](https://github.com/Skac44/CVE-2024-38063)",
       "description": "no description",
@@ -213,9 +220,9 @@
       "raw_date": "2025-07-23T03:19:53Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.932370",
+  "generated_at": "2025-11-04T00:59:13.160544",
   "metadata": {
-    "total_cves": 30,
+    "total_cves": 31,
     "date_range": "2025-07-23",
     "source": "README.md",
     "script_version": "2.0"

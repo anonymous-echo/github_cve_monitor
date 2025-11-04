@@ -1,6 +1,6 @@
 {
   "date": "2025-07-13",
-  "count": 15,
+  "count": 16,
   "cves": [
     {
       "cve_id": "CVE-2025-6058",
@@ -59,6 +59,13 @@
       "raw_date": "2025-07-13T10:43:52Z"
     },
     {
+      "cve_id": "CVE-2025-10720",
+      "repo_info": "[lorenzocamilli/CVE-2025-10720-PoC](https://github.com/lorenzocamilli/CVE-2025-10720-PoC)",
+      "description": "CVE-2025-10720 PoC",
+      "date": "2025-07-13",
+      "raw_date": "2025-07-13T17:14:13Z"
+    },
+    {
       "cve_id": "CVE-2024-21626",
       "repo_info": "[aayush256-sys/Moodle-authenticated-RCE](https://github.com/aayush256-sys/Moodle-authenticated-RCE)",
       "description": "🚀 Exploit for Moodle 4.4.0 Authenticated RCE (CVE-2024-43425) — run commands remotely ⚡",
@@ -108,9 +115,9 @@
       "raw_date": "2025-07-13T14:12:30Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.929883",
+  "generated_at": "2025-11-04T00:59:13.158107",
   "metadata": {
-    "total_cves": 15,
+    "total_cves": 16,
     "date_range": "2025-07-13",
     "source": "README.md",
     "script_version": "2.0"

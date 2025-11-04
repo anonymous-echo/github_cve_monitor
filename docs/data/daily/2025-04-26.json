@@ -1,7 +1,14 @@
 {
   "date": "2025-04-26",
-  "count": 11,
+  "count": 12,
   "cves": [
+    {
+      "cve_id": "CVE-2025-50505",
+      "repo_info": "[bron1e/CVE-2025-50505](https://github.com/bron1e/CVE-2025-50505)",
+      "description": "no description",
+      "date": "2025-04-26",
+      "raw_date": "2025-04-26T22:47:11Z"
+    },
     {
       "cve_id": "CVE-2025-32432",
       "repo_info": "[Chocapikk/CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432)",
@@ -80,9 +87,9 @@
       "raw_date": "2025-04-26T05:14:27Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.912938",
+  "generated_at": "2025-11-04T00:59:13.141607",
   "metadata": {
-    "total_cves": 11,
+    "total_cves": 12,
     "date_range": "2025-04-26",
     "source": "README.md",
     "script_version": "2.0"

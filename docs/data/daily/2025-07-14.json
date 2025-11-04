@@ -1,6 +1,6 @@
 {
   "date": "2025-07-14",
-  "count": 18,
+  "count": 19,
   "cves": [
     {
       "cve_id": "CVE-2025-7620",
@@ -80,6 +80,13 @@
       "raw_date": "2025-07-14T09:53:04Z"
     },
     {
+      "cve_id": "CVE-2025-41656",
+      "repo_info": "[wallyschag/CVE-2025-41656](https://github.com/wallyschag/CVE-2025-41656)",
+      "description": "This repository includes the code and files needed to test and execute a PoC for CVE-2025-41656",
+      "date": "2025-07-14",
+      "raw_date": "2025-07-14T18:10:12Z"
+    },
+    {
       "cve_id": "CVE-2025-32463",
       "repo_info": "[dbarquero/cve-2025-32463-lab](https://github.com/dbarquero/cve-2025-32463-lab)",
       "description": "Educational Docker lab to simulate privilege escalation via CVE-2025-32463",
@@ -129,9 +136,9 @@
       "raw_date": "2025-07-14T18:09:35Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.930121",
+  "generated_at": "2025-11-04T00:59:13.158327",
   "metadata": {
-    "total_cves": 18,
+    "total_cves": 19,
     "date_range": "2025-07-14",
     "source": "README.md",
     "script_version": "2.0"

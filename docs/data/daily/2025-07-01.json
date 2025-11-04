@@ -1,6 +1,6 @@
 {
   "date": "2025-07-01",
-  "count": 18,
+  "count": 19,
   "cves": [
     {
       "cve_id": "CVE-2025-6934",
@@ -87,6 +87,13 @@
       "raw_date": "2025-07-01T16:23:11Z"
     },
     {
+      "cve_id": "CVE-2025-20282",
+      "repo_info": "[skadevare/CiscoISE-CVE-2025-20282-POC](https://github.com/skadevare/CiscoISE-CVE-2025-20282-POC)",
+      "description": "Proof of concept of CVE-2025-20282, the perfect 10.",
+      "date": "2025-07-01",
+      "raw_date": "2025-07-01T11:52:07Z"
+    },
+    {
       "cve_id": "CVE-2023-5561",
       "repo_info": "[dthkhang/CVE-2023-5561-PoC](https://github.com/dthkhang/CVE-2023-5561-PoC)",
       "description": "CVE-2023-5561-PoC",
@@ -129,9 +136,9 @@
       "raw_date": "2025-07-01T11:16:36Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.926536",
+  "generated_at": "2025-11-04T00:59:13.154880",
   "metadata": {
-    "total_cves": 18,
+    "total_cves": 19,
     "date_range": "2025-07-01",
     "source": "README.md",
     "script_version": "2.0"

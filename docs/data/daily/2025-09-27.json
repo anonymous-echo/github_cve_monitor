@@ -1,6 +1,6 @@
 {
   "date": "2025-09-27",
-  "count": 6,
+  "count": 10,
   "cves": [
     {
       "cve_id": "CVE-2025-59932",
@@ -8,6 +8,20 @@
       "description": "CVE on FlagForge on versions 2.0.0 to 2.3.0. Upgrade to version 2.3.1 to fix the issue.",
       "date": "2025-09-27",
       "raw_date": "2025-09-27T02:55:20Z"
+    },
+    {
+      "cve_id": "CVE-2025-57428",
+      "repo_info": "[5ulfur/CVE-2025-57428](https://github.com/5ulfur/CVE-2025-57428)",
+      "description": "CVE-2025-57428",
+      "date": "2025-09-27",
+      "raw_date": "2025-09-27T14:49:00Z"
+    },
+    {
+      "cve_id": "CVE-2025-56764",
+      "repo_info": "[Remenis/CVE-2025-56764-trivision-nc227wf](https://github.com/Remenis/CVE-2025-56764-trivision-nc227wf)",
+      "description": "Username Enumeration in Trivision NC-227WF",
+      "date": "2025-09-27",
+      "raw_date": "2025-09-27T16:26:07Z"
     },
     {
       "cve_id": "CVE-2025-5304",
@@ -43,11 +57,25 @@
       "description": "no description",
       "date": "2025-09-27",
       "raw_date": "2025-09-27T06:16:59Z"
+    },
+    {
+      "cve_id": "CVE-2025-10035",
+      "repo_info": "[orange0Mint/CVE-2025-10035_GoAnywhere](https://github.com/orange0Mint/CVE-2025-10035_GoAnywhere)",
+      "description": "CVE-2025-10035_GoAnywhere Get RCE",
+      "date": "2025-09-27",
+      "raw_date": "2025-09-27T08:50:50Z"
+    },
+    {
+      "cve_id": "CVE-2021-31630",
+      "repo_info": "[KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device](https://github.com/KamalideenAK/Microsoft-Defender-for-Endpoint-Deployment-on-Windows-10-11-device)",
+      "description": "This repository documents how deployment of Microsoft Defender for Endpoint on a Windows 11 device, including onboarding via local script, enabling device discovery, configuring Log4j2 detection (CVE-2021-44228), and validating incident response workflows.",
+      "date": "2025-09-27",
+      "raw_date": "2025-09-27T11:26:58Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.947899",
+  "generated_at": "2025-11-04T00:59:13.175895",
   "metadata": {
-    "total_cves": 6,
+    "total_cves": 10,
     "date_range": "2025-09-27",
     "source": "README.md",
     "script_version": "2.0"

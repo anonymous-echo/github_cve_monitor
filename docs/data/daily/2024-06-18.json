@@ -1,7 +1,14 @@
 {
   "date": "2024-06-18",
-  "count": 21,
+  "count": 22,
   "cves": [
+    {
+      "cve_id": "CVE-2025-24367",
+      "repo_info": "[NVIDIA/product-security](https://github.com/NVIDIA/product-security)",
+      "description": "Starting October 1, 2025, NVIDIA PSIRT will publish an initial set of security bulletins on GitHub in Markdown, CSAF, and CVE formats. Coverage will expand over time, while all bulletins remain available on the Product Security website.",
+      "date": "2024-06-18",
+      "raw_date": "2024-06-18T21:11:50Z"
+    },
     {
       "cve_id": "CVE-2024-4577",
       "repo_info": "[jakabakos/CVE-2024-4577-PHP-CGI-argument-injection-RCE](https://github.com/jakabakos/CVE-2024-4577-PHP-CGI-argument-injection-RCE)",
@@ -150,9 +157,9 @@
       "raw_date": "2024-06-18T13:31:44Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.851937",
+  "generated_at": "2025-11-04T00:59:13.082138",
   "metadata": {
-    "total_cves": 21,
+    "total_cves": 22,
     "date_range": "2024-06-18",
     "source": "README.md",
     "script_version": "2.0"

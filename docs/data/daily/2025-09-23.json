@@ -1,6 +1,6 @@
 {
   "date": "2025-09-23",
-  "count": 21,
+  "count": 22,
   "cves": [
     {
       "cve_id": "CVE-2025-54253",
@@ -50,6 +50,13 @@
       "description": "no description",
       "date": "2025-09-23",
       "raw_date": "2025-09-23T16:55:01Z"
+    },
+    {
+      "cve_id": "CVE-2025-34226",
+      "repo_info": "[Eyodav/CVE-2025-34226](https://github.com/Eyodav/CVE-2025-34226)",
+      "description": "OpenPLC Runtime suffers from a persistent denial of service (DoS) vulnerability in the /upload-program-action endpoint.",
+      "date": "2025-09-23",
+      "raw_date": "2025-09-23T11:32:26Z"
     },
     {
       "cve_id": "CVE-2025-32463",
@@ -150,9 +157,9 @@
       "raw_date": "2025-09-23T18:03:45Z"
     }
   ],
-  "generated_at": "2025-10-28T00:56:54.947062",
+  "generated_at": "2025-11-04T00:59:13.175039",
   "metadata": {
-    "total_cves": 21,
+    "total_cves": 22,
     "date_range": "2025-09-23",
     "source": "README.md",
     "script_version": "2.0"
