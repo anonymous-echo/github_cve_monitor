@@ -211,7 +211,8 @@
           
           contentDiv.innerHTML = `
             <p>📅 <strong>${reportInfo.date}</strong> | 📈 新增记录: ${reportInfo.totalRecords} | ⏰ ${reportInfo.updateTime}</p>
-            <a href="${reportUrl}" target="_blank" style="color: white; text-decoration: underline;">查看完整报告 →</a>
+            <!-- 使用markdown-viewer.html来渲染Markdown文件 -->
+            <a href="markdown-viewer.html?file=${reportUrl}" target="_blank" style="color: white; text-decoration: underline;">查看完整报告 →</a>
           `;
           
           latestReportDiv.style.display = 'block';

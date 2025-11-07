@@ -209,8 +209,10 @@ def update_daily_index():
             except:
                 formatted_date = date_str
             
+            # 使用markdown-viewer.html来渲染Markdown文件
+            viewer_link = f"../../markdown-viewer.html?file=../{date_dir.name}/{file_name}"
             with open(index_path, 'a', encoding='utf-8') as f:
-                f.write(f"- [{formatted_date} 每日报告]({relative_path})\n")
+                f.write(f"- [{formatted_date} 每日报告]({viewer_link})\n")
         
         with open(index_path, 'a', encoding='utf-8') as f:
             f.write("\n")
